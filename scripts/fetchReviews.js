@@ -4,11 +4,14 @@ const path = require('path');
 
 const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
-function httpsGet(url) {
+function httpsGet(url, headers = {}) {
   return new Promise((resolve, reject) => {
     const u = new URL(url);
     const req = https.request({
-      hostname: u.hostname, path: u.pathname + u.search, method: 'GET'
+      hostname: u.hostname,
+      path: u.pathname + u.search,
+      method: 'GET',
+      headers
     }, res => {
       let data = '';
       res.on('data', c => data += c);
@@ -24,7 +27,9 @@ function httpsPost(url, headers, body) {
     const u = new URL(url);
     const buf = Buffer.from(JSON.stringify(body));
     const req = https.request({
-      hostname: u.hostname, path: u.pathname, method: 'POST',
+      hostname: u.hostname,
+      path: u.pathname,
+      method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Content-Length': buf.length, ...headers }
     }, res => {
       let data = '';
@@ -37,25 +42,30 @@ function httpsPost(url, headers, body) {
   });
 }
 
-const RATING_NUM = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
 const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
 
-// Search for a place by name and get its Place ID
+// New Places API (v1) — Text Search to find Place ID
 async function findPlaceId(labName, labCity) {
-  const query = encodeURIComponent(`${labName} ${labCity || ''} India`);
-  const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${query}&inputtype=textquery&fields=place_id,name&key=${PLACES_API_KEY}`;
-  const res = await httpsGet(url);
-  if (res.candidates?.length) return res.candidates[0].place_id;
+  const query = `${labName} ${labCity || ''} India diagnostic lab`;
+  const res = await httpsPost(
+    'https://places.googleapis.com/v1/places:searchText',
+    { 'X-Goog-Api-Key': PLACES_API_KEY, 'X-Goog-FieldMask': 'places.id,places.displayName' },
+    { textQuery: query, maxResultCount: 1 }
+  );
+  if (res.places?.length) {
+    console.log(`  Found: ${res.places[0].displayName?.text}`);
+    return res.places[0].id;
+  }
   return null;
 }
 
-// Get reviews for a Place ID using Places API (New)
+// New Places API (v1) — Place Details to get reviews + rating
 async function fetchReviewsForPlace(placeId) {
   const url = `https://places.googleapis.com/v1/places/${placeId}`;
-  const res = await httpsPost(url, {
+  const res = await httpsGet(url, {
     'X-Goog-Api-Key': PLACES_API_KEY,
     'X-Goog-FieldMask': 'reviews,rating,userRatingCount'
-  }, {});
+  });
 
   const reviews = [];
   for (const r of (res.reviews || [])) {
@@ -69,7 +79,11 @@ async function fetchReviewsForPlace(placeId) {
       sentiment: sentiment(rating)
     });
   }
-  return { reviews, avgRating: res.rating || 0, totalCount: res.userRatingCount || 0 };
+  return {
+    reviews,
+    avgRating: res.rating || 0,
+    totalCount: res.userRatingCount || 0
+  };
 }
 
 async function main() {
@@ -82,12 +96,11 @@ async function main() {
   const alerts = [];
 
   for (const lab of labs) {
-    process.stdout.write(`Fetching ${lab.name}... `);
+    process.stdout.write(`\nFetching ${lab.name}... `);
 
-    // Find place ID
     const placeId = await findPlaceId(lab.name, lab.city);
     if (!placeId) {
-      console.log(`Place not found, skipping`);
+      console.log('Place not found, skipping');
       branches.push({
         id: lab.id, name: lab.name, city: lab.city || '',
         rating: 0, reviewCount: 0, reviews: [],
@@ -97,7 +110,6 @@ async function main() {
       continue;
     }
 
-    // Fetch reviews
     const { reviews, avgRating, totalCount } = await fetchReviewsForPlace(placeId);
 
     for (const r of reviews) {
@@ -117,8 +129,8 @@ async function main() {
       lastSyncedAt: new Date().toISOString()
     });
 
-    console.log(`${reviews.length} reviews shown, overall avg ${avgRating} (${totalCount} total)`);
-    await new Promise(r => setTimeout(r, 300));
+    console.log(`${reviews.length} reviews shown, avg ${avgRating} (${totalCount} total)`);
+    await new Promise(r => setTimeout(r, 400));
   }
 
   const output = { generatedAt: new Date().toISOString(), branches, alerts };
