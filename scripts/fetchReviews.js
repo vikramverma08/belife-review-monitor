@@ -84,9 +84,16 @@ async function main() {
   const token = await getAccessToken();
 
   console.log('Fetching accounts...');
-  const accountsRes = await httpsGet('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', token);
-  if (!accountsRes.accounts?.length) throw new Error('No accounts: ' + JSON.stringify(accountsRes));
-  const accountName = accountsRes.accounts[0].name;
+  // Try v4 API first (avoids quota issues with the newer account management API)
+  let accountName;
+  const v4Res = await httpsGet('https://mybusiness.googleapis.com/v4/accounts', token);
+  if (v4Res.accounts?.length) {
+    accountName = v4Res.accounts[0].name;
+  } else {
+    const v1Res = await httpsGet('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', token);
+    if (!v1Res.accounts?.length) throw new Error('No accounts found: ' + JSON.stringify(v1Res));
+    accountName = v1Res.accounts[0].name;
+  }
   console.log(`Account: ${accountName}`);
 
   const labsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../labs.json'), 'utf8'));
