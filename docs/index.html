@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 <style>
 :root {
   --bg: #F6F2EA; --bg-elevated: #FBF8F1; --bg-card: #FFFFFF;
@@ -298,6 +299,73 @@ tr:hover td{background:var(--line-soft);}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
 ::-webkit-scrollbar-thumb:hover{background:var(--ink-mute)}
+
+/* ANALYTICS */
+.analytics-kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px;}
+.a-kpi{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:14px 16px;position:relative;overflow:hidden;}
+.a-kpi-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);font-weight:500;}
+.a-kpi-val{font-family:'Instrument Serif',serif;font-size:28px;line-height:1;margin:8px 0 4px;letter-spacing:-.01em;}
+.a-kpi-delta{font-size:11px;color:var(--ink-soft);}
+.a-kpi-delta.up{color:var(--good);}
+.a-kpi-delta.down{color:var(--accent);}
+.charts-row{display:grid;grid-template-columns:1.6fr 1fr;gap:14px;margin-bottom:14px;}
+.chart-wrap{position:relative;height:220px;}
+.dist-row{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+.dist-star{width:20px;font-size:12px;font-weight:600;color:var(--ink-soft);text-align:right;flex-shrink:0;}
+.dist-bar-bg{flex:1;height:7px;background:var(--line-soft);border-radius:4px;overflow:hidden;}
+.dist-bar-fill{height:100%;border-radius:4px;transition:width .6s ease;}
+.dist-pct{width:34px;font-size:11px;color:var(--ink-soft);text-align:right;flex-shrink:0;}
+.performers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px;}
+.performer-item{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line-soft);cursor:pointer;transition:background .15s;}
+.performer-item:hover{background:var(--bg-elevated);}
+.perf-rank{width:22px;height:22px;border-radius:50%;font-size:11px;font-weight:600;display:grid;place-items:center;flex-shrink:0;}
+.perf-rank.gold{background:var(--warn-soft);color:var(--gold);}
+.perf-rank.primary{background:var(--primary-soft);color:var(--primary);}
+.perf-rank.bad{background:var(--accent-soft);color:var(--accent);}
+.trend-toggle{display:flex;gap:2px;background:var(--line-soft);border-radius:var(--radius-sm);padding:2px;}
+.tt-btn{background:none;border:none;padding:4px 12px;border-radius:calc(var(--radius-sm) - 1px);font-family:inherit;font-size:12px;cursor:pointer;color:var(--ink-mute);font-weight:500;transition:all .15s;}
+.tt-btn.active{background:var(--bg-card);color:var(--ink);box-shadow:var(--shadow-sm);}
+/* DAILY */
+.daily-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}
+.d-kpi{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:16px 18px;}
+.d-kpi-label{font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.08em;font-weight:500;}
+.d-kpi-val{font-family:'Instrument Serif',serif;font-size:36px;line-height:1;margin:8px 0 4px;}
+.d-kpi-sub{font-size:11.5px;color:var(--ink-soft);}
+.branch-table-wrap{overflow-x:auto;}
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(14,22,20,.5);z-index:200;display:none;place-items:center;backdrop-filter:blur(4px);}
+.modal-overlay.open{display:grid;animation:fadeIn .2s;}
+.modal-box{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);width:min(700px,96vw);max-height:88vh;overflow-y:auto;box-shadow:var(--shadow-lg);animation:slideUp .25s;}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.modal-header{padding:20px 24px 16px;border-bottom:1px solid var(--line-soft);display:flex;align-items:flex-start;justify-content:space-between;gap:12px;position:sticky;top:0;background:var(--bg-card);z-index:1;border-radius:var(--radius-lg) var(--radius-lg) 0 0;}
+.modal-close{background:none;border:none;cursor:pointer;color:var(--ink-mute);padding:6px;border-radius:var(--radius-sm);display:grid;place-items:center;transition:all .15s;}
+.modal-close:hover{color:var(--ink);background:var(--line-soft);}
+.modal-body{padding:20px 24px;}
+.modal-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px;}
+.m-kpi{background:var(--bg-elevated);border:1px solid var(--line-soft);border-radius:var(--radius);padding:12px 14px;}
+.m-kpi-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);font-weight:500;}
+.m-kpi-val{font-family:'Instrument Serif',serif;font-size:24px;margin:5px 0 2px;}
+.m-kpi-sub{font-size:11px;color:var(--ink-soft);}
+/* FILTERS */
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;align-items:center;}
+.filter-sel{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:7px 10px;font-family:inherit;font-size:12.5px;color:var(--ink);cursor:pointer;outline:none;}
+.filter-sel:focus{border-color:var(--primary);}
+/* AI */
+.ai-sentiments{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;}
+.ai-sent-card{border-radius:var(--radius);padding:14px 16px;text-align:center;}
+.ai-sent-card.pos{background:var(--good-soft);}
+.ai-sent-card.neu{background:var(--warn-soft);}
+.ai-sent-card.neg{background:var(--accent-soft);}
+.ai-sent-pct{font-family:'Instrument Serif',serif;font-size:32px;}
+.ai-placeholder{pointer-events:none;user-select:none;}
+/* EXPORT */
+.export-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;background:var(--bg-elevated);border:1px solid var(--line);border-radius:var(--radius-sm);font-family:inherit;font-size:12px;cursor:pointer;color:var(--ink-soft);transition:all .15s;pointer-events:all;}
+.export-btn:hover{background:var(--line-soft);color:var(--ink);}
+/* TARGET */
+.target-bar-bg{height:10px;background:var(--line-soft);border-radius:5px;overflow:hidden;margin:10px 0 6px;}
+.target-bar-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--primary),var(--primary-deep));transition:width .8s ease;}
+@media(max-width:1100px){.analytics-kpis{grid-template-columns:repeat(3,1fr)}.charts-row{grid-template-columns:1fr}.performers-grid{grid-template-columns:1fr 1fr}.daily-kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.analytics-kpis{grid-template-columns:repeat(2,1fr)}.performers-grid{grid-template-columns:1fr}.modal-kpis{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -334,6 +402,16 @@ tr:hover td{background:var(--line-soft);}
       <button class="nav-item" data-view="alerts">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg>
         Negative Alerts <span class="badge" id="navAlertCount">—</span>
+      </button>
+
+      <div class="nav-label" style="margin-top:14px;">Analytics</div>
+      <button class="nav-item" data-view="analytics">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Analytics
+      </button>
+      <button class="nav-item" data-view="daily">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Daily Reviews
       </button>
     </nav>
 
@@ -496,6 +574,151 @@ tr:hover td{background:var(--line-soft);}
         </div>
       </section>
 
+      <!-- ========== ANALYTICS ========== -->
+      <section class="view" id="view-analytics">
+        <div class="analytics-kpis" id="analyticsKpis"></div>
+        <div class="charts-row">
+          <div class="card">
+            <div class="card-header">
+              <div><div class="card-title">Review Trend</div><div class="card-sub" id="trendSub">Last 7 days</div></div>
+              <div class="trend-toggle">
+                <button class="tt-btn active" data-days="7" onclick="switchTrend(7,this)">7D</button>
+                <button class="tt-btn" data-days="30" onclick="switchTrend(30,this)">30D</button>
+              </div>
+            </div>
+            <div style="padding:16px 22px 20px"><div class="chart-wrap"><canvas id="trendChart"></canvas></div></div>
+          </div>
+          <div class="card">
+            <div class="card-header"><div><div class="card-title">Rating Distribution</div><div class="card-sub">Across all loaded reviews</div></div></div>
+            <div style="padding:18px 22px" id="ratingDist"></div>
+          </div>
+        </div>
+        <div class="performers-grid">
+          <div class="card">
+            <div class="card-header"><div class="card-title">Top Rated</div><div class="card-sub">Highest rating</div></div>
+            <div id="topRated"></div>
+          </div>
+          <div class="card">
+            <div class="card-header"><div class="card-title">Most Reviewed</div><div class="card-sub">By total count</div></div>
+            <div id="mostReviewed"></div>
+          </div>
+          <div class="card">
+            <div class="card-header"><div class="card-title">Needs Improvement</div><div class="card-sub">Lowest rating branches</div></div>
+            <div id="needsImprovement"></div>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom:14px">
+          <div class="card-header">
+            <div><div class="card-title">AI Insights <span class="chip primary" style="font-size:10px;margin-left:6px">Coming Soon</span></div><div class="card-sub">Sentiment analysis — backend connects here</div></div>
+          </div>
+          <div style="padding:18px 22px" class="ai-placeholder">
+            <div class="ai-sentiments" id="aiSentiments"></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <div>
+                <div style="font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:10px;font-weight:500">Most Common Complaints</div>
+                <div id="aiComplaints"></div>
+              </div>
+              <div>
+                <div style="font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:10px;font-weight:500">Most Appreciated</div>
+                <div id="aiPraise"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DAILY ========== -->
+      <section class="view" id="view-daily">
+        <div class="daily-kpis">
+          <div class="d-kpi"><div class="d-kpi-label">Today</div><div class="d-kpi-val" id="d-today">—</div><div class="d-kpi-sub">reviews (loaded)</div></div>
+          <div class="d-kpi"><div class="d-kpi-label">Yesterday</div><div class="d-kpi-val" id="d-yesterday">—</div><div class="d-kpi-sub">reviews</div></div>
+          <div class="d-kpi"><div class="d-kpi-label">Last 7 Days</div><div class="d-kpi-val" id="d-7d">—</div><div class="d-kpi-sub">reviews</div></div>
+          <div class="d-kpi"><div class="d-kpi-label">Last 30 Days</div><div class="d-kpi-val" id="d-30d">—</div><div class="d-kpi-sub">reviews</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:14px">
+          <div class="card">
+            <div class="card-header">
+              <div><div class="card-title">Branch-wise Review Breakdown</div><div class="card-sub">Based on loaded reviews (5 per branch)</div></div>
+              <button class="export-btn" onclick="exportCSV()">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Export CSV
+              </button>
+            </div>
+            <div class="branch-table-wrap">
+              <table><thead><tr><th>Branch</th><th>5★</th><th>4★</th><th>3★</th><th>2★</th><th>1★</th><th>Avg Rating</th><th>Total</th></tr></thead>
+              <tbody id="dailyBranchTable"></tbody></table>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div class="card card-pad">
+              <div style="font-family:'Instrument Serif',serif;font-size:19px;margin-bottom:4px">Monthly Target</div>
+              <div style="font-size:12px;color:var(--ink-mute);margin-bottom:14px">Review collection goal</div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--ink-soft);margin-bottom:2px"><span>Target</span><span id="targetGoal" style="font-weight:600;color:var(--ink)">500</span></div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--ink-soft)"><span>Achieved</span><span id="targetAchieved" style="font-weight:600;color:var(--primary)">—</span></div>
+              <div class="target-bar-bg"><div class="target-bar-fill" id="targetBar" style="width:0%"></div></div>
+              <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--ink-mute)"><span id="targetRemaining">Remaining: —</span><span id="targetPct" style="font-weight:600">0%</span></div>
+              <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-soft)">
+                <label style="font-size:11px;color:var(--ink-mute);display:block;margin-bottom:4px">Set monthly target</label>
+                <input type="number" id="targetInput" value="500" min="1" style="width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--bg);font-family:inherit;font-size:12px;color:var(--ink);outline:none;" oninput="updateTarget()">
+              </div>
+            </div>
+            <div class="card card-pad">
+              <div style="font-family:'Instrument Serif',serif;font-size:19px;margin-bottom:4px">Pending Replies</div>
+              <div style="font-size:12px;color:var(--ink-mute);margin-bottom:14px">Negative reviews awaiting response</div>
+              <div id="pendingReplies"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-pad">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <div style="font-family:'Instrument Serif',serif;font-size:19px">Advanced Filters</div>
+            <button class="btn ghost sm" onclick="clearFilters()">Clear all</button>
+          </div>
+          <div class="filter-row">
+            <select class="filter-sel" id="filterRating" onchange="applyAdvancedFilters()">
+              <option value="">All Ratings</option>
+              <option value="5">5 ★</option><option value="4">4 ★</option><option value="3">3 ★</option><option value="2">2 ★</option><option value="1">1 ★</option>
+            </select>
+            <select class="filter-sel" id="filterSentiment" onchange="applyAdvancedFilters()">
+              <option value="">All Sentiments</option>
+              <option value="positive">Positive</option><option value="neutral">Neutral</option><option value="negative">Negative</option>
+            </select>
+            <select class="filter-sel" id="filterBranch" onchange="applyAdvancedFilters()">
+              <option value="">All Branches</option>
+            </select>
+            <label style="display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink-soft);cursor:pointer">
+              <input type="checkbox" id="filterNegOnly" onchange="applyAdvancedFilters()"> Negative only
+            </label>
+          </div>
+          <div id="filteredReviewsResult"></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="branchModal" onclick="if(event.target===this)closeBranchModal()">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div style="font-family:'Instrument Serif',serif;font-size:26px;letter-spacing:-.01em" id="modalBranchName"></div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:3px" id="modalBranchCity"></div>
+      </div>
+      <button class="modal-close" onclick="closeBranchModal()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-kpis" id="modalKpis"></div>
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:10px;font-weight:500">Rating Distribution (loaded reviews)</div>
+        <div id="modalDist"></div>
+      </div>
+      <div>
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:10px;font-weight:500">Recent Reviews</div>
+        <div id="modalReviews"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -554,6 +777,8 @@ function renderAll() {
   renderReviewList();
   renderAlerts();
   updateNavBadges();
+  renderAnalytics();
+  renderDaily();
 }
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
@@ -926,7 +1151,9 @@ const PAGE_META = {
   dashboard: ['Dashboard','Centralized view across all 24 BeLife partner labs'],
   branches: ['Branches','All 24 labs — ratings, reviews, and health status'],
   reviews: ['Review Inbox','All Google reviews across every branch'],
-  alerts: ['Negative Alerts','Reviews ≤ 2 stars needing immediate attention']
+  alerts: ['Negative Alerts','Reviews ≤ 2 stars needing immediate attention'],
+  analytics: ['Analytics','Review trends, distribution and performance insights'],
+  daily: ['Daily Reviews','Branch-wise review activity with advanced filters']
 };
 
 function navTo(view) {
@@ -935,6 +1162,7 @@ function navTo(view) {
   const meta = PAGE_META[view]||[view,''];
   document.getElementById('pageTitle').textContent = meta[0];
   document.getElementById('pageSub').textContent = meta[1];
+  if (view === 'analytics' && DATA) renderTrendChart(trendDays);
 }
 
 document.querySelectorAll('.nav-item').forEach(n => {
@@ -946,6 +1174,296 @@ function toggleTheme() {
   const cur = document.documentElement.getAttribute('data-theme');
   document.documentElement.setAttribute('data-theme', cur==='dark'?'':'dark');
   toast(cur==='dark' ? 'Light mode' : 'Dark mode');
+}
+
+// ─── ANALYTICS ────────────────────────────────────────────────────────────────
+let trendChartInstance = null;
+let trendDays = 7;
+
+function reviewsInPeriod(days) {
+  const cutoff = Date.now() - days * 86400000;
+  return allReviews.filter(r => r.publishTime && new Date(r.publishTime) >= cutoff).length;
+}
+
+function computeDailyCounts(days) {
+  const counts = {};
+  const now = new Date();
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(now);
+    d.setDate(d.getDate() - i);
+    counts[d.toISOString().slice(0,10)] = 0;
+  }
+  for (const r of allReviews) {
+    if (!r.publishTime) continue;
+    const key = new Date(r.publishTime).toISOString().slice(0,10);
+    if (key in counts) counts[key]++;
+  }
+  return counts;
+}
+
+function renderAnalytics() {
+  if (!DATA) return;
+  const total = allReviews.length;
+  const week = reviewsInPeriod(7);
+  const month = reviewsInPeriod(30);
+  const today = reviewsInPeriod(1);
+  const pos = allReviews.filter(r => r.sentiment==='positive').length;
+  const posRate = total ? Math.round(pos/total*100) : 0;
+  const avgDaily = month ? (month / 30).toFixed(1) : 0;
+
+  document.getElementById('analyticsKpis').innerHTML = `
+    <div class="a-kpi"><div class="a-kpi-label">Reviews Today</div><div class="a-kpi-val">${today}</div><div class="a-kpi-delta">loaded reviews</div></div>
+    <div class="a-kpi"><div class="a-kpi-label">This Week</div><div class="a-kpi-val">${week}</div><div class="a-kpi-delta">last 7 days</div></div>
+    <div class="a-kpi"><div class="a-kpi-label">This Month</div><div class="a-kpi-val">${month}</div><div class="a-kpi-delta">last 30 days</div></div>
+    <div class="a-kpi"><div class="a-kpi-label">Avg Daily</div><div class="a-kpi-val">${avgDaily}</div><div class="a-kpi-delta">reviews/day</div></div>
+    <div class="a-kpi"><div class="a-kpi-label">Positive Rate</div><div class="a-kpi-val">${posRate}%</div><div class="a-kpi-delta ${posRate>=70?'up':'down'}">${posRate>=70?'↑ Healthy':'↓ Attention'}</div></div>
+  `;
+  renderTrendChart(trendDays);
+  renderRatingDist();
+  renderPerformers();
+  renderAIInsights();
+}
+
+function renderTrendChart(days) {
+  const el = document.getElementById('trendChart');
+  if (!el) return;
+  const counts = computeDailyCounts(days);
+  const labels = Object.keys(counts).map(d => new Date(d).toLocaleDateString('en-IN',{day:'numeric',month:'short'}));
+  const values = Object.values(counts);
+  document.getElementById('trendSub').textContent = 'Last ' + days + ' days';
+  if (trendChartInstance) trendChartInstance.destroy();
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const gridColor = isDark ? 'rgba(255,255,255,.06)' : 'rgba(0,0,0,.06)';
+  const textColor = isDark ? '#7A847F' : '#8A938F';
+  trendChartInstance = new Chart(el.getContext('2d'), {
+    type: 'line',
+    data: { labels, datasets: [{
+      label: 'Reviews', data: values, fill: true,
+      borderColor: '#0E5E5C', backgroundColor: 'rgba(14,94,92,.08)',
+      tension: 0.4, pointBackgroundColor: '#0E5E5C', pointRadius: 3, pointHoverRadius: 5, borderWidth: 2
+    }]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
+      scales: {
+        x: { grid: { color: gridColor }, ticks: { color: textColor, font: { size: 11 } } },
+        y: { grid: { color: gridColor }, ticks: { color: textColor, font: { size: 11 }, stepSize: 1 }, beginAtZero: true }
+      }
+    }
+  });
+}
+
+function switchTrend(days, btn) {
+  trendDays = days;
+  document.querySelectorAll('.tt-btn').forEach(b => b.classList.toggle('active', b.dataset.days == days));
+  renderTrendChart(days);
+}
+
+function renderRatingDist() {
+  const counts = {5:0,4:0,3:0,2:0,1:0};
+  allReviews.forEach(r => { if (r.rating) counts[r.rating]++; });
+  const total = allReviews.length || 1;
+  const colors = {5:'#2F7D4F',4:'#5DAE7B',3:'#C68D2E',2:'#E47C5E',1:'#C84B31'};
+  document.getElementById('ratingDist').innerHTML = [5,4,3,2,1].map(s => {
+    const pct = Math.round(counts[s]/total*100);
+    return `<div class="dist-row">
+      <div class="dist-star">${s}★</div>
+      <div class="dist-bar-bg"><div class="dist-bar-fill" style="width:${pct}%;background:${colors[s]}"></div></div>
+      <div class="dist-pct">${pct}%</div>
+    </div>`;
+  }).join('');
+}
+
+function renderPerformers() {
+  const rated = DATA.branches.filter(b => b.rating);
+  const byRating = [...rated].sort((a,b) => b.rating - a.rating);
+  const byCount = [...DATA.branches].sort((a,b) => (b.reviewCount||0) - (a.reviewCount||0));
+  const worst = [...rated].sort((a,b) => a.rating - b.rating);
+  const perfItem = (b, rank, cls) => `
+    <div class="performer-item" onclick="openBranchModal('${b.id}')">
+      <div class="perf-rank ${cls}">${rank}</div>
+      <div style="flex:1;min-width:0">
+        <div style="font-weight:500;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(b.name)}</div>
+        <div style="font-size:11px;color:var(--ink-mute)">${b.rating||'—'}★ · ${fmtNum(b.reviewCount)} reviews</div>
+      </div>
+    </div>`;
+  document.getElementById('topRated').innerHTML = byRating.slice(0,5).map((b,i) => perfItem(b,i+1,'gold')).join('');
+  document.getElementById('mostReviewed').innerHTML = byCount.slice(0,5).map((b,i) => perfItem(b,i+1,'primary')).join('');
+  document.getElementById('needsImprovement').innerHTML = worst.slice(0,5).map((b,i) => perfItem(b,i+1,'bad')).join('');
+}
+
+function renderAIInsights() {
+  const pos = allReviews.filter(r => r.sentiment==='positive').length;
+  const neg = allReviews.filter(r => r.sentiment==='negative').length;
+  const neu = allReviews.filter(r => r.sentiment==='neutral').length;
+  const total = allReviews.length || 1;
+  document.getElementById('aiSentiments').innerHTML = `
+    <div class="ai-sent-card pos"><div class="ai-sent-pct" style="color:var(--good)">${Math.round(pos/total*100)}%</div><div style="font-size:11px;font-weight:500;color:var(--good)">Positive</div></div>
+    <div class="ai-sent-card neu"><div class="ai-sent-pct" style="color:var(--warn)">${Math.round(neu/total*100)}%</div><div style="font-size:11px;font-weight:500;color:var(--warn)">Neutral</div></div>
+    <div class="ai-sent-card neg"><div class="ai-sent-pct" style="color:var(--accent)">${Math.round(neg/total*100)}%</div><div style="font-size:11px;font-weight:500;color:var(--accent)">Negative</div></div>`;
+  const listItem = (text, color) => `<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line-soft)"><div style="width:6px;height:6px;border-radius:50%;background:${color};flex-shrink:0"></div><span style="font-size:12.5px">${text}</span></div>`;
+  document.getElementById('aiComplaints').innerHTML = ['Wait time','Staff behavior','Report delay','Cleanliness'].map(c => listItem(c,'var(--accent)')).join('');
+  document.getElementById('aiPraise').innerHTML = ['Accurate results','Friendly staff','Quick service','Clean facility'].map(c => listItem(c,'var(--good)')).join('');
+}
+
+// ─── DAILY ────────────────────────────────────────────────────────────────────
+function renderDaily() {
+  if (!DATA) return;
+  const toDate = dt => new Date(dt).toISOString().slice(0,10);
+  const todayStr = toDate(Date.now());
+  const yesterdayStr = toDate(Date.now() - 86400000);
+  document.getElementById('d-today').textContent = allReviews.filter(r => r.publishTime && toDate(r.publishTime)===todayStr).length;
+  document.getElementById('d-yesterday').textContent = allReviews.filter(r => r.publishTime && toDate(r.publishTime)===yesterdayStr).length;
+  document.getElementById('d-7d').textContent = reviewsInPeriod(7);
+  document.getElementById('d-30d').textContent = reviewsInPeriod(30);
+
+  document.getElementById('dailyBranchTable').innerHTML = DATA.branches.map(b => {
+    const revs = b.reviews || [];
+    const c = {5:0,4:0,3:0,2:0,1:0};
+    revs.forEach(r => { if (r.rating) c[r.rating]++; });
+    return `<tr style="cursor:pointer" onclick="openBranchModal('${b.id}')">
+      <td><div style="font-weight:500">${esc(b.name)}</div></td>
+      <td><span style="color:var(--good);font-weight:500">${c[5]}</span></td>
+      <td><span style="color:#5DAE7B">${c[4]}</span></td>
+      <td><span style="color:var(--warn)">${c[3]}</span></td>
+      <td><span style="color:#E47C5E">${c[2]}</span></td>
+      <td><span style="color:var(--accent);font-weight:500">${c[1]}</span></td>
+      <td><span class="mono">${b.rating||'—'}</span></td>
+      <td><span class="mono">${fmtNum(b.reviewCount)}</span></td>
+    </tr>`;
+  }).join('');
+
+  updateTarget();
+  renderPendingReplies();
+  populateFilterBranch();
+}
+
+function updateTarget() {
+  const target = parseInt(document.getElementById('targetInput')?.value) || 500;
+  const achieved = DATA ? DATA.branches.reduce((s,b) => s+(b.reviewCount||0), 0) : 0;
+  const pct = Math.min(100, Math.round(achieved/target*100));
+  document.getElementById('targetGoal').textContent = target;
+  document.getElementById('targetAchieved').textContent = fmtNum(achieved);
+  document.getElementById('targetRemaining').textContent = 'Remaining: ' + fmtNum(Math.max(0,target-achieved));
+  document.getElementById('targetPct').textContent = pct + '%';
+  document.getElementById('targetBar').style.width = pct + '%';
+}
+
+function renderPendingReplies() {
+  const open = DATA.alerts.filter(a => !dismissed.has(a.reviewId));
+  const old24 = open.filter(a => a.createdAt && (Date.now()-new Date(a.createdAt))>86400000).length;
+  const old3d = open.filter(a => a.createdAt && (Date.now()-new Date(a.createdAt))>259200000).length;
+  const total = DATA.branches.reduce((s,b) => s+(b.reviewCount||0), 0);
+  const rate = total ? Math.round(Math.max(0,total-open.length)/total*100) : 100;
+  document.getElementById('pendingReplies').innerHTML = `
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line-soft)"><span style="font-size:13px">Total Pending</span><span style="font-weight:600;font-size:18px;font-family:'Instrument Serif',serif;color:var(--accent)">${open.length}</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line-soft)"><span style="font-size:13px;color:var(--ink-soft)">Pending 24h+</span><span class="chip ${old24>0?'bad':''}">${old24}</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line-soft)"><span style="font-size:13px;color:var(--ink-soft)">Pending 3 days+</span><span class="chip ${old3d>0?'bad':''}">${old3d}</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0"><span style="font-size:13px;color:var(--ink-soft)">Reply Rate</span><span class="chip ${rate>=80?'good':rate>=50?'warn':'bad'}">${rate}%</span></div>
+    </div>`;
+}
+
+function populateFilterBranch() {
+  const sel = document.getElementById('filterBranch');
+  if (!sel || !DATA) return;
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">All Branches</option>' + DATA.branches.map(b => `<option value="${b.id}" ${b.id===cur?'selected':''}>${esc(b.name)}</option>`).join('');
+}
+
+function applyAdvancedFilters() {
+  const rating = document.getElementById('filterRating')?.value;
+  const sentiment = document.getElementById('filterSentiment')?.value;
+  const branch = document.getElementById('filterBranch')?.value;
+  const negOnly = document.getElementById('filterNegOnly')?.checked;
+  let list = allReviews;
+  if (rating) list = list.filter(r => r.rating == rating);
+  if (sentiment) list = list.filter(r => r.sentiment === sentiment);
+  if (branch) list = list.filter(r => r.branchId === branch);
+  if (negOnly) list = list.filter(r => r.rating <= 2);
+  const el = document.getElementById('filteredReviewsResult');
+  if (!rating && !sentiment && !branch && !negOnly) { el.innerHTML = ''; return; }
+  if (!list.length) { el.innerHTML = '<div style="padding:20px;text-align:center;color:var(--ink-mute);font-size:13px">No reviews match filters</div>'; return; }
+  el.innerHTML = `<div style="font-size:12px;color:var(--ink-mute);margin-bottom:8px;margin-top:4px">${list.length} review${list.length!==1?'s':''} found</div>` +
+    list.slice(0,30).map(r => `
+      <div style="padding:10px 0;border-bottom:1px solid var(--line-soft);cursor:pointer" onclick="navToReview('${r.reviewId}')">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+          <div style="font-weight:500;font-size:13px">${esc(r.reviewerName)} ${star(r.rating)}</div>
+          <div style="font-size:11px;color:var(--ink-mute)">${r.publishTime?relTime(r.publishTime):''}</div>
+        </div>
+        <div style="font-size:11px;color:var(--primary);font-weight:500;margin-bottom:3px">${esc(r.branchName)}</div>
+        <div style="font-size:12.5px;color:var(--ink-soft)">${esc((r.text||'(no comment)').slice(0,120))}${(r.text||'').length>120?'…':''}</div>
+      </div>`).join('') +
+    (list.length > 30 ? `<div style="padding:10px 0;font-size:12px;color:var(--ink-mute)">... and ${list.length-30} more</div>` : '');
+}
+
+function clearFilters() {
+  ['filterRating','filterSentiment','filterBranch'].forEach(id => { const el = document.getElementById(id); if(el) el.value=''; });
+  const cb = document.getElementById('filterNegOnly'); if(cb) cb.checked = false;
+  document.getElementById('filteredReviewsResult').innerHTML = '';
+}
+
+// ─── BRANCH MODAL ─────────────────────────────────────────────────────────────
+function openBranchModal(branchId) {
+  if (!DATA) return;
+  const b = DATA.branches.find(x => x.id === branchId);
+  if (!b) return;
+  document.getElementById('modalBranchName').textContent = b.name;
+  document.getElementById('modalBranchCity').textContent = b.city || 'BeLife Partner';
+  const alerts = DATA.alerts.filter(a => a.branchId===branchId && !dismissed.has(a.reviewId)).length;
+  const loaded = (b.reviews||[]).length;
+  document.getElementById('modalKpis').innerHTML = `
+    <div class="m-kpi"><div class="m-kpi-label">Rating</div><div class="m-kpi-val">${b.rating||'—'}</div><div class="m-kpi-sub">${star(b.rating)}</div></div>
+    <div class="m-kpi"><div class="m-kpi-label">Total Reviews</div><div class="m-kpi-val">${fmtNum(b.reviewCount)}</div><div class="m-kpi-sub">Google overall</div></div>
+    <div class="m-kpi"><div class="m-kpi-label">Open Alerts</div><div class="m-kpi-val" style="${alerts>0?'color:var(--accent)':''}">${alerts}</div><div class="m-kpi-sub">negative reviews</div></div>`;
+  const revs = b.reviews || [];
+  const c = {5:0,4:0,3:0,2:0,1:0};
+  revs.forEach(r => { if (r.rating) c[r.rating]++; });
+  const tot = revs.length || 1;
+  const colors = {5:'#2F7D4F',4:'#5DAE7B',3:'#C68D2E',2:'#E47C5E',1:'#C84B31'};
+  document.getElementById('modalDist').innerHTML = [5,4,3,2,1].map(s => `
+    <div class="dist-row">
+      <div class="dist-star">${s}★</div>
+      <div class="dist-bar-bg"><div class="dist-bar-fill" style="width:${Math.round(c[s]/tot*100)}%;background:${colors[s]}"></div></div>
+      <div class="dist-pct">${c[s]}</div>
+    </div>`).join('');
+  document.getElementById('modalReviews').innerHTML = revs.length ? revs.map(r => `
+    <div style="padding:10px 0;border-bottom:1px solid var(--line-soft)">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px">
+        <div style="font-weight:500;font-size:13px">${esc(r.reviewerName)} ${star(r.rating)}</div>
+        <div style="font-size:11px;color:var(--ink-mute)">${r.publishTime?relTime(r.publishTime):''}</div>
+      </div>
+      <div style="font-size:13px;color:var(--ink-soft);line-height:1.5">${esc(r.text||'(no comment)')}</div>
+    </div>`).join('') :
+    '<div style="padding:20px 0;text-align:center;color:var(--ink-mute);font-size:13px">No reviews loaded</div>';
+  document.getElementById('branchModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeBranchModal() {
+  document.getElementById('branchModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeBranchModal(); });
+
+// ─── EXPORT CSV ──────────────────────────────────────────────────────────────
+function exportCSV() {
+  if (!DATA) return;
+  const rows = [['Branch','City','Overall Rating','Total Reviews','5★','4★','3★','2★','1★','Open Alerts']];
+  for (const b of DATA.branches) {
+    const c = {5:0,4:0,3:0,2:0,1:0};
+    (b.reviews||[]).forEach(r => { if (r.rating) c[r.rating]++; });
+    const alerts = DATA.alerts.filter(a => a.branchId===b.id && !dismissed.has(a.reviewId)).length;
+    rows.push([b.name, b.city||'', b.rating||0, b.reviewCount||0, c[5],c[4],c[3],c[2],c[1], alerts]);
+  }
+  const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `belife-reviews-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  toast('✓ CSV exported successfully');
 }
 
 // ─── BOOT ────────────────────────────────────────────────────────────────────
