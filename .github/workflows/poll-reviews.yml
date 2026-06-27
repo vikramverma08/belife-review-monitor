@@ -19,9 +19,7 @@ jobs:
 
       - name: Fetch reviews from Google Business Profile API
         env:
-          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
-          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
-          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: node scripts/fetchReviews.js
 
       - name: Commit updated data
