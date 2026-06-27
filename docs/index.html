@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeLife Review Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F6F2EA; --bg-elevated: #FBF8F1; --bg-card: #FFFFFF;
+  --ink: #14211D; --ink-soft: #4A5853; --ink-mute: #8A938F;
+  --line: #E5DFD2; --line-soft: #EEE9DC;
+  --primary: #0E5E5C; --primary-soft: #DDEDEB; --primary-deep: #053F3D;
+  --accent: #C84B31; --accent-soft: #FBE3DA;
+  --warn: #C68D2E; --warn-soft: #F6E8C6;
+  --good: #2F7D4F; --good-soft: #DBEDDF;
+  --gold: #B8923E;
+  --shadow-sm: 0 1px 2px rgba(20,33,29,.04);
+  --shadow-md: 0 4px 12px rgba(20,33,29,.08);
+  --shadow-lg: 0 12px 32px rgba(20,33,29,.12);
+  --radius-sm: 6px; --radius: 10px; --radius-lg: 16px;
+}
+[data-theme="dark"] {
+  --bg: #0E1614; --bg-elevated: #15211E; --bg-card: #1A2825;
+  --ink: #EEE9DC; --ink-soft: #B5BCB8; --ink-mute: #7A847F;
+  --line: #283631; --line-soft: #1F2C28;
+  --primary: #4AA9A6; --primary-soft: #1E3534; --primary-deep: #6BC2BF;
+  --accent: #E47C5E; --accent-soft: #3A2620;
+  --warn: #E0B25A; --warn-soft: #3A2F1A;
+  --good: #5DAE7B; --good-soft: #1F3327;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.3);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{
+  font-family:'Geist',-apple-system,sans-serif;
+  background:var(--bg); color:var(--ink);
+  font-size:14px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  overflow:hidden;
+}
+body::before{
+  content:''; position:fixed; inset:0;
+  background-image:radial-gradient(circle at 1px 1px,var(--line) 1px,transparent 0);
+  background-size:32px 32px; opacity:.4; pointer-events:none; z-index:0;
+}
+.serif{font-family:'Instrument Serif',serif;font-weight:400;}
+.mono{font-family:'Geist Mono',monospace;}
+
+/* LAYOUT */
+.app{display:grid;grid-template-columns:248px 1fr;height:100vh;position:relative;z-index:1;}
+
+/* SIDEBAR */
+.sidebar{background:var(--bg-elevated);border-right:1px solid var(--line);display:flex;flex-direction:column;overflow-y:auto;}
+.sidebar-header{padding:22px 20px 18px;border-bottom:1px solid var(--line-soft);}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);}
+.brand-mark{
+  width:32px;height:32px;background:var(--primary);border-radius:8px;
+  display:grid;place-items:center;color:#FBF8F1;
+  font-family:'Instrument Serif',serif;font-size:20px;font-style:italic;
+}
+.brand-name{font-family:'Instrument Serif',serif;font-size:22px;letter-spacing:-.01em;}
+.brand-sub{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin-top:1px;}
+.nav-section{padding:18px 12px 8px;}
+.nav-label{padding:0 10px 8px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);font-weight:500;}
+.nav-item{
+  display:flex;align-items:center;gap:10px;padding:8px 10px;
+  border-radius:var(--radius-sm);color:var(--ink-soft);
+  text-decoration:none;font-size:13.5px;cursor:pointer;
+  transition:all .15s;border:none;background:none;
+  width:100%;text-align:left;font-family:inherit;margin-bottom:1px;
+}
+.nav-item:hover{background:var(--line-soft);color:var(--ink);}
+.nav-item.active{background:var(--primary);color:#FBF8F1;}
+.nav-item .icon{width:16px;height:16px;flex-shrink:0;}
+.nav-item .badge{
+  margin-left:auto;background:var(--accent);color:white;
+  font-size:10px;padding:1px 6px;border-radius:8px;font-weight:500;
+}
+.nav-item.active .badge{background:rgba(255,255,255,.25);}
+.sidebar-footer{
+  margin-top:auto;padding:14px 16px;
+  border-top:1px solid var(--line-soft);
+  display:flex;align-items:center;gap:10px;
+}
+.avatar{
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--primary-deep));
+  color:#FBF8F1;display:grid;place-items:center;font-size:12px;font-weight:600;
+}
+.user-info{flex:1;min-width:0;}
+.user-name{font-size:13px;font-weight:500;}
+.user-role{font-size:11px;color:var(--ink-mute);}
+
+/* MAIN */
+.main{display:flex;flex-direction:column;overflow:hidden;}
+.topbar{
+  height:60px;background:var(--bg-elevated);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;padding:0 28px;gap:16px;flex-shrink:0;
+}
+.topbar-title{flex:1;}
+.topbar-title h1{font-family:'Instrument Serif',serif;font-size:24px;font-weight:400;letter-spacing:-.01em;line-height:1;}
+.topbar-title p{font-size:12px;color:var(--ink-mute);margin-top:2px;}
+.search{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:7px 12px;width:260px;display:flex;align-items:center;gap:8px;
+}
+.search input{background:none;border:none;outline:none;font-family:inherit;font-size:13px;color:var(--ink);width:100%;}
+.icon-btn{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  width:36px;height:36px;display:grid;place-items:center;
+  cursor:pointer;color:var(--ink-soft);position:relative;transition:all .15s;
+}
+.icon-btn:hover{background:var(--line-soft);color:var(--ink);}
+.icon-btn .dot{
+  position:absolute;top:6px;right:6px;width:7px;height:7px;
+  border-radius:50%;background:var(--accent);border:2px solid var(--bg-elevated);
+  display:none;
+}
+.content{flex:1;overflow-y:auto;padding:28px;}
+.view{display:none;}
+.view.active{display:block;animation:fadeIn .25s;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* CARDS */
+.card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);}
+.card-pad{padding:22px;}
+.card-header{
+  padding:18px 22px;border-bottom:1px solid var(--line-soft);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.card-title{font-family:'Instrument Serif',serif;font-size:19px;letter-spacing:-.01em;}
+.card-sub{font-size:12px;color:var(--ink-mute);margin-top:2px;}
+
+/* KPI */
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px;}
+.kpi{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:18px 20px;position:relative;overflow:hidden;}
+.kpi-label{font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.1em;font-weight:500;}
+.kpi-value{font-family:'Instrument Serif',serif;font-size:38px;line-height:1;margin:10px 0 8px;letter-spacing:-.02em;}
+.kpi-meta{font-size:11.5px;color:var(--ink-soft);}
+.kpi-accent{
+  position:absolute;top:16px;right:16px;width:28px;height:28px;
+  border-radius:8px;display:grid;place-items:center;
+  background:var(--primary-soft);color:var(--primary);
+}
+.kpi.alert .kpi-accent{background:var(--accent-soft);color:var(--accent);}
+.kpi.warn .kpi-accent{background:var(--warn-soft);color:var(--warn);}
+.kpi.good .kpi-accent{background:var(--good-soft);color:var(--good);}
+
+/* GRID */
+.grid{display:grid;gap:14px;}
+.grid-2{grid-template-columns:1.4fr 1fr;}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{text-align:left;font-weight:500;color:var(--ink-mute);font-size:11px;text-transform:uppercase;letter-spacing:.08em;padding:12px 22px;border-bottom:1px solid var(--line-soft);background:var(--bg-elevated);}
+td{padding:14px 22px;border-bottom:1px solid var(--line-soft);vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:var(--line-soft);}
+
+/* CHIPS */
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:100px;font-size:11px;font-weight:500;background:var(--line-soft);color:var(--ink-soft);}
+.chip.good{background:var(--good-soft);color:var(--good);}
+.chip.warn{background:var(--warn-soft);color:var(--warn);}
+.chip.bad{background:var(--accent-soft);color:var(--accent);}
+.chip.primary{background:var(--primary-soft);color:var(--primary);}
+.chip.dot::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;}
+
+/* BUTTONS */
+.btn{
+  display:inline-flex;align-items:center;gap:6px;padding:7px 14px;
+  border-radius:var(--radius);font-family:inherit;font-size:13px;font-weight:500;
+  cursor:pointer;border:1px solid var(--line);background:var(--bg-card);color:var(--ink);transition:all .15s;
+}
+.btn:hover{background:var(--line-soft);}
+.btn.primary{background:var(--primary);color:#FBF8F1;border-color:var(--primary);}
+.btn.primary:hover{background:var(--primary-deep);}
+.btn.accent{background:var(--accent);color:white;border-color:var(--accent);}
+.btn.ghost{background:none;border:1px solid transparent;color:var(--ink-soft);}
+.btn.ghost:hover{background:var(--line-soft);color:var(--ink);}
+.btn.sm{padding:4px 10px;font-size:12px;}
+
+/* STARS */
+.stars{display:inline-flex;gap:1px;color:var(--gold);}
+.stars .off{color:var(--line);}
+
+/* ALERT BAR */
+.alert-bar{
+  background:linear-gradient(95deg,var(--accent-soft),transparent);
+  border:1px solid var(--accent);border-left-width:3px;
+  border-radius:var(--radius);padding:12px 18px;margin-bottom:16px;
+  display:flex;align-items:center;gap:12px;
+}
+.alert-bar .ab-icon{
+  width:28px;height:28px;background:var(--accent);color:white;
+  border-radius:50%;display:grid;place-items:center;flex-shrink:0;
+}
+.ab-content{flex:1;}
+.ab-title{font-weight:500;font-size:13px;}
+.ab-sub{font-size:12px;color:var(--ink-soft);margin-top:1px;}
+
+/* BRANCH GRID */
+.branch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;}
+.branch-card{
+  background:var(--bg-card);border:1px solid var(--line);
+  border-radius:var(--radius-lg);padding:18px 20px;transition:all .15s;
+}
+.branch-card:hover{box-shadow:var(--shadow-md);transform:translateY(-1px);}
+.bc-top{display:flex;justify-content:space-between;align-items:flex-start;}
+.bc-name{font-family:'Instrument Serif',serif;font-size:18px;letter-spacing:-.01em;line-height:1.2;}
+.bc-city{font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
+.bc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line-soft);}
+.bc-stat-label{font-size:10px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.08em;}
+.bc-stat-val{font-family:'Instrument Serif',serif;font-size:21px;line-height:1.1;margin-top:2px;}
+.bc-actions{display:flex;gap:6px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line-soft);align-items:center;}
+.bc-action{
+  flex:1;background:var(--bg-elevated);border:1px solid var(--line);
+  color:var(--ink-soft);padding:6px 10px;border-radius:var(--radius-sm);
+  font-size:12px;font-family:inherit;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:5px;transition:all .15s;
+}
+.bc-action:hover{background:var(--primary-soft);color:var(--primary);border-color:var(--primary);}
+
+/* TABS */
+.tabs{display:flex;gap:6px;margin-bottom:16px;border-bottom:1px solid var(--line-soft);}
+.tab{
+  padding:9px 14px;background:none;border:none;color:var(--ink-mute);
+  font-family:inherit;font-size:13px;cursor:pointer;
+  border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500;
+}
+.tab.active{color:var(--ink);border-bottom-color:var(--primary);}
+.tab:hover{color:var(--ink);}
+
+/* REVIEW INBOX */
+.inbox{
+  display:grid;grid-template-columns:340px 1fr;
+  height:calc(100vh - 60px - 56px - 56px);
+  background:var(--bg-card);border:1px solid var(--line);
+  border-radius:var(--radius-lg);overflow:hidden;
+}
+.inbox-list{border-right:1px solid var(--line-soft);overflow-y:auto;}
+.inbox-filters{
+  padding:12px 16px;border-bottom:1px solid var(--line-soft);
+  display:flex;gap:6px;flex-wrap:wrap;background:var(--bg-elevated);
+  position:sticky;top:0;z-index:2;
+}
+.filter-btn{
+  background:none;border:1px solid var(--line);padding:4px 10px;
+  border-radius:100px;font-size:11.5px;cursor:pointer;
+  color:var(--ink-soft);font-family:inherit;transition:all .15s;
+}
+.filter-btn.active{background:var(--ink);color:var(--bg);border-color:var(--ink);}
+.review-item{
+  padding:13px 16px;border-bottom:1px solid var(--line-soft);
+  cursor:pointer;transition:background .15s;
+}
+.review-item:hover{background:var(--bg-elevated);}
+.review-item.selected{background:var(--primary-soft);box-shadow:inset 3px 0 0 var(--primary);}
+.ri-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:3px;}
+.ri-name{font-weight:500;font-size:13px;}
+.ri-date{font-size:11px;color:var(--ink-mute);}
+.ri-branch{font-size:11px;color:var(--primary);margin-bottom:5px;font-weight:500;}
+.ri-text{font-size:12.5px;color:var(--ink-soft);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.review-detail{overflow-y:auto;display:flex;flex-direction:column;}
+.rd-header{padding:22px 28px 18px;border-bottom:1px solid var(--line-soft);}
+.rd-body{padding:22px 28px;flex:1;}
+.rd-name{font-family:'Instrument Serif',serif;font-size:26px;letter-spacing:-.01em;}
+.rd-empty{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  color:var(--ink-mute);gap:10px;
+}
+
+/* TOAST */
+.toast{
+  position:fixed;bottom:24px;right:24px;background:var(--ink);color:var(--bg);
+  padding:12px 18px;border-radius:var(--radius);font-size:13px;
+  box-shadow:var(--shadow-lg);z-index:100;display:flex;align-items:center;gap:10px;
+  transform:translateY(100px);opacity:0;transition:all .25s;
+}
+.toast.show{transform:none;opacity:1;}
+
+/* STATUS */
+.status-live{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--good);font-weight:500;}
+.status-live::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--good);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(2,1fr)}.grid-2{grid-template-columns:1fr}}
+@media(max-width:768px){.app{grid-template-columns:1fr}.sidebar{display:none}.search{display:none}.content{padding:16px}.inbox{grid-template-columns:1fr;height:auto}}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--ink-mute)}
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a class="brand" href="#">
+        <div class="brand-mark">B</div>
+        <div>
+          <div class="brand-name">BeLife</div>
+          <span class="brand-sub">Review Monitor</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="nav-section">
+      <div class="nav-label">Overview</div>
+      <button class="nav-item active" data-view="dashboard">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        Dashboard
+      </button>
+      <button class="nav-item" data-view="branches">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1M9 13h1m4 0h1M9 17h1m4 0h1"/></svg>
+        Branches <span class="chip" style="margin-left:auto;font-size:10px;background:var(--line);" id="branchCount">24</span>
+      </button>
+
+      <div class="nav-label" style="margin-top:14px;">Reviews</div>
+      <button class="nav-item" data-view="reviews">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Review Inbox <span class="badge" id="navReviewCount">—</span>
+      </button>
+      <button class="nav-item" data-view="alerts">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg>
+        Negative Alerts <span class="badge" id="navAlertCount">—</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="avatar">RB</div>
+      <div class="user-info">
+        <div class="user-name">BeLife Admin</div>
+        <div class="user-role" id="syncStatus">Loading data…</div>
+      </div>
+      <button class="icon-btn" style="width:30px;height:30px;" onclick="toggleTheme()" title="Toggle dark mode">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="topbar">
+      <div class="topbar-title">
+        <h1 id="pageTitle">Dashboard</h1>
+        <p id="pageSub">Centralized view across all 24 BeLife partner labs</p>
+      </div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input id="searchInput" placeholder="Search reviews, branches…" oninput="onSearch(this.value)">
+      </div>
+      <button class="icon-btn" title="Refresh data" onclick="loadData()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        <span class="dot" id="refreshDot"></span>
+      </button>
+    </div>
+
+    <div class="content">
+
+      <!-- ========== DASHBOARD ========== -->
+      <section class="view active" id="view-dashboard">
+        <div class="alert-bar" id="dashAlertBar" style="display:none">
+          <div class="ab-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+          </div>
+          <div class="ab-content">
+            <div class="ab-title" id="dashAlertTitle"></div>
+            <div class="ab-sub" id="dashAlertSub"></div>
+          </div>
+          <button class="btn accent sm" onclick="navTo('alerts')">Review now</button>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi good">
+            <div class="kpi-accent"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg></div>
+            <div class="kpi-label">Active Branches</div>
+            <div class="kpi-value" id="kpiBranches">—</div>
+            <div class="kpi-meta">BeLife partner labs</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-accent"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="kpi-label">Avg. Network Rating</div>
+            <div class="kpi-value" id="kpiRating">—</div>
+            <div class="kpi-meta">across all branches</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-accent"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="kpi-label">Total Reviews</div>
+            <div class="kpi-value" id="kpiReviews">—</div>
+            <div class="kpi-meta">Google Business Profile</div>
+          </div>
+          <div class="kpi alert">
+            <div class="kpi-accent"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg></div>
+            <div class="kpi-label">Open Alerts</div>
+            <div class="kpi-value" id="kpiAlerts">—</div>
+            <div class="kpi-meta">reviews ≤ 2 stars</div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Branch Leaderboard</div>
+                <div class="card-sub">Sorted by Google rating</div>
+              </div>
+              <button class="btn ghost sm" onclick="navTo('branches')">View all →</button>
+            </div>
+            <table>
+              <thead><tr><th>Branch</th><th>Rating</th><th>Reviews</th><th>Status</th></tr></thead>
+              <tbody id="leaderboard"></tbody>
+            </table>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <div class="card-title">Needs Attention</div>
+                <div class="card-sub">Recent ≤ 2★ reviews</div>
+              </div>
+              <button class="btn ghost sm" onclick="navTo('alerts')">All alerts →</button>
+            </div>
+            <div style="overflow-y:auto;max-height:420px;" id="dashAlerts"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== BRANCHES ========== -->
+      <section class="view" id="view-branches">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:12px;">
+          <div class="tabs" style="margin:0;border:none;" id="branchTabs">
+            <button class="tab active" data-status="all">All</button>
+            <button class="tab" data-status="good">Healthy (≥4.5★)</button>
+            <button class="tab" data-status="warn">Watch (4.0–4.4★)</button>
+            <button class="tab" data-status="bad">Action (&lt;4.0★)</button>
+          </div>
+          <div class="status-live" id="dataTimestamp">Live data</div>
+        </div>
+        <div class="branch-grid" id="branchGrid"></div>
+      </section>
+
+      <!-- ========== REVIEWS ========== -->
+      <section class="view" id="view-reviews">
+        <div class="inbox">
+          <div class="inbox-list">
+            <div class="inbox-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="low">≤ 2★</button>
+              <button class="filter-btn" data-filter="high">5★</button>
+              <button class="filter-btn" data-filter="mid">3–4★</button>
+            </div>
+            <div id="reviewList"></div>
+          </div>
+          <div class="review-detail" id="reviewDetail">
+            <div class="rd-empty">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".3"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span style="font-size:13px;">Select a review to read</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ALERTS ========== -->
+      <section class="view" id="view-alerts">
+        <div class="alert-bar">
+          <div class="ab-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg>
+          </div>
+          <div class="ab-content">
+            <div class="ab-title">Negative reviews need follow-up</div>
+            <div class="ab-sub">All reviews with ≤ 2 stars — respond within 24 hours to minimize reputation impact</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Open Critical Reviews</div>
+              <div class="card-sub" id="alertsCardSub">Loading…</div>
+            </div>
+          </div>
+          <table>
+            <thead><tr><th>Branch</th><th>Reviewer</th><th>Rating</th><th>Review</th><th>Date</th><th></th></tr></thead>
+            <tbody id="alertsList"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ─── STATE ───────────────────────────────────────────────────────────────────
+let DATA = null;
+let allReviews = [];
+let currentFilter = 'all';
+let currentReview = null;
+let branchFilter = 'all';
+let dismissed = new Set(JSON.parse(localStorage.getItem('bl_dismissed') || '[]'));
+let searchQ = '';
+
+// ─── LOAD ─────────────────────────────────────────────────────────────────────
+async function loadData() {
+  document.getElementById('refreshDot').style.display = 'block';
+  document.getElementById('syncStatus').textContent = 'Refreshing…';
+  try {
+    const r = await fetch('./data.json?t=' + Date.now());
+    DATA = await r.json();
+    buildAllReviews();
+    renderAll();
+    const rel = relTime(new Date(DATA.generatedAt));
+    document.getElementById('syncStatus').textContent = 'Synced ' + rel;
+    document.getElementById('dataTimestamp').textContent = 'Last sync: ' + rel;
+    document.getElementById('refreshDot').style.display = 'none';
+  } catch(e) {
+    document.getElementById('syncStatus').textContent = 'Error loading data';
+    document.getElementById('refreshDot').style.display = 'none';
+    toast('⚠ Could not load data.json — is the server running?');
+  }
+}
+
+function buildAllReviews() {
+  allReviews = [];
+  for (const b of DATA.branches) {
+    for (const r of (b.reviews || [])) {
+      allReviews.push({ ...r, branchId: b.id, branchName: b.name });
+    }
+  }
+  allReviews.sort((a, b) => {
+    const da = a.publishTime ? new Date(a.publishTime) : new Date(0);
+    const db = b.publishTime ? new Date(b.publishTime) : new Date(0);
+    return db - da;
+  });
+}
+
+function renderAll() {
+  renderKPIs();
+  renderLeaderboard();
+  renderDashAlerts();
+  renderBranches();
+  renderReviewList();
+  renderAlerts();
+  updateNavBadges();
+}
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+function star(n) {
+  if (!n) return '<span style="color:var(--ink-mute);font-size:12px;">—</span>';
+  let s = '<span class="stars">';
+  for (let i = 0; i < 5; i++) s += i < Math.round(n) ? '★' : '<span class="off">★</span>';
+  return s + '</span>';
+}
+
+function ratingChip(r) {
+  if (!r) return '<span class="chip">No data</span>';
+  if (r >= 4.5) return '<span class="chip good dot">Healthy</span>';
+  if (r >= 4.0) return '<span class="chip warn dot">Watch</span>';
+  return '<span class="chip bad dot">Action</span>';
+}
+
+function sentimentChip(s) {
+  if (s === 'positive') return '<span class="chip good dot">positive</span>';
+  if (s === 'negative') return '<span class="chip bad dot">negative</span>';
+  return '<span class="chip warn dot">mixed</span>';
+}
+
+function relTime(dt) {
+  const diff = (Date.now() - new Date(dt)) / 1000;
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  if (diff < 604800) return Math.floor(diff/86400) + 'd ago';
+  return new Date(dt).toLocaleDateString('en-IN',{day:'numeric',month:'short'});
+}
+
+function fmtNum(n) {
+  if (n == null) return '—';
+  return n >= 1000 ? (n/1000).toFixed(1)+'k' : String(n);
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── KPIs ─────────────────────────────────────────────────────────────────────
+function renderKPIs() {
+  const branches = DATA.branches;
+  const rated = branches.filter(b => b.rating);
+  const avgRating = rated.length
+    ? (rated.reduce((s,b) => s+b.rating, 0) / rated.length).toFixed(2)
+    : '—';
+  const totalReviews = branches.reduce((s,b) => s+(b.reviewCount||0), 0);
+  const openAlerts = DATA.alerts.filter(a => !dismissed.has(a.reviewId)).length;
+
+  document.getElementById('kpiBranches').textContent = branches.length;
+  document.getElementById('kpiRating').textContent = avgRating;
+  document.getElementById('kpiReviews').textContent = totalReviews >= 1000 ? (totalReviews/1000).toFixed(1)+'k' : totalReviews;
+  document.getElementById('kpiAlerts').textContent = openAlerts;
+
+  const bar = document.getElementById('dashAlertBar');
+  if (openAlerts > 0) {
+    const names = [...new Set(DATA.alerts.filter(a=>!dismissed.has(a.reviewId)).map(a=>a.branchName))];
+    bar.style.display = 'flex';
+    document.getElementById('dashAlertTitle').textContent = openAlerts + ' negative review' + (openAlerts>1?'s':'') + ' need attention';
+    document.getElementById('dashAlertSub').textContent = names.slice(0,4).join(', ') + (names.length>4 ? ' + '+(names.length-4)+' more' : '');
+  } else {
+    bar.style.display = 'none';
+  }
+}
+
+// ─── LEADERBOARD ──────────────────────────────────────────────────────────────
+function renderLeaderboard() {
+  const sorted = [...DATA.branches].filter(b=>b.rating).sort((a,b)=>b.rating-a.rating);
+  document.getElementById('leaderboard').innerHTML = sorted.slice(0,8).map(b => `
+    <tr style="cursor:pointer" onclick="navToBranchReviews('${b.id}')">
+      <td>
+        <div style="font-weight:500">${esc(b.name)}</div>
+        <div style="font-size:11px;color:var(--ink-mute)">${esc(b.city||'—')}</div>
+      </td>
+      <td>${star(b.rating)} <span class="mono" style="font-size:12px;color:var(--ink-soft)">${b.rating}</span></td>
+      <td class="mono">${fmtNum(b.reviewCount)}</td>
+      <td>${ratingChip(b.rating)}</td>
+    </tr>
+  `).join('');
+}
+
+// ─── DASH ALERTS ─────────────────────────────────────────────────────────────
+function renderDashAlerts() {
+  const open = DATA.alerts.filter(a => !dismissed.has(a.reviewId));
+  if (!open.length) {
+    document.getElementById('dashAlerts').innerHTML = `
+      <div style="padding:40px 22px;text-align:center;color:var(--ink-mute);font-size:13px">
+        <div style="font-family:'Instrument Serif',serif;font-size:32px;margin-bottom:8px;color:var(--good)">✓</div>
+        All clear — no open negative reviews
+      </div>`;
+    return;
+  }
+  document.getElementById('dashAlerts').innerHTML = open.map(a => `
+    <div style="padding:14px 22px;border-bottom:1px solid var(--line-soft);display:flex;gap:12px;align-items:flex-start">
+      <div style="flex:1;min-width:0">
+        <div style="font-weight:500;font-size:13px">${esc(a.reviewerName)}</div>
+        <div style="font-size:11px;color:var(--primary);margin:2px 0 4px;font-weight:500">${esc(a.branchName)}</div>
+        <div style="font-size:12.5px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(a.text || '(no comment)')}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0">
+        ${star(a.rating)}
+        <button class="btn sm" onclick="dismissAlert('${a.reviewId}',event)">Dismiss</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function dismissAlert(id, e) {
+  e && e.stopPropagation();
+  dismissed.add(id);
+  localStorage.setItem('bl_dismissed', JSON.stringify([...dismissed]));
+  renderKPIs();
+  renderDashAlerts();
+  renderAlerts();
+  updateNavBadges();
+  toast('Alert dismissed');
+}
+
+// ─── BRANCHES ────────────────────────────────────────────────────────────────
+function renderBranches() {
+  let list = DATA.branches;
+  if (branchFilter === 'good') list = list.filter(b => b.rating >= 4.5);
+  else if (branchFilter === 'warn') list = list.filter(b => b.rating >= 4.0 && b.rating < 4.5);
+  else if (branchFilter === 'bad') list = list.filter(b => b.rating && b.rating < 4.0);
+
+  if (searchQ) {
+    const q = searchQ.toLowerCase();
+    list = list.filter(b => b.name.toLowerCase().includes(q) || (b.city||'').toLowerCase().includes(q));
+  }
+
+  if (!list.length) {
+    document.getElementById('branchGrid').innerHTML = `
+      <div style="grid-column:1/-1;padding:60px 20px;text-align:center;background:var(--bg-card);border:1px dashed var(--line);border-radius:var(--radius-lg)">
+        <div style="font-family:'Instrument Serif',serif;font-size:22px;color:var(--ink-mute)">No branches in this category</div>
+      </div>`;
+    return;
+  }
+
+  document.getElementById('branchGrid').innerHTML = list.map(b => {
+    const alertCount = DATA.alerts.filter(a => a.branchId === b.id && !dismissed.has(a.reviewId)).length;
+    return `
+      <div class="branch-card">
+        <div class="bc-top">
+          <div style="flex:1;min-width:0">
+            <div class="bc-name">${esc(b.name)}</div>
+            <div class="bc-city">${esc(b.city||'BeLife Partner')}</div>
+          </div>
+          <div style="flex-shrink:0;margin-left:8px">${ratingChip(b.rating)}</div>
+        </div>
+        ${alertCount ? `<div style="margin-top:10px;padding:6px 10px;background:var(--accent-soft);border:1px solid var(--accent);border-radius:var(--radius-sm);font-size:12px;color:var(--accent);font-weight:500">⚠ ${alertCount} negative review${alertCount>1?'s':''}</div>` : ''}
+        <div class="bc-stats">
+          <div>
+            <div class="bc-stat-label">Rating</div>
+            <div class="bc-stat-val">${b.rating||'—'}</div>
+          </div>
+          <div>
+            <div class="bc-stat-label">Total</div>
+            <div class="bc-stat-val">${fmtNum(b.reviewCount)}</div>
+          </div>
+          <div>
+            <div class="bc-stat-label">Loaded</div>
+            <div class="bc-stat-val">${(b.reviews||[]).length}</div>
+          </div>
+        </div>
+        <div class="bc-actions">
+          <button class="bc-action" onclick="navToBranchReviews('${b.id}')">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Reviews (${(b.reviews||[]).length})
+          </button>
+          <div style="flex-shrink:0">${star(b.rating)}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+document.addEventListener('click', e => {
+  if (e.target.closest('#branchTabs') && e.target.matches('.tab')) {
+    document.querySelectorAll('#branchTabs .tab').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+    branchFilter = e.target.dataset.status;
+    renderBranches();
+  }
+});
+
+// ─── REVIEWS INBOX ────────────────────────────────────────────────────────────
+function filteredReviews() {
+  let list = allReviews;
+  if (searchQ) {
+    const q = searchQ.toLowerCase();
+    list = list.filter(r =>
+      r.reviewerName.toLowerCase().includes(q) ||
+      (r.text||'').toLowerCase().includes(q) ||
+      r.branchName.toLowerCase().includes(q)
+    );
+  }
+  switch (currentFilter) {
+    case 'low': return list.filter(r => r.rating <= 2);
+    case 'high': return list.filter(r => r.rating === 5);
+    case 'mid': return list.filter(r => r.rating >= 3 && r.rating <= 4);
+    default: return list;
+  }
+}
+
+function renderReviewList() {
+  const list = filteredReviews();
+  if (!list.length) {
+    document.getElementById('reviewList').innerHTML = `<div style="padding:40px 20px;text-align:center;color:var(--ink-mute);font-size:13px">No reviews match this filter</div>`;
+    return;
+  }
+  document.getElementById('reviewList').innerHTML = list.map(r => {
+    const sel = currentReview && r.reviewId === currentReview.reviewId ? 'selected' : '';
+    const date = r.publishTime ? relTime(r.publishTime) : '';
+    const snip = r.text ? r.text.slice(0,80)+(r.text.length>80?'…':'') : '(no comment)';
+    return `
+      <div class="review-item ${sel}" onclick="selectReview('${r.reviewId}')">
+        <div class="ri-top">
+          <div class="ri-name">${esc(r.reviewerName)} ${star(r.rating)}</div>
+          <div class="ri-date">${date}</div>
+        </div>
+        <div class="ri-branch">${esc(r.branchName)}</div>
+        <div class="ri-text">${esc(snip)}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function selectReview(id) {
+  currentReview = allReviews.find(r => r.reviewId === id);
+  renderReviewList();
+  renderReviewDetail();
+}
+
+function renderReviewDetail() {
+  const el = document.getElementById('reviewDetail');
+  if (!currentReview) {
+    el.innerHTML = `<div class="rd-empty"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".3"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span style="font-size:13px">Select a review to read</span></div>`;
+    return;
+  }
+  const r = currentReview;
+  const date = r.publishTime ? new Date(r.publishTime).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}) : '';
+  const aiReply = genReply(r);
+  el.innerHTML = `
+    <div class="rd-header">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+        <div>
+          <div class="rd-name">${esc(r.reviewerName)}</div>
+          <div style="margin-top:8px;display:flex;align-items:center;gap:10px">
+            ${star(r.rating)}
+            <span style="color:var(--ink-mute);font-size:12px">${date}</span>
+          </div>
+          <div style="margin-top:4px;font-size:12px;color:var(--primary);font-weight:500">${esc(r.branchName)}</div>
+        </div>
+        <div style="display:flex;gap:6px;align-items:center">
+          ${sentimentChip(r.sentiment)}
+          ${r.rating <= 2 && !dismissed.has(r.reviewId) ? `<button class="btn sm accent" onclick="dismissAlert('${r.reviewId}')">Dismiss alert</button>` : ''}
+        </div>
+      </div>
+    </div>
+    <div class="rd-body">
+      <div style="font-size:15px;line-height:1.75;color:var(--ink)">
+        ${r.text ? esc(r.text) : '<span style="color:var(--ink-mute);font-style:italic">No written comment — rating only</span>'}
+      </div>
+
+      ${aiReply ? `
+      <div style="margin-top:20px;background:linear-gradient(135deg,var(--primary-soft),var(--bg-elevated));border:1px solid var(--primary);border-radius:var(--radius);padding:16px 18px">
+        <div style="display:inline-flex;align-items:center;gap:5px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--primary);font-weight:600;margin-bottom:10px">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Suggested Reply
+        </div>
+        <div style="font-size:13px;color:var(--ink);line-height:1.65;font-style:italic">${esc(aiReply)}</div>
+        <div style="margin-top:12px;display:flex;gap:6px;flex-wrap:wrap">
+          <button class="filter-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(aiReply)}).then(()=>toast('Copied!'))">Copy reply</button>
+          <button class="filter-btn" style="pointer-events:none;opacity:.5">More formal</button>
+          <button class="filter-btn" style="pointer-events:none;opacity:.5">हिंदी में</button>
+        </div>
+      </div>
+      ` : ''}
+    </div>
+    <div style="padding:14px 28px;border-top:1px solid var(--line-soft);background:var(--bg-elevated);display:flex;justify-content:space-between;align-items:center;flex-shrink:0">
+      <span style="font-size:11.5px;color:var(--ink-mute)">Source: Google Business Profile</span>
+      <a class="btn sm" href="https://www.google.com/maps/search/${encodeURIComponent(r.branchName)}" target="_blank" rel="noopener">View on Google ↗</a>
+    </div>
+  `;
+}
+
+function genReply(r) {
+  if (!r.rating || r.rating > 2) return '';
+  const first = r.reviewerName.split(' ')[0];
+  if (r.rating <= 1)
+    return `Dear ${first}, we sincerely apologize for the experience you had. This is not the standard we hold ourselves to and we take your feedback very seriously. Our branch manager will personally reach out within 24 hours to resolve this. Thank you for bringing this to our attention.`;
+  return `Dear ${first}, thank you for sharing your feedback. We are sorry your visit didn't meet expectations. We're looking into this and will make sure it's addressed. Please feel free to contact us directly so we can make this right for you.`;
+}
+
+// ─── ALERTS TABLE ─────────────────────────────────────────────────────────────
+function renderAlerts() {
+  const open = DATA.alerts.filter(a => !dismissed.has(a.reviewId));
+  document.getElementById('alertsCardSub').textContent = open.length + ' review' + (open.length !== 1 ? 's' : '') + ' awaiting follow-up';
+  document.getElementById('alertsList').innerHTML = open.map(a => `
+    <tr>
+      <td><div style="font-weight:500">${esc(a.branchName)}</div></td>
+      <td style="font-weight:500">${esc(a.reviewerName)}</td>
+      <td>${star(a.rating)}</td>
+      <td style="max-width:260px">
+        <div style="font-size:12.5px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(a.text||'(no comment)')}</div>
+      </td>
+      <td style="font-size:12px;color:var(--ink-mute)">${a.createdAt ? relTime(a.createdAt) : '—'}</td>
+      <td>
+        <div style="display:flex;gap:6px">
+          <button class="btn primary sm" onclick="navToReview('${a.reviewId}')">View →</button>
+          <button class="btn sm" onclick="dismissAlert('${a.reviewId}')">Dismiss</button>
+        </div>
+      </td>
+    </tr>
+  `).join('') || `<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--ink-mute)">✓ No open alerts — all clear</td></tr>`;
+}
+
+// ─── NAV HELPERS ─────────────────────────────────────────────────────────────
+function navToReview(reviewId) {
+  currentFilter = 'all';
+  document.querySelectorAll('.inbox-filters .filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter==='all'));
+  navTo('reviews');
+  setTimeout(() => selectReview(reviewId), 50);
+}
+
+function navToBranchReviews(branchId) {
+  currentFilter = 'all';
+  document.querySelectorAll('.inbox-filters .filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter==='all'));
+  navTo('reviews');
+  const first = allReviews.find(r => r.branchId === branchId);
+  setTimeout(() => { if (first) selectReview(first.reviewId); }, 50);
+}
+
+function updateNavBadges() {
+  document.getElementById('navReviewCount').textContent = allReviews.length;
+  const openA = DATA.alerts.filter(a => !dismissed.has(a.reviewId)).length;
+  const badge = document.getElementById('navAlertCount');
+  badge.textContent = openA;
+  badge.style.display = openA ? '' : 'none';
+}
+
+// ─── SEARCH ──────────────────────────────────────────────────────────────────
+function onSearch(q) {
+  searchQ = q.trim();
+  renderBranches();
+  renderReviewList();
+}
+
+// ─── FILTER BUTTONS (inbox) ───────────────────────────────────────────────────
+document.addEventListener('click', e => {
+  if (e.target.classList.contains('filter-btn') && e.target.closest('.inbox-filters')) {
+    document.querySelectorAll('.inbox-filters .filter-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentFilter = e.target.dataset.filter;
+    renderReviewList();
+  }
+});
+
+// ─── NAVIGATION ──────────────────────────────────────────────────────────────
+const PAGE_META = {
+  dashboard: ['Dashboard','Centralized view across all 24 BeLife partner labs'],
+  branches: ['Branches','All 24 labs — ratings, reviews, and health status'],
+  reviews: ['Review Inbox','All Google reviews across every branch'],
+  alerts: ['Negative Alerts','Reviews ≤ 2 stars needing immediate attention']
+};
+
+function navTo(view) {
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.toggle('active', n.dataset.view===view));
+  document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id==='view-'+view));
+  const meta = PAGE_META[view]||[view,''];
+  document.getElementById('pageTitle').textContent = meta[0];
+  document.getElementById('pageSub').textContent = meta[1];
+}
+
+document.querySelectorAll('.nav-item').forEach(n => {
+  n.addEventListener('click', () => navTo(n.dataset.view));
+});
+
+// ─── THEME ───────────────────────────────────────────────────────────────────
+function toggleTheme() {
+  const cur = document.documentElement.getAttribute('data-theme');
+  document.documentElement.setAttribute('data-theme', cur==='dark'?'':'dark');
+  toast(cur==='dark' ? 'Light mode' : 'Dark mode');
+}
+
+// ─── BOOT ────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

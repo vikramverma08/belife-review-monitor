@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Zapier-MCP__execute_zapier_read_action"
+    ]
+  }
+}

@@ -1,0 +1,2293 @@
+{
+  "generatedAt": "2026-06-26T11:23:11.986Z",
+  "branches": [
+    {
+      "id": "om-biocare",
+      "name": "Om Biocare",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": null,
+      "reviews": [
+        {
+          "reviewId": "om-biocare-tejveer-singh-2026-06-20",
+          "reviewerName": "Tejveer Singh",
+          "rating": 5,
+          "text": "Good service 👍",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-javlesh-singh-2026-06-18",
+          "reviewerName": "Javlesh Singh",
+          "rating": 4,
+          "text": "Excellent service",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-seema-sahoo-2026-06-15",
+          "reviewerName": "Seema Sahoo",
+          "rating": 5,
+          "text": "Good",
+          "publishTime": "2026-06-15T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-rj-ch-2026-06-14",
+          "reviewerName": "Rj Ch",
+          "rating": 5,
+          "text": "The staff is very polite and they are very professional.",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-abhishek-pandey-2026-05-23",
+          "reviewerName": "Abhishek Pandey",
+          "rating": 5,
+          "text": "Excellent service like diagnostic related,home services etc.",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-jeetu-solanki-2026-05-23",
+          "reviewerName": "jeetu solanki",
+          "rating": 5,
+          "text": "Excellent",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-abhay-solanki-2026-05-23",
+          "reviewerName": "abhay solanki",
+          "rating": 5,
+          "text": "V good",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-shiv-kumar-2026-05-17",
+          "reviewerName": "Shiv Kumar",
+          "rating": 5,
+          "text": "Vary good",
+          "publishTime": "2026-05-17T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-munesh-bhati-2026-05-16",
+          "reviewerName": "Munesh Bhati",
+          "rating": 5,
+          "text": "Satisfied",
+          "publishTime": "2026-05-16T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "om-biocare-vivek-sharma-2026-05-10",
+          "reviewerName": "vivek sharma",
+          "rating": 5,
+          "text": "excellent service and very supportive and helpful staff.",
+          "publishTime": "2026-05-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.911Z"
+    },
+    {
+      "id": "tridot-care",
+      "name": "TRIDOT CARE Pvt.Ltd.",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": 63,
+      "reviews": [
+        {
+          "reviewId": "tridot-care-krishan-rajput-2026-06-14",
+          "reviewerName": "Krishan Rajput",
+          "rating": 5,
+          "text": "Vishal sharma good service and good behaviour",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-amit-kumar-2026-06-12",
+          "reviewerName": "amit kumar",
+          "rating": 5,
+          "text": "Timing is important now a days.. so she understands it and completed the all tests on time.",
+          "publishTime": "2026-06-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-manav-khandelwal-2026-06-08",
+          "reviewerName": "Manav Khandelwal",
+          "rating": 5,
+          "text": "Very good service. Very friendly & cooperative staff.",
+          "publishTime": "2026-06-08T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-anita-k1969-2026-06-07",
+          "reviewerName": "Anita K1969",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-07T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-tanvi-sharma-2026-06-04",
+          "reviewerName": "Tanvi Sharma",
+          "rating": 5,
+          "text": "Vishal Sharma very cooperative and good behaviour",
+          "publishTime": "2026-06-04T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-gunjan-gahlot-2026-06-03",
+          "reviewerName": "Gunjan Gahlot",
+          "rating": 5,
+          "text": "Excellent performance by Kanchan Sharma",
+          "publishTime": "2026-06-03T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-jitender-boora-2026-06-03",
+          "reviewerName": "Jitender Boora",
+          "rating": 5,
+          "text": "Very good",
+          "publishTime": "2026-06-03T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-md-shams-tabrez-2026-05-28",
+          "reviewerName": "md shams tabrez",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-28T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-kavita-sunhotra-2026-05-16",
+          "reviewerName": "Kavita Sunhotra",
+          "rating": 5,
+          "text": "Overoll very gud experince",
+          "publishTime": "2026-05-16T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "tridot-care-dr.-anurag-verma-2026-05-16",
+          "reviewerName": "Dr. Anurag Verma",
+          "rating": 4,
+          "text": "Overall good experience",
+          "publishTime": "2026-05-16T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "ai-healthcare",
+      "name": "AI HEALTHCARE",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": 237,
+      "reviews": [
+        {
+          "reviewId": "ai-healthcare-gopal-limbu-2026-06-22",
+          "reviewerName": "Gopal Limbu",
+          "rating": 2,
+          "text": "",
+          "publishTime": "2026-06-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-ankit-jain-2026-06-11",
+          "reviewerName": "Ankit Jain",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-ritik-raj-2026-06-09",
+          "reviewerName": "Ritik Raj",
+          "rating": 5,
+          "text": "It was a good experience.",
+          "publishTime": "2026-06-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-arnab-chatterjee-2026-06-07",
+          "reviewerName": "Arnab Chatterjee",
+          "rating": 5,
+          "text": "Excellent service. Super smooth.",
+          "publishTime": "2026-06-07T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-chandra-narayan-2026-06-06",
+          "reviewerName": "Chandra Narayan",
+          "rating": 4,
+          "text": "Over all good. No waiting time. Cleanliness is good.",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-sandeep-verma-2026-05-30",
+          "reviewerName": "Sandeep Verma",
+          "rating": 4,
+          "text": "",
+          "publishTime": "2026-05-30T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-rakesh-mishra-2026-05-27",
+          "reviewerName": "Rakesh Mishra",
+          "rating": 5,
+          "text": "Its a very nice experience. Excellent behavior and maintain hygiene.",
+          "publishTime": "2026-05-27T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-vishal-singh-2026-05-27",
+          "reviewerName": "Vishal Singh",
+          "rating": 5,
+          "text": "Doctor was very polite and communication was helpful",
+          "publishTime": "2026-05-27T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-yogendranath-kang-2026-05-23",
+          "reviewerName": "Yogendranath Kang",
+          "rating": 5,
+          "text": "Diligent team and timely tests helped in fast completion.",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "ai-healthcare-utkarsh-bhargava-2026-05-23",
+          "reviewerName": "utkarsh bhargava",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "prakash-path-lab",
+      "name": "PRAKASH PATH LAB",
+      "city": "",
+      "rating": null,
+      "reviewCount": null,
+      "reviews": [],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "accured-diagnostics",
+      "name": "ACCURED DIAGNOSTICS",
+      "city": "",
+      "rating": 4.8,
+      "reviewCount": 51,
+      "reviews": [],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "nt-pro-lab",
+      "name": "NT PRO LAB",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": 98,
+      "reviews": [],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "fifty-one-plus-east-delhi",
+      "name": "FIFTY ONE PLUS LAB",
+      "city": "East Delhi",
+      "rating": 5,
+      "reviewCount": null,
+      "reviews": [
+        {
+          "reviewId": "fifty-one-plus-east-delhi-yugank-jain-2026-06-09",
+          "reviewerName": "Yugank Jain",
+          "rating": 5,
+          "text": "Great",
+          "publishTime": "2026-06-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-east-delhi-ravi-kant-2026-05-11",
+          "reviewerName": "RAVI KANT",
+          "rating": 5,
+          "text": "Very nice service and good behaviour",
+          "publishTime": "2026-05-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-east-delhi-arun-gupta-2026-04-05",
+          "reviewerName": "Arun Gupta",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-04-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-east-delhi-ashish-manna-2026-03-08",
+          "reviewerName": "Ashish Manna",
+          "rating": 5,
+          "text": "Best centre",
+          "publishTime": "2026-03-08T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-east-delhi-gusain-mahender-2026-03-01",
+          "reviewerName": "Gusain Mahender",
+          "rating": 5,
+          "text": "Sanu ji kya sath acha laga or behewir is all so best",
+          "publishTime": "2026-03-01T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "bharatiya-path-lab",
+      "name": "BHARATIYA PATH LAB",
+      "city": "",
+      "rating": 4.5,
+      "reviewCount": 52,
+      "reviews": [
+        {
+          "reviewId": "bharatiya-path-lab-satish-kimar-2026-06-03",
+          "reviewerName": "Satish kimar",
+          "rating": 5,
+          "text": "Very good and experienced staff with good testing facilities",
+          "publishTime": "2026-06-03T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-miraj-ahmad-2026-05-24",
+          "reviewerName": "miraj ahmad",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-24T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-jeet-pandey-2026-05-23",
+          "reviewerName": "Jeet Pandey",
+          "rating": 5,
+          "text": "Hassle-free medical checkup at home. Very Professional and good behaviour.",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-vivek-sharma-2026-05-23",
+          "reviewerName": "Vivek Sharma",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-sachin-arya-2026-05-22",
+          "reviewerName": "Sachin Arya",
+          "rating": 5,
+          "text": "Lab is too good",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-robin-rawat-2026-05-22",
+          "reviewerName": "robin rawat",
+          "rating": 5,
+          "text": "Nice environment",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-vikas-kumar-2026-05-22",
+          "reviewerName": "Vikas Kumar",
+          "rating": 4,
+          "text": "",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-deepak-pant-2026-05-18",
+          "reviewerName": "Deepak Pant",
+          "rating": 5,
+          "text": "The person is professional and took the sample without pain.",
+          "publishTime": "2026-05-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-aman-agarwal-2026-05-18",
+          "reviewerName": "Aman Agarwal",
+          "rating": 5,
+          "text": "Great service by Mr. Sarfaraz. He is very humble.",
+          "publishTime": "2026-05-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "bharatiya-path-lab-sumit-mittal-2026-05-16",
+          "reviewerName": "Sumit Mittal",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-16T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "nirog-labcare",
+      "name": "NIROG LABCARE",
+      "city": "",
+      "rating": 5,
+      "reviewCount": 29,
+      "reviews": [
+        {
+          "reviewId": "nirog-labcare-vedant-goyal-2026-05-15",
+          "reviewerName": "vedant goyal",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-15T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-upendra-baghel-2026-05-14",
+          "reviewerName": "Upendra Baghel",
+          "rating": 5,
+          "text": "5",
+          "publishTime": "2026-05-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-saurabh-goyal-2026-05-14",
+          "reviewerName": "Saurabh Goyal",
+          "rating": 4,
+          "text": "Good service",
+          "publishTime": "2026-05-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-satu-with-english-2026-05-14",
+          "reviewerName": "Satu With English",
+          "rating": 5,
+          "text": "Good service timely complete all test",
+          "publishTime": "2026-05-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-vedant-patni-2026-05-13",
+          "reviewerName": "Vedant Patni",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-13T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-ram-avatar-diwakar-2026-05-12",
+          "reviewerName": "Ram Avatar Diwakar",
+          "rating": 5,
+          "text": "Good facility",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-roshni-kushwah-2026-05-12",
+          "reviewerName": "Roshni Kushwah",
+          "rating": 5,
+          "text": "Good service",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-bhavna-kushawah-2026-05-12",
+          "reviewerName": "Bhavna Kushawah",
+          "rating": 5,
+          "text": "Good service",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-neelam-sharma-2026-05-12",
+          "reviewerName": "Neelam Sharma",
+          "rating": 5,
+          "text": "Good service",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "nirog-labcare-pallavi-kush-2026-05-12",
+          "reviewerName": "Pallavi Kush",
+          "rating": 5,
+          "text": "Good service",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "eezee-pathlabs",
+      "name": "EEZEE PATHLABS",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": 134,
+      "reviews": [
+        {
+          "reviewId": "eezee-pathlabs-surinder-rana-2026-06-26",
+          "reviewerName": "Surinder Rana",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-26T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-rithik-kumar-2026-06-25",
+          "reviewerName": "Rithik Kumar",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-25T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-mohit-sharma-2026-06-25",
+          "reviewerName": "mohit sharma",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-25T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-neeraj-singh-2026-06-23",
+          "reviewerName": "Neeraj Singh",
+          "rating": 5,
+          "text": "Good service nice behaviour, home collection",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-sam-nain-2026-06-23",
+          "reviewerName": "Sam Nain",
+          "rating": 5,
+          "text": "Nice lab with the good result all over.",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-mohd-firoz-2026-06-23",
+          "reviewerName": "Mohd Firoz",
+          "rating": 5,
+          "text": "Good staff and services",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-shrey-joshi-2026-06-23",
+          "reviewerName": "Shrey Joshi",
+          "rating": 5,
+          "text": "Nice and fast results good team here.",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-alok-rohilla-2026-06-22",
+          "reviewerName": "alok rohilla",
+          "rating": 5,
+          "text": "Very cooperative and informative staff.",
+          "publishTime": "2026-06-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-sanjeev-jha-2026-06-20",
+          "reviewerName": "sanjeev jha",
+          "rating": 5,
+          "text": "Excellent service and abhishek provided good lab services",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "eezee-pathlabs-aarti-chitkara-2026-06-20",
+          "reviewerName": "Aarti Chitkara",
+          "rating": 5,
+          "text": "Excellent staff, very cooperative",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "red-diagnostics",
+      "name": "RED DIAGNOSTICS",
+      "city": "Noida",
+      "rating": 4.8,
+      "reviewCount": 143,
+      "reviews": [
+        {
+          "reviewId": "red-diagnostics-shivangi-sharma-2026-06-19",
+          "reviewerName": "Shivangi Sharma",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-19T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-prashant-singh-2026-06-06",
+          "reviewerName": "Prashant Singh",
+          "rating": 2,
+          "text": "Very disappointing experience. The staff was unresponsive, and the overall process felt highly unorganized.",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-ankur-srivastava-2026-06-09",
+          "reviewerName": "Ankur Srivastava",
+          "rating": 5,
+          "text": "All tests were quick and upto the mark.",
+          "publishTime": "2026-06-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-shivani-yadav-2026-06-08",
+          "reviewerName": "Shivani Yadav",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-08T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-harsh-pal-2026-06-06",
+          "reviewerName": "Harsh Pal",
+          "rating": 5,
+          "text": "Salman it's was good",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-pawan-verma-2026-06-06",
+          "reviewerName": "Pawan Verma",
+          "rating": 5,
+          "text": "It was good experience with Salman. He took blood without any pain.",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-sanjeet-kumar-2026-06-05",
+          "reviewerName": "sanjeet kumar",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-rajeev-kumar-2026-06-05",
+          "reviewerName": "Rajeev Kumar",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-oneplus-lab-2026-05-30",
+          "reviewerName": "ONEPLUS LAB",
+          "rating": 5,
+          "text": "Good Service staff behaviour good",
+          "publishTime": "2026-05-30T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "red-diagnostics-rachna-arora-2026-05-12",
+          "reviewerName": "rachna Arora",
+          "rating": 1,
+          "text": "Highly unprofessional cheat customers. Multiple times I had to check myself for test coverage. Highly unethical and unreliable diagnostic centre.",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "serum-inc",
+      "name": "SERUM Inc.",
+      "city": "",
+      "rating": 5,
+      "reviewCount": 1,
+      "reviews": [
+        {
+          "reviewId": "serum-inc-dinesh-kumar-2026-06-05",
+          "reviewerName": "Dinesh Kumar",
+          "rating": 5,
+          "text": "Good service",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "my-choice-lab",
+      "name": "My Choice Lab",
+      "city": "",
+      "rating": 4.8,
+      "reviewCount": 37,
+      "reviews": [
+        {
+          "reviewId": "my-choice-lab-roshni-devi-2026-06-20",
+          "reviewerName": "Roshni Devi",
+          "rating": 5,
+          "text": "Service is good",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-bipul-dixit-2026-06-14",
+          "reviewerName": "Bipul Dixit",
+          "rating": 5,
+          "text": "Service was really good",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-relayssig-contacts-2026-06-11",
+          "reviewerName": "Relayssig contacts",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-mukesh-gupta-2026-06-10",
+          "reviewerName": "Mukesh Gupta",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-manoj-kumar-2026-06-10",
+          "reviewerName": "manoj kumar",
+          "rating": 3,
+          "text": "Visual Sharma Good and nice behaved",
+          "publishTime": "2026-06-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "mixed",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-jpverma-verma-2026-06-09",
+          "reviewerName": "Jpverma Verma",
+          "rating": 5,
+          "text": "All staff are very good and Dr Sanjeev was very humble and polite.",
+          "publishTime": "2026-06-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-manish-srivastava-2026-06-05",
+          "reviewerName": "Manish Srivastava",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-rajesh-kumar-jha-2026-06-03",
+          "reviewerName": "Rajesh Kumar Jha",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-03T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-abha-jha-2026-06-03",
+          "reviewerName": "Abha Jha",
+          "rating": 5,
+          "text": "Good lab and Staff behavior is very nice",
+          "publishTime": "2026-06-03T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "my-choice-lab-soniya-chauhan-2026-05-27",
+          "reviewerName": "Soniya Chauhan",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-27T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "surbhi-care",
+      "name": "SURBHI CARE",
+      "city": "",
+      "rating": 4.8,
+      "reviewCount": 142,
+      "reviews": [
+        {
+          "reviewId": "surbhi-care-vikram-sharma-2026-06-21",
+          "reviewerName": "Vikram Sharma",
+          "rating": 5,
+          "text": "good performance by kanchan sharma",
+          "publishTime": "2026-06-21T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-vinesh-kumar-2026-06-21",
+          "reviewerName": "Vinesh Kumar",
+          "rating": 5,
+          "text": "Kanchan shrama is very good and polite",
+          "publishTime": "2026-06-21T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-pradeep-rawat-2026-06-21",
+          "reviewerName": "Pradeep Rawat",
+          "rating": 5,
+          "text": "I appreciate this team because of great support and smooth experience specially mrs Kanchan Sharma ji.",
+          "publishTime": "2026-06-21T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-aparana-srivastav-2026-06-21",
+          "reviewerName": "Aparana Srivastav",
+          "rating": 5,
+          "text": "Kanchan sharma, thank you, support staff and hygienic technician.",
+          "publishTime": "2026-06-21T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-sujeet-kumar-2026-06-20",
+          "reviewerName": "sujeet Kumar",
+          "rating": 5,
+          "text": "She has done a good work",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-amit-kumar-2026-06-20",
+          "reviewerName": "Amit Kumar",
+          "rating": 5,
+          "text": "Kanchan Sharma, she is well trained and nice",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-vicky-kumar-2026-06-18",
+          "reviewerName": "Vicky Kumar",
+          "rating": 5,
+          "text": "Good care for patients",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-sushma-mimrot-2026-06-18",
+          "reviewerName": "Sushma Mimrot",
+          "rating": 5,
+          "text": "Good and polite behaviour with client",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-manish-pacherwal-2026-06-18",
+          "reviewerName": "Manish Pacherwal",
+          "rating": 5,
+          "text": "Ms Kanchan Sharma came to collect sample. She is very professional.",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "surbhi-care-priyanka-porwal-2026-06-18",
+          "reviewerName": "Priyanka Porwal",
+          "rating": 5,
+          "text": "The way of dealing of Miss Kanchan sharma is very appreciable.",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "d-care-diagnostics",
+      "name": "D CARE Diagnostics",
+      "city": "",
+      "rating": 4.6,
+      "reviewCount": 67,
+      "reviews": [
+        {
+          "reviewId": "d-care-diagnostics-hari-malhotra-2026-05-25",
+          "reviewerName": "Hari Malhotra",
+          "rating": 4,
+          "text": "Very Good services",
+          "publishTime": "2026-05-25T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-lalit-thapa-2026-05-25",
+          "reviewerName": "Lalit Thapa",
+          "rating": 5,
+          "text": "It was a good experience. Especially Sameer was polite overall NICE.",
+          "publishTime": "2026-05-25T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-naveen-kumar-2026-05-24",
+          "reviewerName": "Naveen Kumar",
+          "rating": 5,
+          "text": "Experience is good",
+          "publishTime": "2026-05-24T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-abhishek-yadav-2026-05-23",
+          "reviewerName": "Abhishek Yadav",
+          "rating": 5,
+          "text": "Polite staff, good service",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-simpi-jha-2026-05-23",
+          "reviewerName": "Simpi Jha",
+          "rating": 4,
+          "text": "",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-neha-maini-2026-05-22",
+          "reviewerName": "neha maini",
+          "rating": 1,
+          "text": "",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-sandeep-bahuguna-2026-05-17",
+          "reviewerName": "Sandeep Bahuguna",
+          "rating": 5,
+          "text": "Mr. Ajit goswami and his team has good experience. Impressed with their support.",
+          "publishTime": "2026-05-17T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-krishna-kumar-yadav-2026-05-16",
+          "reviewerName": "Krishna Kumar Yadav",
+          "rating": 5,
+          "text": "Good and fast service.",
+          "publishTime": "2026-05-16T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-nitin-rajput-2026-05-11",
+          "reviewerName": "Nitin Rajput",
+          "rating": 2,
+          "text": "Good lab",
+          "publishTime": "2026-05-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "d-care-diagnostics-minakshi-singh-2026-05-10",
+          "reviewerName": "Minakshi Singh",
+          "rating": 5,
+          "text": "Best lab service",
+          "publishTime": "2026-05-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "fifty-one-plus-noida",
+      "name": "FIFTY ONE PLUS LAB",
+      "city": "Noida",
+      "rating": 4.7,
+      "reviewCount": 745,
+      "reviews": [
+        {
+          "reviewId": "fifty-one-plus-noida-gajendra-kumar-2026-06-26",
+          "reviewerName": "Gajendra kumar",
+          "rating": 5,
+          "text": "it is a very good lab and staff is very co operative and active.",
+          "publishTime": "2026-06-26T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-ashu-singh-2026-06-25",
+          "reviewerName": "ashu singh",
+          "rating": 1,
+          "text": "There are n number of labs in Noida. If someone is choosing your laboratory you could have atleast stapled the report pages in the correct sequence.",
+          "publishTime": "2026-06-25T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-vishwajit-kumar-2026-06-20",
+          "reviewerName": "VISHWAJIT KUMAR",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-punit-2026-06-13",
+          "reviewerName": "Punit",
+          "rating": 5,
+          "text": "Good",
+          "publishTime": "2026-06-13T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-rahul-sangwan-2026-06-13",
+          "reviewerName": "Rahul Sangwan",
+          "rating": 5,
+          "text": "Good services, nice staff",
+          "publishTime": "2026-06-13T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-abhay-chauhan-2026-06-13",
+          "reviewerName": "Abhay Chauhan",
+          "rating": 5,
+          "text": "Overall best experience with 51 plus labs. The staffing was really helpful.",
+          "publishTime": "2026-06-13T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-radhe-radhe-2026-06-03",
+          "reviewerName": "Radhe Radhe",
+          "rating": 1,
+          "text": "Service bad",
+          "publishTime": "2026-06-03T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-aarna-grover-2026-06-11",
+          "reviewerName": "Aarna Grover",
+          "rating": 3,
+          "text": "",
+          "publishTime": "2026-06-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "mixed",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-vipin-kushwaha-2026-06-10",
+          "reviewerName": "Vipin Kushwaha",
+          "rating": 5,
+          "text": "Vishal sharma is very polite and humble person. Good behaviour",
+          "publishTime": "2026-06-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-noida-vikas-chauhan-2026-06-09",
+          "reviewerName": "Vikas Chauhan",
+          "rating": 5,
+          "text": "Experience very good, staff behaviour so nice",
+          "publishTime": "2026-06-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "vachana-diagnostic",
+      "name": "Vachana Diagnostic Laboratory",
+      "city": "",
+      "rating": 5,
+      "reviewCount": 9,
+      "reviews": [
+        {
+          "reviewId": "vachana-diagnostic-mohammad-moosa-2026-06-01",
+          "reviewerName": "Mohammad Moosa",
+          "rating": 5,
+          "text": "I was impressed by the staff behaviour and the fact that they conduct the management tests very well.",
+          "publishTime": "2026-06-01T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-jitendra-kumar-2026-05-20",
+          "reviewerName": "Jitendra Kumar",
+          "rating": 5,
+          "text": "Amazing",
+          "publishTime": "2026-05-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-gaurav-kumar-2026-05-20",
+          "reviewerName": "Gaurav Kumar",
+          "rating": 5,
+          "text": "Nice lab",
+          "publishTime": "2026-05-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-suraj-mathur-2026-05-20",
+          "reviewerName": "Suraj Mathur",
+          "rating": 5,
+          "text": "Good lab",
+          "publishTime": "2026-05-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-annu-singh-2026-05-20",
+          "reviewerName": "Annu singh",
+          "rating": 5,
+          "text": "Excellent Lab",
+          "publishTime": "2026-05-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-ajeet-thakur-2026-05-20",
+          "reviewerName": "Ajeet Thakur",
+          "rating": 5,
+          "text": "Good lab",
+          "publishTime": "2026-05-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-pankaj-raj-2026-05-11",
+          "reviewerName": "Pankaj Raj",
+          "rating": 5,
+          "text": "Nice lab",
+          "publishTime": "2026-05-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-radha-yadav-2026-05-10",
+          "reviewerName": "Radha Yadav",
+          "rating": 5,
+          "text": "Good lab",
+          "publishTime": "2026-05-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "vachana-diagnostic-allied-health-2026-05-10",
+          "reviewerName": "ALLIED HEALTH",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.914Z"
+    },
+    {
+      "id": "fifty-one-plus-meerut",
+      "name": "FIFTY ONE PLUS LAB",
+      "city": "Meerut",
+      "rating": 4.9,
+      "reviewCount": 176,
+      "reviews": [
+        {
+          "reviewId": "fifty-one-plus-meerut-ललित-कुमार-2026-06-23",
+          "reviewerName": "ललित कुमार",
+          "rating": 5,
+          "text": "Good staff somaiya",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-neeru-sharma-2026-06-20",
+          "reviewerName": "Neeru Sharma",
+          "rating": 5,
+          "text": "Best lab for health checkup, good behaviour of staff",
+          "publishTime": "2026-06-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-aman-raghav-2026-06-18",
+          "reviewerName": "Aman Raghav",
+          "rating": 5,
+          "text": "Good Facility",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-prerna-gandhi-2026-06-18",
+          "reviewerName": "Prerna Gandhi",
+          "rating": 5,
+          "text": "Service is very good",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-rinku-sharma-2026-06-18",
+          "reviewerName": "Rinku Sharma",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-harsh-gupta-2026-06-10",
+          "reviewerName": "Harsh Gupta",
+          "rating": 5,
+          "text": "Staff behaviour good",
+          "publishTime": "2026-06-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-priyanshi-sharma-2026-06-10",
+          "reviewerName": "priyanshi sharma",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-ekansh-jain-2026-06-02",
+          "reviewerName": "Ekansh Jain",
+          "rating": 5,
+          "text": "Ok",
+          "publishTime": "2026-06-02T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-upendra-kumar-2026-05-28",
+          "reviewerName": "UPENDRA KUMAR",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-28T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-meerut-utkarsh-rastogi-2026-05-27",
+          "reviewerName": "UTKARSH RASTOGI",
+          "rating": 1,
+          "text": "Irresponsible staff. Waited 1 hour after appointment",
+          "publishTime": "2026-05-27T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    },
+    {
+      "id": "prime-diagnostic",
+      "name": "Prime Diagnostic Pathology",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": 91,
+      "reviews": [
+        {
+          "reviewId": "prime-diagnostic-amit-singh-2026-06-23",
+          "reviewerName": "Amit Singh",
+          "rating": 5,
+          "text": "Special thanks to Kulwant Thakur for his excellent support. Very professional, polite, and helpful.",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-manmohan-singh-2026-05-22",
+          "reviewerName": "Manmohan Singh",
+          "rating": 5,
+          "text": "Good work by Shubhash",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-mohit-kumar-2026-05-22",
+          "reviewerName": "mohit kumar",
+          "rating": 5,
+          "text": "Excellence job by subhash. Nice person",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-aimless-life-2026-05-22",
+          "reviewerName": "aimless life",
+          "rating": 5,
+          "text": "Subhash is excellent and very professional in his work",
+          "publishTime": "2026-05-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-dinesh-kumar-2026-05-21",
+          "reviewerName": "Dinesh Kumar",
+          "rating": 5,
+          "text": "Subhash is very good person",
+          "publishTime": "2026-05-21T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-rajendra-p-raj-2026-05-21",
+          "reviewerName": "Rajendra P Raj",
+          "rating": 5,
+          "text": "Subhash nice guy, very professional working",
+          "publishTime": "2026-05-21T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-kailash-kumar-2026-05-20",
+          "reviewerName": "kailash kumar",
+          "rating": 5,
+          "text": "Subhash",
+          "publishTime": "2026-05-20T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-raj-chauhan-2026-05-19",
+          "reviewerName": "Raj Chauhan",
+          "rating": 5,
+          "text": "Very Corprative and supportive Staff Name Subhas",
+          "publishTime": "2026-05-19T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-mahendar-singh-2026-05-19",
+          "reviewerName": "Mahendar Singh",
+          "rating": 5,
+          "text": "Shubhash good best service",
+          "publishTime": "2026-05-19T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "prime-diagnostic-praveen-kumar-2026-05-19",
+          "reviewerName": "Praveen Kumar",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-19T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    },
+    {
+      "id": "dayal-diagnostic",
+      "name": "DAYAL DIAGNOSTIC CENTER",
+      "city": "",
+      "rating": 4.3,
+      "reviewCount": 37,
+      "reviews": [
+        {
+          "reviewId": "dayal-diagnostic-muzib-khan-2026-06-22",
+          "reviewerName": "muzib khan",
+          "rating": 5,
+          "text": "Excellent services by Sonam. Proper health checkup.",
+          "publishTime": "2026-06-22T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-mandavi-sarraf-2026-06-18",
+          "reviewerName": "Mandavi Sarraf",
+          "rating": 5,
+          "text": "Staff there was cooperative. Ms. Sonam ensured my smooth health checkups",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-bhumi-enterprises-2026-06-11",
+          "reviewerName": "Bhumi Enterprises",
+          "rating": 5,
+          "text": "Dr. Nempal Singh good Behaviour and good management.",
+          "publishTime": "2026-06-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-shashank-2026-06-07",
+          "reviewerName": "Shashank",
+          "rating": 1,
+          "text": "Worst Diagnostic centre with the worst staff. They don't have their own machine for the test. Pathetic experience.",
+          "publishTime": "2026-06-07T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-gaurav-saxena-2026-06-06",
+          "reviewerName": "Gaurav Saxena",
+          "rating": 3,
+          "text": "",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "mixed",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-om-narayan-agnihotri-2026-05-29",
+          "reviewerName": "Om Narayan Agnihotri",
+          "rating": 5,
+          "text": "All the staff members behaved professional and all the test was done properly.",
+          "publishTime": "2026-05-29T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-shobha-wati-2026-05-28",
+          "reviewerName": "SHOBHA WATI",
+          "rating": 5,
+          "text": "Sonam is too good here, taken very small time and all the test are done.",
+          "publishTime": "2026-05-28T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-dr.aniket-pandey-2026-05-26",
+          "reviewerName": "Dr.ANIKET PANDEY",
+          "rating": 5,
+          "text": "Well and good management. She is good and do all procedure very efficiently.",
+          "publishTime": "2026-05-26T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-avantika-singh-2026-05-24",
+          "reviewerName": "Avantika Singh",
+          "rating": 5,
+          "text": "Very good service. Mr shaizy saifi centre head is good person is very helpful",
+          "publishTime": "2026-05-24T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "dayal-diagnostic-alka-garg-2026-05-24",
+          "reviewerName": "ALKA GARG",
+          "rating": 5,
+          "text": "Sonam is good person is very helpful person",
+          "publishTime": "2026-05-24T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    },
+    {
+      "id": "chaitanya-lifecare",
+      "name": "Chaitanya LifeCare",
+      "city": "",
+      "rating": 4.6,
+      "reviewCount": 23,
+      "reviews": [
+        {
+          "reviewId": "chaitanya-lifecare-ashish-singh-2026-05-23",
+          "reviewerName": "Ashish Singh",
+          "rating": 5,
+          "text": "ADVANCED MACHINE AND FAST TESTING AND SKILLED TECH PEOPLE SEAMLESS EXPERIENCE",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-puneet-omar-2026-05-15",
+          "reviewerName": "PUNEET Omar",
+          "rating": 5,
+          "text": "Good experience, polite person interaction",
+          "publishTime": "2026-05-15T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-amit-singh-arora-2026-05-12",
+          "reviewerName": "Amit singh Arora",
+          "rating": 1,
+          "text": "",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-radhika-2026-05-12",
+          "reviewerName": "Radhika",
+          "rating": 1,
+          "text": "Good",
+          "publishTime": "2026-05-12T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "negative",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-raju-awasthi-2026-05-11",
+          "reviewerName": "Raju Awasthi",
+          "rating": 5,
+          "text": "Very nice service",
+          "publishTime": "2026-05-11T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-nirupma-mazumdar-2026-05-10",
+          "reviewerName": "Nirupma Mazumdar",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-ram-sagar-singh-2026-05-10",
+          "reviewerName": "RAM SAGAR SINGH",
+          "rating": 5,
+          "text": "Very Good Experience",
+          "publishTime": "2026-05-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-vatsal-sahu-2026-05-09",
+          "reviewerName": "VATSAL SAHU",
+          "rating": 5,
+          "text": "Most supportive staff I ever met.",
+          "publishTime": "2026-05-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-baba-shiv-2026-05-09",
+          "reviewerName": "BABA Shiv",
+          "rating": 5,
+          "text": "Best service & humble nature",
+          "publishTime": "2026-05-09T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "chaitanya-lifecare-ankit-pal-2026-05-08",
+          "reviewerName": "ankit Pal",
+          "rating": 5,
+          "text": "👍",
+          "publishTime": "2026-05-08T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    },
+    {
+      "id": "fifty-one-plus-delhi",
+      "name": "FIFTY ONE PLUS LAB",
+      "city": "Delhi",
+      "rating": 4.9,
+      "reviewCount": 116,
+      "reviews": [
+        {
+          "reviewId": "fifty-one-plus-delhi-saurabh-verma-2026-06-23",
+          "reviewerName": "Saurabh Verma",
+          "rating": 5,
+          "text": "Good experience",
+          "publishTime": "2026-06-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-piyush-arora-2026-06-07",
+          "reviewerName": "Piyush Arora",
+          "rating": 4,
+          "text": "Good. Hygienic lab with supportive and good physicians",
+          "publishTime": "2026-06-07T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-praveen-sharma-2026-06-01",
+          "reviewerName": "Praveen Sharma",
+          "rating": 5,
+          "text": "Good staff",
+          "publishTime": "2026-06-01T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-prakash-bothra-2026-05-31",
+          "reviewerName": "prakash bothra",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-31T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-tushar-das-2026-05-30",
+          "reviewerName": "Tushar Das",
+          "rating": 5,
+          "text": "All the tests were done appropriately with excellent hospitality.",
+          "publishTime": "2026-05-30T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-adeel-ahmad-2026-05-29",
+          "reviewerName": "adeel ahmad",
+          "rating": 5,
+          "text": "Fully convinced with the service of this lab.",
+          "publishTime": "2026-05-29T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-saleena-chaudhary-2026-05-24",
+          "reviewerName": "Saleena Chaudhary",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-24T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-shalabh-gupta-2026-05-24",
+          "reviewerName": "Shalabh Gupta",
+          "rating": 5,
+          "text": "Very prompt and courteous staff. Everything done professionally and timely",
+          "publishTime": "2026-05-24T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-saree-family-2026-05-23",
+          "reviewerName": "Saree Family",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "fifty-one-plus-delhi-jatin-yadav-2026-05-23",
+          "reviewerName": "Jatin Yadav",
+          "rating": 5,
+          "text": "Very quick and efficient service. The staff is well trained and cooperative.",
+          "publishTime": "2026-05-23T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    },
+    {
+      "id": "konica-imaging",
+      "name": "KONICA Imaging & Diagnostic Center",
+      "city": "",
+      "rating": 4.7,
+      "reviewCount": 69,
+      "reviews": [
+        {
+          "reviewId": "konica-imaging-sachin-mathur-2026-06-10",
+          "reviewerName": "Sachin Mathur",
+          "rating": 5,
+          "text": "Service Good",
+          "publishTime": "2026-06-10T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-pappu-kumr-2026-06-07",
+          "reviewerName": "pappu kumr",
+          "rating": 4,
+          "text": "Vishal Sharma today done my medical very good",
+          "publishTime": "2026-06-07T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-nikhil-aggarwal-2026-06-07",
+          "reviewerName": "Nikhil Aggarwal",
+          "rating": 5,
+          "text": "Good experience",
+          "publishTime": "2026-06-07T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-archhana-suuri-2026-06-06",
+          "reviewerName": "ARCHHANA Suuri",
+          "rating": 5,
+          "text": "Good experience",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-hrishikesh-bothe-2026-06-06",
+          "reviewerName": "Hrishikesh Bothe",
+          "rating": 5,
+          "text": "Very good experience",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-rohan-agrawal-2026-06-06",
+          "reviewerName": "rohan agrawal",
+          "rating": 5,
+          "text": "Good service done by Sailendra. All test conducted well with proper procedure.",
+          "publishTime": "2026-06-06T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-prateek-chugh-2026-06-05",
+          "reviewerName": "prateek chugh",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-shailendra-tinguriya-2026-06-05",
+          "reviewerName": "Shailendra Tinguriya",
+          "rating": 5,
+          "text": "Good service and supportive.",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-arjun-mishra-2026-06-05",
+          "reviewerName": "Arjun Mishra",
+          "rating": 5,
+          "text": "Employee vishal ji was very cooperative",
+          "publishTime": "2026-06-05T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "konica-imaging-raminder-pal-singh-2026-06-04",
+          "reviewerName": "Raminder Pal Singh",
+          "rating": 5,
+          "text": "Vishal Sharma did medical today",
+          "publishTime": "2026-06-04T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    },
+    {
+      "id": "amino-diagnostics",
+      "name": "Amino Diagnostics",
+      "city": "",
+      "rating": 4.9,
+      "reviewCount": 511,
+      "reviews": [
+        {
+          "reviewId": "amino-diagnostics-manoj-kumar-2026-06-18",
+          "reviewerName": "Manoj Kumar",
+          "rating": 5,
+          "text": "Ayan came to my house for my medical checkup he was so nice polite and professional",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-shubham-jain-2026-06-18",
+          "reviewerName": "shubham jain",
+          "rating": 5,
+          "text": "Mr. Ayan came to take samples for test. He was very diligent and careful.",
+          "publishTime": "2026-06-18T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-brajesh-sahani-2026-06-17",
+          "reviewerName": "Brajesh Sahani",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-06-17T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-sandeep-mishra-2026-06-15",
+          "reviewerName": "Sandeep Mishra",
+          "rating": 5,
+          "text": "Mr. Vishal ji done commendable work. Service on time. Neat and clean.",
+          "publishTime": "2026-06-15T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-gᴀᴜᴛᴀϻ-miຮhʀa-2026-06-15",
+          "reviewerName": "Gᴀᴜᴛᴀϻ Miຮhʀa",
+          "rating": 4,
+          "text": "Vishal sharma, good person and very fast checkup and decent",
+          "publishTime": "2026-06-15T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-dr-raj-prasad-2026-06-14",
+          "reviewerName": "Dr raj Prasad",
+          "rating": 5,
+          "text": "Good attitude and skill",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-tarun055-2026-06-14",
+          "reviewerName": "Tarun055",
+          "rating": 5,
+          "text": "Mr Ayan was excellent, they come on time and take blood without painfull string incerting",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-sunny-choudhary-2026-06-14",
+          "reviewerName": "Sunny Choudhary",
+          "rating": 5,
+          "text": "I had a great experience with Dr. Vishal Sharma.",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-kumar-kavindra-2026-06-14",
+          "reviewerName": "kumar Kavindra",
+          "rating": 5,
+          "text": "Ayan a lab technician is very punctual on time to collect sample.",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        },
+        {
+          "reviewId": "amino-diagnostics-parmanand-prakash-2026-06-14",
+          "reviewerName": "Parmanand Prakash",
+          "rating": 5,
+          "text": "Mr. Ayan came at my home timely as per our discussion.",
+          "publishTime": "2026-06-14T00:00:00.000Z",
+          "relativeTime": "",
+          "sentiment": "positive",
+          "source": "google_business_profile"
+        }
+      ],
+      "lastSyncedAt": "2026-06-26T11:23:11.915Z"
+    }
+  ],
+  "alerts": [
+    {
+      "branchId": "fifty-one-plus-noida",
+      "branchName": "FIFTY ONE PLUS LAB",
+      "reviewId": "fifty-one-plus-noida-ashu-singh-2026-06-25",
+      "rating": 1,
+      "text": "There are n number of labs in Noida. If someone is choosing your laboratory you could have atleast stapled the report pages in the correct sequence.",
+      "reviewerName": "ashu singh",
+      "createdAt": "2026-06-25T00:00:00.000Z"
+    },
+    {
+      "branchId": "ai-healthcare",
+      "branchName": "AI HEALTHCARE",
+      "reviewId": "ai-healthcare-gopal-limbu-2026-06-22",
+      "rating": 2,
+      "text": "",
+      "reviewerName": "Gopal Limbu",
+      "createdAt": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "branchId": "dayal-diagnostic",
+      "branchName": "DAYAL DIAGNOSTIC CENTER",
+      "reviewId": "dayal-diagnostic-shashank-2026-06-07",
+      "rating": 1,
+      "text": "Worst Diagnostic centre with the worst staff. They don't have their own machine for the test. Pathetic experience.",
+      "reviewerName": "Shashank",
+      "createdAt": "2026-06-07T00:00:00.000Z"
+    },
+    {
+      "branchId": "red-diagnostics",
+      "branchName": "RED DIAGNOSTICS",
+      "reviewId": "red-diagnostics-prashant-singh-2026-06-06",
+      "rating": 2,
+      "text": "Very disappointing experience. The staff was unresponsive, and the overall process felt highly unorganized.",
+      "reviewerName": "Prashant Singh",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "branchId": "fifty-one-plus-noida",
+      "branchName": "FIFTY ONE PLUS LAB",
+      "reviewId": "fifty-one-plus-noida-radhe-radhe-2026-06-03",
+      "rating": 1,
+      "text": "Service bad",
+      "reviewerName": "Radhe Radhe",
+      "createdAt": "2026-06-03T00:00:00.000Z"
+    },
+    {
+      "branchId": "fifty-one-plus-meerut",
+      "branchName": "FIFTY ONE PLUS LAB",
+      "reviewId": "fifty-one-plus-meerut-utkarsh-rastogi-2026-05-27",
+      "rating": 1,
+      "text": "Irresponsible staff. Waited 1 hour after appointment",
+      "reviewerName": "UTKARSH RASTOGI",
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "branchId": "d-care-diagnostics",
+      "branchName": "D CARE Diagnostics",
+      "reviewId": "d-care-diagnostics-neha-maini-2026-05-22",
+      "rating": 1,
+      "text": "",
+      "reviewerName": "neha maini",
+      "createdAt": "2026-05-22T00:00:00.000Z"
+    },
+    {
+      "branchId": "red-diagnostics",
+      "branchName": "RED DIAGNOSTICS",
+      "reviewId": "red-diagnostics-rachna-arora-2026-05-12",
+      "rating": 1,
+      "text": "Highly unprofessional cheat customers. Multiple times I had to check myself for test coverage. Highly unethical and unreliable diagnostic centre.",
+      "reviewerName": "rachna Arora",
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "branchId": "chaitanya-lifecare",
+      "branchName": "Chaitanya LifeCare",
+      "reviewId": "chaitanya-lifecare-amit-singh-arora-2026-05-12",
+      "rating": 1,
+      "text": "",
+      "reviewerName": "Amit singh Arora",
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "branchId": "chaitanya-lifecare",
+      "branchName": "Chaitanya LifeCare",
+      "reviewId": "chaitanya-lifecare-radhika-2026-05-12",
+      "rating": 1,
+      "text": "Good",
+      "reviewerName": "Radhika",
+      "createdAt": "2026-05-12T00:00:00.000Z"
+    },
+    {
+      "branchId": "d-care-diagnostics",
+      "branchName": "D CARE Diagnostics",
+      "reviewId": "d-care-diagnostics-nitin-rajput-2026-05-11",
+      "rating": 2,
+      "text": "Good lab",
+      "reviewerName": "Nitin Rajput",
+      "createdAt": "2026-05-11T00:00:00.000Z"
+    }
+  ]
+}

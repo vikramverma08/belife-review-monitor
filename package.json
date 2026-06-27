@@ -1,0 +1,12 @@
+{
+  "name": "lab-review-monitor",
+  "version": "1.0.0",
+  "description": "Monitor Google reviews for lab branches via Outscraper — no Google billing, no card.",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "fetch": "node scripts/fetchReviews.js",
+    "serve": "node scripts/serve.js"
+  }
+}
