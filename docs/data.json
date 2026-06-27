@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-06-27T08:28:38.966Z",
+  "generatedAt": "2026-06-27T10:54:19.795Z",
   "branches": [
     {
       "id": "om-biocare",
       "name": "Om Biocare",
       "city": "",
-      "rating": 5,
-      "reviewCount": 724,
+      "rating": 4.9,
+      "reviewCount": 146,
       "reviews": [
         {
-          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kT2FFbDJlUzFTVTJ4RVVVMHRZMTlUWW10dlVsRRAB",
-          "reviewerName": "Raseena Niloffar",
+          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aTWREVnhNek5EWmxjeE5UaEVYMGhhV1ZKc2JtYxAB",
+          "reviewerName": "Dipak Doshi",
           "rating": 5,
-          "text": "I took a CRP blood test from Biocare Diagnostic Centre Lab. They provided home sample collection service, which was very convenient. The staff came on time and collected the blood sample in a safe and professional manner. I received the results quickly. The service was fast, hygienic, and reliable. I am very satisfied with their response and support. Highly recommended",
-          "publishTime": "2026-03-02T03:46:20.914281575Z",
+          "text": "Easy way of booking blood collection with personalised touch. Friendly technicians. On time collection. Exhaustive and comprehensive reports. Pricing is the most reasonable.",
+          "publishTime": "2026-06-03T05:06:05.830259526Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CYVRFMTFaM00yY0VGcE1uazVWbk5YVTFkUk5IYxAB",
-          "reviewerName": "Nandhini Jaya",
+          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pSM2FrcE9VRXB2UTNsWE1rc3dVVUV0TFU5MWFsRRAB",
+          "reviewerName": "ramanamurty malla",
           "rating": 5,
-          "text": "A lady who is so humble and quick i was gone to this lab due to nearby home for blood CBC count. She is very quick and no pain while taking the blood. I recommend this lab 100%✅ but make sure you done a phone call of lab is opened or not and then visit the place and surely the calls are answering at any time. THANK YOU BIOCARE",
-          "publishTime": "2026-05-23T12:14:52.456152561Z",
+          "text": "Extremely happy with over all service. Chetna reached our home early morning at appointed time at 12 hour notice and finished job.We are very happy with het dedication and communication skills. Thx",
+          "publishTime": "2026-01-24T13:08:32.057206860Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aMFh6ZGpXbWhmYVhSd01FUkJabmRLYzFwQk4wRRAB",
-          "reviewerName": "Sarath N",
+          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkcFpVRk5jbmhsVWpGRU1XUkNhbVJFWms1YVIyYxAB",
+          "reviewerName": "Jay Ash",
           "rating": 5,
-          "text": "The Friendliest Lab Experience You'll Find!\nI absolutely strongly recommend this lab for all your blood work and routine health checks. Dealing with health information can be stressful, but this team genuinely operates as a friendly, caring sanctuary.\nThey treat every patient like their own family member. What truly sets them apart is their incredible patience and dedication to clarity. If you’re worried about asking a \"silly\" question or needing something explained for the tenth time (a fear we all have when it comes to our health!), fear not! They never hesitate to walk you through the process and your results, ensuring you feel completely informed and at ease.\nThis is the place to go if you want professional care delivered with a huge dose of kindness",
-          "publishTime": "2025-11-14T15:45:57.266163062Z",
+          "text": "Very Good Service and timely reports...\nGood Efforts by Om Lab",
+          "publishTime": "2026-01-22T06:57:03.562754958Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKWVpIUjZTMmx2TVZCNFFsbEdOSHBMZW01TU9WRRAB",
-          "reviewerName": "Sekar Sangaiah",
+          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1b1dHUTVVamRHYmxKRmREZzJNRU0xVG5ka1gwRRAB",
+          "reviewerName": "Rajkamal Shah",
           "rating": 5,
-          "text": "It is a very good budget friendly lab. The lady is very customer friendly and pleasant. She comes home promptly to collect the blood sample free of cost and informs you over phone when the report is ready. Very nice experience",
-          "publishTime": "2026-01-08T05:54:20.305113582Z",
+          "text": "Good & polite person who came to collect sample for examination, faster delivery of reports",
+          "publishTime": "2026-02-05T16:56:35.381115639Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25keE1sbHBSMlI1ZGtSalFUWXhkWEZoVEVwWGQyYxAB",
-          "reviewerName": "Sangeetha Thiyagarajan",
+          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21rdFRIbHBORUl4Vkhwak5XMXZMVWhmVkVwRVRVRRAB",
+          "reviewerName": "Darshan Bhagat",
           "rating": 5,
-          "text": "I searched for “best blood test lab near me” online and that’s how I found Biocare Diagnostic Lab. I stay in Pallavaram, so the location was very convenient. Their master health checkup was very accurate and the reports were delivered quickly without any delay. The best part is that the cost is very affordable compared to other labs. The home sample collection was smooth, hygienic and the staff were friendly. I’m very satisfied and highly recommend Biocare Lab for anyone looking for reliable and trustworthy blood test services near Pallavaram.",
-          "publishTime": "2025-11-15T17:17:49.578059988Z",
+          "text": "VERY GOOD LAB. SPECIAL SERVICE DOOR TO DOOR AVAILABLE, AND TIE UP WITH CA IS GOOD, REASONABLE AND GOOD PACKAGE.",
+          "publishTime": "2025-10-09T07:18:56.951457431Z",
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:21.991Z"
+      "lastSyncedAt": "2026-06-27T10:54:02.939Z"
     },
     {
       "id": "tridot-care",
@@ -99,7 +99,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:22.743Z"
+      "lastSyncedAt": "2026-06-27T10:54:03.662Z"
     },
     {
       "id": "ai-healthcare",
@@ -149,7 +149,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:23.480Z"
+      "lastSyncedAt": "2026-06-27T10:54:04.384Z"
     },
     {
       "id": "prakash-path-lab",
@@ -199,7 +199,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:24.208Z"
+      "lastSyncedAt": "2026-06-27T10:54:05.109Z"
     },
     {
       "id": "accured-diagnostics",
@@ -249,7 +249,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:24.939Z"
+      "lastSyncedAt": "2026-06-27T10:54:05.840Z"
     },
     {
       "id": "nt-pro-lab",
@@ -299,7 +299,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:25.682Z"
+      "lastSyncedAt": "2026-06-27T10:54:06.601Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
@@ -349,7 +349,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:26.482Z"
+      "lastSyncedAt": "2026-06-27T10:54:07.381Z"
     },
     {
       "id": "bharatiya-path-lab",
@@ -399,7 +399,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:27.208Z"
+      "lastSyncedAt": "2026-06-27T10:54:08.113Z"
     },
     {
       "id": "nirog-labcare",
@@ -449,7 +449,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:27.940Z"
+      "lastSyncedAt": "2026-06-27T10:54:08.826Z"
     },
     {
       "id": "eezee-pathlabs",
@@ -499,7 +499,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:28.685Z"
+      "lastSyncedAt": "2026-06-27T10:54:09.540Z"
     },
     {
       "id": "red-diagnostics",
@@ -549,25 +549,57 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:29.414Z"
+      "lastSyncedAt": "2026-06-27T10:54:10.255Z"
     },
     {
       "id": "serum-inc",
       "name": "SERUM Inc.",
       "city": "",
-      "rating": 5,
-      "reviewCount": 1,
+      "rating": 3.4,
+      "reviewCount": 65,
       "reviews": [
         {
-          "reviewId": "places/ChIJy0LNtefnDDkRNE09dZSUkG8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSclNHRkRZemxFY1Y4ellrRnRNWFZ2V0hCR05VRRAB",
-          "reviewerName": "Dinesh Kumar",
-          "rating": 5,
-          "text": "Good service",
-          "publishTime": "2026-06-05T04:27:43.892142975Z",
+          "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VQRDg2X25ldmM2S2dnRRAB",
+          "reviewerName": "Kausar Mustafa",
+          "rating": 1,
+          "text": "I had a very disappointing experience at SERUM Analysis Centre, Asansol. As a chronic kidney patient, I received a blood report from this lab showing my serum phosphate level as 9.02 mg/dL, which was dangerously high and caused a lot of stress and unnecessary expenses for repeat tests and scans. When I got retested at Healthworld Hospitals Asansol, my phosphate level was 3.32 mg/dL-completely normal-and my doctor confirmed the first report was clearly wrong. After checking the NABL official database, I found that the Asansol branch of SERUM is NOT NABL-accredited, even though the group advertises NABL certification. Such errors and misleading claims are unacceptable for a diagnostic lab. I strongly advise others to be cautious and always verify reports and certifications before making medical decisions.",
+          "publishTime": "2025-05-22T17:56:58.859491Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VJQ0FnSUNxMFl1Y29RRRAB",
+          "reviewerName": "Santwana Naskar",
+          "rating": 1,
+          "text": "Worst service provider. Extremely high costs. This place is covered under CGHS( Central Government Health Scheme) for central government employees and pensioners. But the management first misguides and then refuses to work under CGHS. A complain should be registered at respected offices",
+          "publishTime": "2021-06-10T04:16:03.232199Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VJQ0FnSURxOC1YU2dRRRAB",
+          "reviewerName": "Bharati Das",
+          "rating": 1,
+          "text": "It is under CGHS. But it is quite strange that they ask the card holder for OTP sent to card holder's mobile registered for CGHS.  Actually no OTP should be shared with others. OTP is for mobile owner only. Then why shold it be shared with counter person?. It is simply misguiding, Even cheating is possible also. Therefore patient party should be careful about this. The behaviour of the receptionist is not well mannered.",
+          "publishTime": "2021-07-16T06:22:33.008176Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChZDSUhNMG9nS0VJQ0FnSURyanBudE9BEAE",
+          "reviewerName": "A.M.Faizur Rahman",
+          "rating": 2,
+          "text": "Careless  centre. I 've a bitter and tremendous experience. When the report of another diagnostic centre is normal SERUM sent me the report of acute leukaemia i.e. cancer.",
+          "publishTime": "2024-07-17T14:01:21.417930Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VJQ0FnSURXOGJQaGx3RRAB",
+          "reviewerName": "Oindrila Mukherjee",
+          "rating": 4,
+          "text": "Blood test usg tests done nicely and accurate reports. USG is 1350rs total lesser than many places here. Clean place,maintaining covid protocols as well",
+          "publishTime": "2022-03-27T17:48:37.721444Z",
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:30.117Z"
+      "lastSyncedAt": "2026-06-27T10:54:10.933Z"
     },
     {
       "id": "my-choice-lab",
@@ -617,7 +649,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:30.803Z"
+      "lastSyncedAt": "2026-06-27T10:54:11.646Z"
     },
     {
       "id": "surbhi-care",
@@ -667,7 +699,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:31.509Z"
+      "lastSyncedAt": "2026-06-27T10:54:12.342Z"
     },
     {
       "id": "d-care-diagnostics",
@@ -717,7 +749,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:32.226Z"
+      "lastSyncedAt": "2026-06-27T10:54:13.038Z"
     },
     {
       "id": "fifty-one-plus-noida",
@@ -767,14 +799,14 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:32.941Z"
+      "lastSyncedAt": "2026-06-27T10:54:13.753Z"
     },
     {
       "id": "vachana-diagnostic",
       "name": "Vachana Diagnostic Laboratory",
       "city": "",
       "rating": 4.7,
-      "reviewCount": 7185,
+      "reviewCount": 7189,
       "reviews": [
         {
           "reviewId": "places/ChIJkfjn3NDXuDsRl8VySSXCmbw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tGWkxUTk9kMFJ2YTNGWFVHRkVla05PT1RSMVpuYxAB",
@@ -817,7 +849,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:33.666Z"
+      "lastSyncedAt": "2026-06-27T10:54:14.471Z"
     },
     {
       "id": "fifty-one-plus-meerut",
@@ -867,64 +899,64 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:34.390Z"
+      "lastSyncedAt": "2026-06-27T10:54:15.203Z"
     },
     {
       "id": "prime-diagnostic",
       "name": "Prime Diagnostic Pathology",
       "city": "",
       "rating": 4.9,
-      "reviewCount": 91,
+      "reviewCount": 109,
       "reviews": [
         {
-          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OeU4yODBWV2RSZG1aeWMwSnRTa0ZyVnpkQlpXYxAB",
-          "reviewerName": "KAPISH KUMAR",
+          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkSVkybzViVFpwVVVZME4wdFZiME01V0dnMFRWRRAB",
+          "reviewerName": "Sanjeet Vishwakarma",
           "rating": 5,
-          "text": "Mr subash today visit my residence for some lab tests and basic medical detail very good behaviour coperative staff thank you mr subash for helping",
-          "publishTime": "2026-05-18T05:35:35.006628443Z",
+          "text": "Best lab in this area, very low rate compared to other labs in surrounding area. They give discounts also. Staff is also polite and well trained. Toilet is clean and hygienic. Lab is managed by pathologist himself so report authenticity is top class. I will definitely recommend it.",
+          "publishTime": "2025-12-02T08:02:12.369942972Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21oMWMwcExPVTVwU21kWlFVUTRhRk5pTTB0TldVRRAB",
-          "reviewerName": "ankur atri",
-          "rating": 4,
-          "text": "Very good experience with mr. Subhash\nHe was very professional and samples were taken without any pain",
-          "publishTime": "2026-05-04T03:59:01.146294208Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT205aU5YQXhkVWxWUW1kWGNESmhXRmc1YW1WRU9HYxAB",
-          "reviewerName": "Ashendra Singh",
+          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CMVducFdTRTQ1YVdKTmFXcHVZbkpQTkV4RVZWRRAB",
+          "reviewerName": "Diksha Mohit",
           "rating": 5,
-          "text": "Health check up was done smoothly without any issue. Dharmendra reached on time for the check. His behaviour is very good and much professional.",
-          "publishTime": "2025-09-20T07:38:56.735155899Z",
+          "text": "Very prompt in providing reports on whatsapp as well. Accept online payments and on door tests with minimum charges. Highly skilled technicians and lab work is accurate. Dr. Dhiraj sir is very polite and kind. Highly recommended.",
+          "publishTime": "2025-10-31T09:28:15.582621211Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tGM1pUbDNRVjlaZG5sTVQxZDZWSGR6Ykc1UVZGRRAB",
-          "reviewerName": "Abhisek Sarkar (Abhisek)",
+          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT201dFlYQjVSR3R3TTNob1pYVmlRbGhyYXpWa05rRRAB",
+          "reviewerName": "Komal Aher",
           "rating": 5,
-          "text": "Very Good service, quick and nice behaviour. 100% recommendation",
-          "publishTime": "2026-05-11T01:30:46.048117033Z",
+          "text": "Quick, supportive and helfpul.\nHad a smooth experience at the pathology lab—polite and helpful staff, clean and well-organized facility, quick and almost painless blood draw, and reports delivered within a day.",
+          "publishTime": "2026-01-20T09:51:59.893183152Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
-          "reviewerName": "yash jain",
-          "rating": 1,
-          "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
-          "publishTime": "2026-01-10T06:16:13.800982140Z",
-          "sentiment": "negative"
+          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xWWVVWWmhVMGxLYmpreVRqVTBPVTlmTmtSTlVIYxAB",
+          "reviewerName": "J C",
+          "rating": 5,
+          "text": "Recently visited this pathology lab for some routine tests, and overall, I had a smooth experience. The staff were polite and helpful, they explained the process clearly and made me feel comfortable. The place was clean and well-organized, which gave me confidence in their standards. The blood draw was quick and almost painless and I got my reports within a day. They also sent everything over whats app, so I didn’t have to go back just to collect the results. I would definitely recommend it to my family and friends",
+          "publishTime": "2025-12-03T15:42:50.816365877Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sUFlucDNhRFJZU1RaUmRIUXhjemRTWlV0ZlZHYxAB",
+          "reviewerName": "Mahendra Tayade",
+          "rating": 5,
+          "text": "Very good pathology lab in thane savarkar nagar. Cheapest in this area and gave very good discount. Got accurate reports and on time. I will definitely recommend it.",
+          "publishTime": "2026-02-08T10:08:11.516576225Z",
+          "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:35.087Z"
+      "lastSyncedAt": "2026-06-27T10:54:15.904Z"
     },
     {
       "id": "dayal-diagnostic",
       "name": "DAYAL DIAGNOSTIC CENTER",
       "city": "",
       "rating": 4.3,
-      "reviewCount": 37,
+      "reviewCount": 36,
       "reviews": [
         {
           "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5SmEyZDZhV3g2UkdNMWMzUjFMVk5aT0hOUVVYYxAB",
@@ -967,7 +999,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:35.772Z"
+      "lastSyncedAt": "2026-06-27T10:54:16.615Z"
     },
     {
       "id": "chaitanya-lifecare",
@@ -1017,7 +1049,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:36.465Z"
+      "lastSyncedAt": "2026-06-27T10:54:17.285Z"
     },
     {
       "id": "fifty-one-plus-delhi",
@@ -1067,7 +1099,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:37.162Z"
+      "lastSyncedAt": "2026-06-27T10:54:18.005Z"
     },
     {
       "id": "konica-imaging",
@@ -1117,7 +1149,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:37.858Z"
+      "lastSyncedAt": "2026-06-27T10:54:18.690Z"
     },
     {
       "id": "amino-diagnostics",
@@ -1167,7 +1199,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T08:28:38.566Z"
+      "lastSyncedAt": "2026-06-27T10:54:19.395Z"
     }
   ],
   "alerts": [
@@ -1179,6 +1211,42 @@
       "text": "Highly unprofessional cheat customers I shared doctor prescription with all test details to be done and asked for price asking ensure all test are covered but these people are fraudsters multiple times I had to check myself for test coverage and they were trying to collect money without covering test and now when I visited doctor came to know that test not covered and when I message see attached response highly unethical and unreliable diagnostic centre will not recommend anyone going forward",
       "reviewerName": "rachna Arora",
       "createdAt": "2026-05-12T12:42:00.229243041Z"
+    },
+    {
+      "branchId": "serum-inc",
+      "branchName": "SERUM Inc.",
+      "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VQRDg2X25ldmM2S2dnRRAB",
+      "rating": 1,
+      "text": "I had a very disappointing experience at SERUM Analysis Centre, Asansol. As a chronic kidney patient, I received a blood report from this lab showing my serum phosphate level as 9.02 mg/dL, which was dangerously high and caused a lot of stress and unnecessary expenses for repeat tests and scans. When I got retested at Healthworld Hospitals Asansol, my phosphate level was 3.32 mg/dL-completely normal-and my doctor confirmed the first report was clearly wrong. After checking the NABL official database, I found that the Asansol branch of SERUM is NOT NABL-accredited, even though the group advertises NABL certification. Such errors and misleading claims are unacceptable for a diagnostic lab. I strongly advise others to be cautious and always verify reports and certifications before making medical decisions.",
+      "reviewerName": "Kausar Mustafa",
+      "createdAt": "2025-05-22T17:56:58.859491Z"
+    },
+    {
+      "branchId": "serum-inc",
+      "branchName": "SERUM Inc.",
+      "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VJQ0FnSUNxMFl1Y29RRRAB",
+      "rating": 1,
+      "text": "Worst service provider. Extremely high costs. This place is covered under CGHS( Central Government Health Scheme) for central government employees and pensioners. But the management first misguides and then refuses to work under CGHS. A complain should be registered at respected offices",
+      "reviewerName": "Santwana Naskar",
+      "createdAt": "2021-06-10T04:16:03.232199Z"
+    },
+    {
+      "branchId": "serum-inc",
+      "branchName": "SERUM Inc.",
+      "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChdDSUhNMG9nS0VJQ0FnSURxOC1YU2dRRRAB",
+      "rating": 1,
+      "text": "It is under CGHS. But it is quite strange that they ask the card holder for OTP sent to card holder's mobile registered for CGHS.  Actually no OTP should be shared with others. OTP is for mobile owner only. Then why shold it be shared with counter person?. It is simply misguiding, Even cheating is possible also. Therefore patient party should be careful about this. The behaviour of the receptionist is not well mannered.",
+      "reviewerName": "Bharati Das",
+      "createdAt": "2021-07-16T06:22:33.008176Z"
+    },
+    {
+      "branchId": "serum-inc",
+      "branchName": "SERUM Inc.",
+      "reviewId": "places/ChIJ7e-MfDB2AjoRT38CGHU-CKU/reviews/ChZDSUhNMG9nS0VJQ0FnSURyanBudE9BEAE",
+      "rating": 2,
+      "text": "Careless  centre. I 've a bitter and tremendous experience. When the report of another diagnostic centre is normal SERUM sent me the report of acute leukaemia i.e. cancer.",
+      "reviewerName": "A.M.Faizur Rahman",
+      "createdAt": "2024-07-17T14:01:21.417930Z"
     },
     {
       "branchId": "fifty-one-plus-noida",
@@ -1215,15 +1283,6 @@
       "text": "⭐ (1 star — would give zero if possible)\n\nOne of the worst medical experiences we have ever had. My father is a cancer and diabetes patient, and we travelled 50km from Mundgod for a scan at this centre — every single phase was a struggle.\n\nAppointment booking: We called 2 days in advance to get a confirmed time so we could arrange a driver and plan the journey. Instead of a straight answer, they kept brushing us off — \"call in the evening,\" \"call in the morning,\" \"call tomorrow.\" Despite this, we still paid the advance in good faith.\n\nZero instructions: No one bothered to tell us basic pre-scan instructions — empty stomach or not? Water allowed or not? For a cancer patient undergoing a contrast scan, this is not optional information. We had to figure it out ourselves.\n\nAppointment time was meaningless: They finally confirmed 7:30 AM and told us to do the blood test at their facility before the scan. We reached on time in the early morning — the centre was empty except for ONE person sleeping on the sofa, who turned out to be staff. He kept saying \"come at 8,\" then \"come at 8:30,\" with zero care or clarity.\n\n2-hour wait for a sick, fasting patient: The actual staff arrived only at 8:30 AM. My elderly father — a cancer and diabetes patient — was made to wait nearly 2 hours on an empty stomach because of their delay.\n\nNo guidance, no coordination: Even for standard parts of the process like the contrast, we had to ASK for every single step. Nobody walked us through anything.\n\nStaff only care about money: The counter staff were actively attending to other patients only for payment collection. Every time we asked what the next step was, we were ignored.\n\nReports never delivered: We were officially told the reports would be available within 4 hours. It has now been over a DAY. We have been calling them repeatedly and still haven't received the reports. For a cancer patient whose treatment decisions depend on these reports, this is unacceptable and borderline negligent.\n\nAppointments here mean nothing. Instructions are non-existent. Staff are indifferent to patient condition. Reports are not delivered on time. Please do not bring a seriously ill family member here expecting basic standards of care.",
       "reviewerName": "Abhishek Hegde",
       "createdAt": "2026-04-20T04:06:57.730193496Z"
-    },
-    {
-      "branchId": "prime-diagnostic",
-      "branchName": "Prime Diagnostic Pathology",
-      "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
-      "rating": 1,
-      "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
-      "reviewerName": "yash jain",
-      "createdAt": "2026-01-10T06:16:13.800982140Z"
     },
     {
       "branchId": "dayal-diagnostic",
