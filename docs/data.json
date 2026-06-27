@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-06-27T06:22:27.253Z",
+  "generatedAt": "2026-06-27T08:28:38.966Z",
   "branches": [
     {
       "id": "om-biocare",
       "name": "Om Biocare",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 146,
+      "rating": 5,
+      "reviewCount": 724,
       "reviews": [
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aTWREVnhNek5EWmxjeE5UaEVYMGhhV1ZKc2JtYxAB",
-          "reviewerName": "Dipak Doshi",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kT2FFbDJlUzFTVTJ4RVVVMHRZMTlUWW10dlVsRRAB",
+          "reviewerName": "Raseena Niloffar",
           "rating": 5,
-          "text": "Easy way of booking blood collection with personalised touch. Friendly technicians. On time collection. Exhaustive and comprehensive reports. Pricing is the most reasonable.",
-          "publishTime": "2026-06-03T05:06:05.830259526Z",
+          "text": "I took a CRP blood test from Biocare Diagnostic Centre Lab. They provided home sample collection service, which was very convenient. The staff came on time and collected the blood sample in a safe and professional manner. I received the results quickly. The service was fast, hygienic, and reliable. I am very satisfied with their response and support. Highly recommended",
+          "publishTime": "2026-03-02T03:46:20.914281575Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pSM2FrcE9VRXB2UTNsWE1rc3dVVUV0TFU5MWFsRRAB",
-          "reviewerName": "ramanamurty malla",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CYVRFMTFaM00yY0VGcE1uazVWbk5YVTFkUk5IYxAB",
+          "reviewerName": "Nandhini Jaya",
           "rating": 5,
-          "text": "Extremely happy with over all service. Chetna reached our home early morning at appointed time at 12 hour notice and finished job.We are very happy with het dedication and communication skills. Thx",
-          "publishTime": "2026-01-24T13:08:32.057206860Z",
+          "text": "A lady who is so humble and quick i was gone to this lab due to nearby home for blood CBC count. She is very quick and no pain while taking the blood. I recommend this lab 100%✅ but make sure you done a phone call of lab is opened or not and then visit the place and surely the calls are answering at any time. THANK YOU BIOCARE",
+          "publishTime": "2026-05-23T12:14:52.456152561Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkcFpVRk5jbmhsVWpGRU1XUkNhbVJFWms1YVIyYxAB",
-          "reviewerName": "Jay Ash",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aMFh6ZGpXbWhmYVhSd01FUkJabmRLYzFwQk4wRRAB",
+          "reviewerName": "Sarath N",
           "rating": 5,
-          "text": "Very Good Service and timely reports...\nGood Efforts by Om Lab",
-          "publishTime": "2026-01-22T06:57:03.562754958Z",
+          "text": "The Friendliest Lab Experience You'll Find!\nI absolutely strongly recommend this lab for all your blood work and routine health checks. Dealing with health information can be stressful, but this team genuinely operates as a friendly, caring sanctuary.\nThey treat every patient like their own family member. What truly sets them apart is their incredible patience and dedication to clarity. If you’re worried about asking a \"silly\" question or needing something explained for the tenth time (a fear we all have when it comes to our health!), fear not! They never hesitate to walk you through the process and your results, ensuring you feel completely informed and at ease.\nThis is the place to go if you want professional care delivered with a huge dose of kindness",
+          "publishTime": "2025-11-14T15:45:57.266163062Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1b1dHUTVVamRHYmxKRmREZzJNRU0xVG5ka1gwRRAB",
-          "reviewerName": "Rajkamal Shah",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKWVpIUjZTMmx2TVZCNFFsbEdOSHBMZW01TU9WRRAB",
+          "reviewerName": "Sekar Sangaiah",
           "rating": 5,
-          "text": "Good & polite person who came to collect sample for examination, faster delivery of reports",
-          "publishTime": "2026-02-05T16:56:35.381115639Z",
+          "text": "It is a very good budget friendly lab. The lady is very customer friendly and pleasant. She comes home promptly to collect the blood sample free of cost and informs you over phone when the report is ready. Very nice experience",
+          "publishTime": "2026-01-08T05:54:20.305113582Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21rdFRIbHBORUl4Vkhwak5XMXZMVWhmVkVwRVRVRRAB",
-          "reviewerName": "Darshan Bhagat",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25keE1sbHBSMlI1ZGtSalFUWXhkWEZoVEVwWGQyYxAB",
+          "reviewerName": "Sangeetha Thiyagarajan",
           "rating": 5,
-          "text": "VERY GOOD LAB. SPECIAL SERVICE DOOR TO DOOR AVAILABLE, AND TIE UP WITH CA IS GOOD, REASONABLE AND GOOD PACKAGE.",
-          "publishTime": "2025-10-09T07:18:56.951457431Z",
+          "text": "I searched for “best blood test lab near me” online and that’s how I found Biocare Diagnostic Lab. I stay in Pallavaram, so the location was very convenient. Their master health checkup was very accurate and the reports were delivered quickly without any delay. The best part is that the cost is very affordable compared to other labs. The home sample collection was smooth, hygienic and the staff were friendly. I’m very satisfied and highly recommend Biocare Lab for anyone looking for reliable and trustworthy blood test services near Pallavaram.",
+          "publishTime": "2025-11-15T17:17:49.578059988Z",
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:10.378Z"
+      "lastSyncedAt": "2026-06-27T08:28:21.991Z"
     },
     {
       "id": "tridot-care",
@@ -99,7 +99,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:11.113Z"
+      "lastSyncedAt": "2026-06-27T08:28:22.743Z"
     },
     {
       "id": "ai-healthcare",
@@ -149,7 +149,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:11.832Z"
+      "lastSyncedAt": "2026-06-27T08:28:23.480Z"
     },
     {
       "id": "prakash-path-lab",
@@ -199,7 +199,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:12.586Z"
+      "lastSyncedAt": "2026-06-27T08:28:24.208Z"
     },
     {
       "id": "accured-diagnostics",
@@ -249,7 +249,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:13.326Z"
+      "lastSyncedAt": "2026-06-27T08:28:24.939Z"
     },
     {
       "id": "nt-pro-lab",
@@ -299,7 +299,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:14.080Z"
+      "lastSyncedAt": "2026-06-27T08:28:25.682Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
@@ -349,7 +349,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:14.843Z"
+      "lastSyncedAt": "2026-06-27T08:28:26.482Z"
     },
     {
       "id": "bharatiya-path-lab",
@@ -399,7 +399,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:15.597Z"
+      "lastSyncedAt": "2026-06-27T08:28:27.208Z"
     },
     {
       "id": "nirog-labcare",
@@ -449,7 +449,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:16.324Z"
+      "lastSyncedAt": "2026-06-27T08:28:27.940Z"
     },
     {
       "id": "eezee-pathlabs",
@@ -499,7 +499,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:17.046Z"
+      "lastSyncedAt": "2026-06-27T08:28:28.685Z"
     },
     {
       "id": "red-diagnostics",
@@ -549,57 +549,25 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:17.774Z"
+      "lastSyncedAt": "2026-06-27T08:28:29.414Z"
     },
     {
       "id": "serum-inc",
       "name": "SERUM Inc.",
       "city": "",
-      "rating": 4.7,
-      "reviewCount": 382,
+      "rating": 5,
+      "reviewCount": 1,
       "reviews": [
         {
-          "reviewId": "places/ChIJ_y3nTFvAwjsRQoULF0oN24A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNpdnFIYm1RRRAB",
-          "reviewerName": "Rohit Maradkar",
+          "reviewId": "places/ChIJy0LNtefnDDkRNE09dZSUkG8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSclNHRkRZemxFY1Y4ellrRnRNWFZ2V0hCR05VRRAB",
+          "reviewerName": "Dinesh Kumar",
           "rating": 5,
-          "text": "Serum Institute of India Pvt. Ltd. is now the world's largest vaccine manufacturer by number of doses produced and sold globally (more than 1.5 billion doses) which includes Polio vaccine as well as Diphtheria, Tetanus, Pertussis, Hib, BCG, r-Hepatitis B, Measles, Mumps and Rubella vaccines.\nSerum Institute of India is ranked as India's No. 1 biotechnology company, manufacturing highly specialized life saving biologicals like vaccines using cutting edge genetic and cell based technologies, antisera and other medical specialties.",
-          "publishTime": "2020-11-04T05:30:18.583096Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJ_y3nTFvAwjsRQoULF0oN24A/reviews/ChZDSUhNMG9nS0VJQ0FnSURTOGNURFNBEAE",
-          "reviewerName": "Sagar Pathade",
-          "rating": 5,
-          "text": "World largest vaccine manufacturer company. Apart from this, I like this place for morning walk.",
-          "publishTime": "2020-12-30T04:26:56.529191Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJ_y3nTFvAwjsRQoULF0oN24A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNYX3Vpa3BBRRAB",
-          "reviewerName": "Kamlesh Shirude",
-          "rating": 5,
-          "text": "An astonishing culture of the serum organisation which is followed by the good clinical and manufacturing practices, in the era of technology serum is growing at the pace of magnificent management and social work towards the society",
-          "publishTime": "2024-10-17T05:07:02.720809Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJ_y3nTFvAwjsRQoULF0oN24A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNPem95LTN3RRAB",
-          "reviewerName": "Manish Agarwal",
-          "rating": 1,
-          "text": "Today I called their customer care number to inform them that in their own city there is not a single hospital which is preferring their covovax kids vaccine due to arrangements of atleast 10 kids for it. Requested them to find out a way by which number of vials in a set could bring down to 5 so that it could be easy and win win situation for all.\nAt this customer support guy said bluntly, we are here to solve world's problem not yours. I said I am also part of world and in your own city people are struggling to get your vaccine then how will you solve world's problem. Better you could find out some way so that your vaccination rate could be improved as 99% kids are getting only corbevax due to your set of 10 vaccines.\nIt felt like they have already earned billions from covishield and now in no mood to see reality outside and speaking with too much ego and bluntly replying without listening properly. Anyway with hardly 1% vaccination rate in their own city if they think they are solving world's problem that let them live in day dreams.\n\nBy the way, when I was talking to my friend in Australia, he said covishield is the last option considered here when someone need urgently and no other vaccine available at that moment. He himself didn't take it.",
-          "publishTime": "2022-06-10T05:20:59.804945Z",
-          "sentiment": "negative"
-        },
-        {
-          "reviewId": "places/ChIJ_y3nTFvAwjsRQoULF0oN24A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNDMGVLRjl3RRAB",
-          "reviewerName": "joseph mathew",
-          "rating": 5,
-          "text": "The Serum Institute of India has been around for decades and everyone knows it in the area. Over the past 6 months , the world has been introduced to SII. The premises are maintained spotlessly. The team at SII clearly understand what is at stake and take a lot of care in ensuring that there is a lot of attention to detail, be it the paperwork, the SOP's , the follow-up and the meticulous adherence to public health protocols.",
-          "publishTime": "2020-08-26T11:21:02.521018Z",
+          "text": "Good service",
+          "publishTime": "2026-06-05T04:27:43.892142975Z",
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:18.470Z"
+      "lastSyncedAt": "2026-06-27T08:28:30.117Z"
     },
     {
       "id": "my-choice-lab",
@@ -649,7 +617,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:19.176Z"
+      "lastSyncedAt": "2026-06-27T08:28:30.803Z"
     },
     {
       "id": "surbhi-care",
@@ -699,7 +667,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:19.869Z"
+      "lastSyncedAt": "2026-06-27T08:28:31.509Z"
     },
     {
       "id": "d-care-diagnostics",
@@ -749,7 +717,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:20.591Z"
+      "lastSyncedAt": "2026-06-27T08:28:32.226Z"
     },
     {
       "id": "fifty-one-plus-noida",
@@ -799,14 +767,14 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:21.311Z"
+      "lastSyncedAt": "2026-06-27T08:28:32.941Z"
     },
     {
       "id": "vachana-diagnostic",
       "name": "Vachana Diagnostic Laboratory",
       "city": "",
       "rating": 4.7,
-      "reviewCount": 7181,
+      "reviewCount": 7185,
       "reviews": [
         {
           "reviewId": "places/ChIJkfjn3NDXuDsRl8VySSXCmbw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tGWkxUTk9kMFJ2YTNGWFVHRkVla05PT1RSMVpuYxAB",
@@ -849,7 +817,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:22.003Z"
+      "lastSyncedAt": "2026-06-27T08:28:33.666Z"
     },
     {
       "id": "fifty-one-plus-meerut",
@@ -899,57 +867,57 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:22.709Z"
+      "lastSyncedAt": "2026-06-27T08:28:34.390Z"
     },
     {
       "id": "prime-diagnostic",
       "name": "Prime Diagnostic Pathology",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 5612,
+      "rating": 4.9,
+      "reviewCount": 91,
       "reviews": [
         {
-          "reviewId": "places/ChIJRdNcgQ3tDzkRK4Ow7X-5Q9E/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GYVVXZEROVXRVVG0xc1lqazJZV05EWVRkVE5YYxAB",
-          "reviewerName": "Bal Raj Bnu",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OeU4yODBWV2RSZG1aeWMwSnRTa0ZyVnpkQlpXYxAB",
+          "reviewerName": "KAPISH KUMAR",
           "rating": 5,
-          "text": "My wife recently underwent  fetal echocardiography at Prime Diagnostic Centre done by Dr UP Singh and we had a very positive experience. The staff was polite, professional, and supportive throughout the visit. The doctors took the time to explain the findings clearly and answered our questions patiently, which gave us a lot of reassurance.\nThe centre was clean, well-maintained, and efficiently managed. The scans were performed thoroughly, and the reports were provided promptly. We are very satisfied with the quality of care and service we received.\nHighly recommended for expecting parents looking for reliable prenatal scans and fetal assessment services.",
-          "publishTime": "2026-06-02T04:17:44.987530797Z",
+          "text": "Mr subash today visit my residence for some lab tests and basic medical detail very good behaviour coperative staff thank you mr subash for helping",
+          "publishTime": "2026-05-18T05:35:35.006628443Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJRdNcgQ3tDzkRK4Ow7X-5Q9E/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tNMFN6TlpiMmhJUkhoalpHOUtWbGQ0WVc1UGRrRRAB",
-          "reviewerName": "Aprajita Kohli",
-          "rating": 5,
-          "text": "I got my foetal echo done, by Dr UP Singh, cardiologist. And the process was very smooth and met all the expectations.\n\nI had my NT scan done at Prime Diagnostic by Dr Meetan , and my experience was truly excellent.\n\nThe clinic was extremely clean, well-maintained, and everything was handled right on time without any delays.\n\nAlso special word for Rimpy Bhatia,, she has been coordinating things so well at prime. You can meet her when you get to prime centre and she will help you with any questions and process. Also she is very warm, and welcoming towards all patients. A must for anyone coordinating with medical.\n\nThe entire staff is warm, patient, and very professional. They made me feel comfortable throughout the process and explained everything clearly, which really helped ease my nerves. The Dr Meetan was also wonderful, gentle, and reassuring.\n\nI’m very happy with the care I received and highly recommend Prime Diagnostic to anyone looking for a reliable and well-managed diagnostic centre, especially for pregnancy-related scans.\n\nI would highly recommend, this place. Please visit for detailed information and analysis of your health.",
-          "publishTime": "2026-05-28T07:01:16.811193460Z",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21oMWMwcExPVTVwU21kWlFVUTRhRk5pTTB0TldVRRAB",
+          "reviewerName": "ankur atri",
+          "rating": 4,
+          "text": "Very good experience with mr. Subhash\nHe was very professional and samples were taken without any pain",
+          "publishTime": "2026-05-04T03:59:01.146294208Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJRdNcgQ3tDzkRK4Ow7X-5Q9E/reviews/Ci9DQUlRQUNvZENodHljRjlvT25kZlprdEVSa3MwZUhabGFHUkJSWEUwU21ObFpsRRAB",
-          "reviewerName": "Sanjana Negi",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT205aU5YQXhkVWxWUW1kWGNESmhXRmc1YW1WRU9HYxAB",
+          "reviewerName": "Ashendra Singh",
           "rating": 5,
-          "text": "it was great experience… good service… staff polite behaviour with patient… neat & clean hospitality… dr. UP SINGH done the ultrasound , nice behaviour with patient…",
-          "publishTime": "2026-05-30T07:44:34.632901367Z",
+          "text": "Health check up was done smoothly without any issue. Dharmendra reached on time for the check. His behaviour is very good and much professional.",
+          "publishTime": "2025-09-20T07:38:56.735155899Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJRdNcgQ3tDzkRK4Ow7X-5Q9E/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwTVFuRkZPVTV6T0ZGSldEZFBUVU5OVWpZMVQwRRAB",
-          "reviewerName": "Surinder Shanker Anand",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tGM1pUbDNRVjlaZG5sTVQxZDZWSGR6Ykc1UVZGRRAB",
+          "reviewerName": "Abhisek Sarkar (Abhisek)",
           "rating": 5,
-          "text": "Had a very good experience at Prime Diagnostic, Sector 24. The staff was courteous, professional, and helpful throughout the process. The facility is clean, well-organized, and equipped with modern diagnostic equipment. The tests were conducted efficiently, and the reports were delivered on time. The doctors and technicians explained everything clearly, making the entire experience comfortable and hassle-free. An added advantage is the ample free parking space, which makes visiting the center very convenient. Highly recommended for reliable and accurate diagnostic services.",
-          "publishTime": "2026-05-30T01:34:32.660308227Z",
+          "text": "Very Good service, quick and nice behaviour. 100% recommendation",
+          "publishTime": "2026-05-11T01:30:46.048117033Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJRdNcgQ3tDzkRK4Ow7X-5Q9E/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tFdFRsWnNPWG95UTJKcGRrZDVXbFkyWWs5a1YzYxAB",
-          "reviewerName": "Shefali Rana",
-          "rating": 5,
-          "text": "I had a very positive experience at Prime Diagnostic. The staff was courteous, professional, and extremely helpful throughout the process. The appointment was handled smoothly, and there was minimal waiting time.\n\nThe facility was clean and well-maintained, which made the overall experience comfortable and reassuring. The medical team ensured clear communication and explained the procedure properly, which I truly appreciated.",
-          "publishTime": "2026-02-25T05:28:11.707293296Z",
-          "sentiment": "positive"
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
+          "reviewerName": "yash jain",
+          "rating": 1,
+          "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
+          "publishTime": "2026-01-10T06:16:13.800982140Z",
+          "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:23.400Z"
+      "lastSyncedAt": "2026-06-27T08:28:35.087Z"
     },
     {
       "id": "dayal-diagnostic",
@@ -999,7 +967,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:24.086Z"
+      "lastSyncedAt": "2026-06-27T08:28:35.772Z"
     },
     {
       "id": "chaitanya-lifecare",
@@ -1049,7 +1017,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:24.760Z"
+      "lastSyncedAt": "2026-06-27T08:28:36.465Z"
     },
     {
       "id": "fifty-one-plus-delhi",
@@ -1099,7 +1067,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:25.481Z"
+      "lastSyncedAt": "2026-06-27T08:28:37.162Z"
     },
     {
       "id": "konica-imaging",
@@ -1149,7 +1117,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:26.169Z"
+      "lastSyncedAt": "2026-06-27T08:28:37.858Z"
     },
     {
       "id": "amino-diagnostics",
@@ -1199,7 +1167,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T06:22:26.853Z"
+      "lastSyncedAt": "2026-06-27T08:28:38.566Z"
     }
   ],
   "alerts": [
@@ -1211,15 +1179,6 @@
       "text": "Highly unprofessional cheat customers I shared doctor prescription with all test details to be done and asked for price asking ensure all test are covered but these people are fraudsters multiple times I had to check myself for test coverage and they were trying to collect money without covering test and now when I visited doctor came to know that test not covered and when I message see attached response highly unethical and unreliable diagnostic centre will not recommend anyone going forward",
       "reviewerName": "rachna Arora",
       "createdAt": "2026-05-12T12:42:00.229243041Z"
-    },
-    {
-      "branchId": "serum-inc",
-      "branchName": "SERUM Inc.",
-      "reviewId": "places/ChIJ_y3nTFvAwjsRQoULF0oN24A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNPem95LTN3RRAB",
-      "rating": 1,
-      "text": "Today I called their customer care number to inform them that in their own city there is not a single hospital which is preferring their covovax kids vaccine due to arrangements of atleast 10 kids for it. Requested them to find out a way by which number of vials in a set could bring down to 5 so that it could be easy and win win situation for all.\nAt this customer support guy said bluntly, we are here to solve world's problem not yours. I said I am also part of world and in your own city people are struggling to get your vaccine then how will you solve world's problem. Better you could find out some way so that your vaccination rate could be improved as 99% kids are getting only corbevax due to your set of 10 vaccines.\nIt felt like they have already earned billions from covishield and now in no mood to see reality outside and speaking with too much ego and bluntly replying without listening properly. Anyway with hardly 1% vaccination rate in their own city if they think they are solving world's problem that let them live in day dreams.\n\nBy the way, when I was talking to my friend in Australia, he said covishield is the last option considered here when someone need urgently and no other vaccine available at that moment. He himself didn't take it.",
-      "reviewerName": "Manish Agarwal",
-      "createdAt": "2022-06-10T05:20:59.804945Z"
     },
     {
       "branchId": "fifty-one-plus-noida",
@@ -1256,6 +1215,15 @@
       "text": "⭐ (1 star — would give zero if possible)\n\nOne of the worst medical experiences we have ever had. My father is a cancer and diabetes patient, and we travelled 50km from Mundgod for a scan at this centre — every single phase was a struggle.\n\nAppointment booking: We called 2 days in advance to get a confirmed time so we could arrange a driver and plan the journey. Instead of a straight answer, they kept brushing us off — \"call in the evening,\" \"call in the morning,\" \"call tomorrow.\" Despite this, we still paid the advance in good faith.\n\nZero instructions: No one bothered to tell us basic pre-scan instructions — empty stomach or not? Water allowed or not? For a cancer patient undergoing a contrast scan, this is not optional information. We had to figure it out ourselves.\n\nAppointment time was meaningless: They finally confirmed 7:30 AM and told us to do the blood test at their facility before the scan. We reached on time in the early morning — the centre was empty except for ONE person sleeping on the sofa, who turned out to be staff. He kept saying \"come at 8,\" then \"come at 8:30,\" with zero care or clarity.\n\n2-hour wait for a sick, fasting patient: The actual staff arrived only at 8:30 AM. My elderly father — a cancer and diabetes patient — was made to wait nearly 2 hours on an empty stomach because of their delay.\n\nNo guidance, no coordination: Even for standard parts of the process like the contrast, we had to ASK for every single step. Nobody walked us through anything.\n\nStaff only care about money: The counter staff were actively attending to other patients only for payment collection. Every time we asked what the next step was, we were ignored.\n\nReports never delivered: We were officially told the reports would be available within 4 hours. It has now been over a DAY. We have been calling them repeatedly and still haven't received the reports. For a cancer patient whose treatment decisions depend on these reports, this is unacceptable and borderline negligent.\n\nAppointments here mean nothing. Instructions are non-existent. Staff are indifferent to patient condition. Reports are not delivered on time. Please do not bring a seriously ill family member here expecting basic standards of care.",
       "reviewerName": "Abhishek Hegde",
       "createdAt": "2026-04-20T04:06:57.730193496Z"
+    },
+    {
+      "branchId": "prime-diagnostic",
+      "branchName": "Prime Diagnostic Pathology",
+      "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
+      "rating": 1,
+      "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
+      "reviewerName": "yash jain",
+      "createdAt": "2026-01-10T06:16:13.800982140Z"
     },
     {
       "branchId": "dayal-diagnostic",
