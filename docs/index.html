@@ -300,6 +300,35 @@ tr:hover td{background:var(--line-soft);}
 ::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
 ::-webkit-scrollbar-thumb:hover{background:var(--ink-mute)}
 
+/* TODAY FEED */
+.today-section{margin-bottom:20px;}
+.today-section-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
+.today-section-title{font-family:'Instrument Serif',serif;font-size:20px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+.today-count-pill{font-size:11px;font-weight:500;background:var(--good-soft);color:var(--good);padding:3px 10px;border-radius:100px;}
+.today-feed{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x mandatory;}
+.today-feed::-webkit-scrollbar{height:4px;}
+.today-card{
+  flex:0 0 272px;scroll-snap-align:start;
+  background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:15px 17px;cursor:pointer;transition:all .2s;position:relative;
+}
+.today-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.today-card.positive{border-top:3px solid var(--good);}
+.today-card.negative{border-top:3px solid var(--accent);}
+.today-card.neutral{border-top:3px solid var(--warn);}
+.today-card-branch{font-size:10px;color:var(--primary);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px;}
+.today-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.today-card-reviewer{font-weight:600;font-size:13px;}
+.today-card-text{font-size:12px;color:var(--ink-soft);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:55px;}
+.today-card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid var(--line-soft);}
+.today-card-time{font-size:10.5px;color:var(--ink-mute);}
+.today-empty{padding:22px 24px;text-align:center;color:var(--ink-mute);font-size:13px;background:var(--bg-card);border:1px dashed var(--line);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;gap:10px;}
+.new-badge{display:inline-flex;align-items:center;gap:3px;padding:1px 7px;border-radius:100px;font-size:9px;font-weight:700;background:var(--good-soft);color:var(--good);letter-spacing:.06em;text-transform:uppercase;animation:newBlink 2s ease-in-out infinite;}
+@keyframes newBlink{0%,100%{opacity:1}60%{opacity:.5}}
+.kpi{transition:box-shadow .2s;}
+.kpi:hover{box-shadow:var(--shadow-md);}
+.section-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);font-weight:600;margin-bottom:12px;padding-left:2px;}
+
 /* ANALYTICS */
 .analytics-kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px;}
 .a-kpi{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:14px 16px;position:relative;overflow:hidden;}
@@ -484,6 +513,19 @@ tr:hover td{background:var(--line-soft);}
             <div class="kpi-value" id="kpiAlerts">—</div>
             <div class="kpi-meta">reviews ≤ 2 stars</div>
           </div>
+        </div>
+
+        <!-- TODAY'S REVIEWS FEED -->
+        <div class="today-section" id="todaySection">
+          <div class="today-section-hdr">
+            <div class="today-section-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--good)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Today's New Reviews
+              <span class="today-count-pill" id="todayCountPill" style="display:none"></span>
+            </div>
+            <button class="btn ghost sm" onclick="navTo('reviews')">View all reviews →</button>
+          </div>
+          <div id="todayFeed"></div>
         </div>
 
         <div class="grid grid-2">
@@ -771,6 +813,7 @@ function buildAllReviews() {
 
 function renderAll() {
   renderKPIs();
+  renderTodaysFeed();
   renderLeaderboard();
   renderDashAlerts();
   renderBranches();
@@ -855,11 +898,15 @@ function renderKPIs() {
 
 // ─── LEADERBOARD ──────────────────────────────────────────────────────────────
 function renderLeaderboard() {
+  const todayStr = new Date().toISOString().slice(0,10);
+  const branchesWithNewToday = new Set(
+    allReviews.filter(r => r.publishTime && new Date(r.publishTime).toISOString().slice(0,10) === todayStr).map(r => r.branchId)
+  );
   const sorted = [...DATA.branches].filter(b=>b.rating).sort((a,b)=>b.rating-a.rating);
   document.getElementById('leaderboard').innerHTML = sorted.slice(0,8).map(b => `
     <tr style="cursor:pointer" onclick="navToBranchReviews('${b.id}')">
       <td>
-        <div style="font-weight:500">${esc(b.name)}</div>
+        <div style="font-weight:500;display:flex;align-items:center;gap:7px">${esc(b.name)}${branchesWithNewToday.has(b.id)?'<span class="new-badge">NEW</span>':''}</div>
         <div style="font-size:11px;color:var(--ink-mute)">${esc(b.city||'—')}</div>
       </td>
       <td>${star(b.rating)} <span class="mono" style="font-size:12px;color:var(--ink-soft)">${b.rating}</span></td>
@@ -867,6 +914,42 @@ function renderLeaderboard() {
       <td>${ratingChip(b.rating)}</td>
     </tr>
   `).join('');
+}
+
+// ─── TODAY'S FEED ─────────────────────────────────────────────────────────────
+function renderTodaysFeed() {
+  if (!DATA) return;
+  const todayStr = new Date().toISOString().slice(0,10);
+  const todayRevs = allReviews.filter(r => r.publishTime && new Date(r.publishTime).toISOString().slice(0,10) === todayStr);
+
+  const feedEl = document.getElementById('todayFeed');
+  const pillEl = document.getElementById('todayCountPill');
+  if (!feedEl) return;
+
+  if (todayRevs.length === 0) {
+    feedEl.innerHTML = `<div class="today-empty">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      No new reviews yet today — data refreshes every hour automatically
+    </div>`;
+    if (pillEl) pillEl.style.display = 'none';
+    return;
+  }
+
+  if (pillEl) { pillEl.textContent = todayRevs.length + ' new'; pillEl.style.display = 'inline-flex'; }
+
+  feedEl.innerHTML = `<div class="today-feed">${todayRevs.map(r => `
+    <div class="today-card ${r.sentiment||'neutral'}" onclick="navToReview('${r.reviewId}')">
+      <div class="today-card-branch">${esc(r.branchName)}</div>
+      <div class="today-card-top">
+        <div class="today-card-reviewer">${esc(r.reviewerName)}</div>
+        ${star(r.rating)}
+      </div>
+      <div class="today-card-text">${esc(r.text || '(no comment left)')}</div>
+      <div class="today-card-foot">
+        <span class="today-card-time">${r.publishTime ? relTime(r.publishTime) : 'Today'}</span>
+        <span class="chip ${r.sentiment==='positive'?'good':r.sentiment==='negative'?'bad':'warn'} dot">${r.sentiment||'neutral'}</span>
+      </div>
+    </div>`).join('')}</div>`;
 }
 
 // ─── DASH ALERTS ─────────────────────────────────────────────────────────────
