@@ -1,0 +1,28 @@
+{
+  "labs": [
+    { "id": "om-biocare", "name": "Om Biocare", "city": "", "locationId": "locations/17578348237633385948", "query": "Om biocare Powered by BeLife" },
+    { "id": "tridot-care", "name": "TRIDOT CARE Pvt.Ltd.", "city": "", "locationId": "locations/10554808670004990125", "query": "TRIDOT CARE BeLife" },
+    { "id": "ai-healthcare", "name": "AI HEALTHCARE", "city": "", "locationId": "locations/17837364937601330165", "query": "AI HEALTHCARE BeLife" },
+    { "id": "prakash-path-lab", "name": "PRAKASH PATH LAB", "city": "", "locationId": "locations/17047016482798216764", "query": "PRAKASH PATH LAB" },
+    { "id": "accured-diagnostics", "name": "ACCURED DIAGNOSTICS", "city": "", "locationId": "locations/10596752729723526252", "query": "ACCURED DIAGNOSTICS BeLife" },
+    { "id": "nt-pro-lab", "name": "NT PRO LAB", "city": "", "locationId": "locations/13475611406232144313", "query": "NT PRO LAB BeLife" },
+    { "id": "fifty-one-plus-east-delhi", "name": "FIFTY ONE PLUS LAB, EAST DELHI", "city": "East Delhi", "locationId": "locations/8946828527688688020", "query": "FIFTY ONE PLUS LAB EAST DELHI BeLife" },
+    { "id": "bharatiya-path-lab", "name": "BHARATIYA PATH LAB", "city": "", "locationId": "locations/16535919848957840715", "query": "BHARATIYA PATH LAB BeLife" },
+    { "id": "nirog-labcare", "name": "NIROG LABCARE", "city": "", "locationId": "locations/10851229031913150066", "query": "NIROG LABCARE BeLife" },
+    { "id": "eezee-pathlabs", "name": "EEZEE PATHLABS", "city": "", "locationId": "locations/7368714414764485090", "query": "EEZEE PATHLABS BeLife" },
+    { "id": "red-diagnostics", "name": "RED DIAGNOSTICS", "city": "", "locationId": "locations/3207347839781527449", "query": "RED DIAGNOSTICS BeLife" },
+    { "id": "serum-inc", "name": "SERUM Inc.", "city": "", "locationId": "locations/15188951637013367086", "query": "SERUM Inc BeLife" },
+    { "id": "my-choice-lab", "name": "My Choice Lab", "city": "", "locationId": "locations/3172703628806619222", "query": "My choice lab BeLife" },
+    { "id": "surbhi-care", "name": "SURBHI CARE", "city": "", "locationId": "locations/11916889387015285028", "query": "SURBHI CARE BeLife" },
+    { "id": "d-care-diagnostics", "name": "D CARE Diagnostics", "city": "", "locationId": "locations/8295530949413821420", "query": "D CARE Diagnostics BeLife" },
+    { "id": "fifty-one-plus-noida", "name": "FIFTY ONE PLUS LAB, NOIDA", "city": "Noida", "locationId": "locations/9388031214199113244", "query": "FIFTY ONE PLUS LAB NOIDA BeLife" },
+    { "id": "vachana-diagnostic", "name": "Vachana Diagnostic Laboratory", "city": "", "locationId": "locations/16402670543742985973", "query": "Vachana Diagnostic BeLife" },
+    { "id": "fifty-one-plus-meerut", "name": "FIFTY ONE PLUS LAB MEERUT", "city": "Meerut", "locationId": "locations/5067755433302221173", "query": "FIFTY ONE PLUS LAB MEERUT BeLife" },
+    { "id": "prime-diagnostic", "name": "Prime Diagnostic Pathology", "city": "", "locationId": "locations/4917201928344274784", "query": "Prime Diagnostic Pathology BeLife" },
+    { "id": "dayal-diagnostic", "name": "DAYAL DIAGNOSTIC CENTER", "city": "", "locationId": "locations/6105075396308296611", "query": "DAYAL DIAGNOSTIC BeLife" },
+    { "id": "chaitanya-lifecare", "name": "Chaitanya LifeCare", "city": "", "locationId": "locations/1982910961377243776", "query": "Chaitanya LifeCare BeLife" },
+    { "id": "fifty-one-plus-delhi", "name": "FIFTY ONE PLUS LAB, DELHI", "city": "Delhi", "locationId": "locations/5657472877083943243", "query": "FIFTY ONE PLUS LAB DELHI BeLife" },
+    { "id": "konica-imaging", "name": "KONICA Imaging & Diagnostic Center", "city": "", "locationId": "locations/9649318991461885968", "query": "KONICA Imaging Diagnostic BeLife" },
+    { "id": "amino-diagnostics", "name": "Amino Diagnostics", "city": "", "locationId": "locations/18283856694208366696", "query": "Amino Diagnostics BeLife" }
+  ]
+}

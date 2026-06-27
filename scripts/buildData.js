@@ -1,0 +1,100 @@
+// One-time script: converts raw Zapier/GBP API data into public/data.json
+const fs = require("fs"), path = require("path");
+
+const R = { FIVE:5, FOUR:4, THREE:3, TWO:2, ONE:1 };
+const toNum = r => typeof r === "number" ? r : (R[r] ?? null);
+const sentiment = r => r == null ? "unknown" : r >= 4 ? "positive" : r >= 3 ? "mixed" : "negative";
+const uid = (b,n,t) => `${b}-${(n||"").replace(/\s+/g,"-").toLowerCase()}-${(t||"").slice(0,10)}`;
+
+const RAW = [
+  { id:"om-biocare", name:"Om Biocare", city:"", rating:4.9, count:null,
+    reviews:[{n:"Tejveer Singh",r:"FIVE",t:"Good service 👍",d:"2026-06-20"},{n:"Javlesh Singh",r:"FOUR",t:"Excellent service",d:"2026-06-18"},{n:"Seema Sahoo",r:"FIVE",t:"Good",d:"2026-06-15"},{n:"Rj Ch",r:"FIVE",t:"The staff is very polite and they are very professional.",d:"2026-06-14"},{n:"Abhishek Pandey",r:"FIVE",t:"Excellent service like diagnostic related,home services etc.",d:"2026-05-23"},{n:"jeetu solanki",r:"FIVE",t:"Excellent",d:"2026-05-23"},{n:"abhay solanki",r:"FIVE",t:"V good",d:"2026-05-23"},{n:"Shiv Kumar",r:"FIVE",t:"Vary good",d:"2026-05-17"},{n:"Munesh Bhati",r:"FIVE",t:"Satisfied",d:"2026-05-16"},{n:"vivek sharma",r:"FIVE",t:"excellent service and very supportive and helpful staff.",d:"2026-05-10"}]},
+  { id:"tridot-care", name:"TRIDOT CARE Pvt.Ltd.", city:"", rating:4.9, count:63,
+    reviews:[{n:"Krishan Rajput",r:"FIVE",t:"Vishal sharma good service and good behaviour",d:"2026-06-14"},{n:"amit kumar",r:"FIVE",t:"Timing is important now a days.. so she understands it and completed the all tests on time.",d:"2026-06-12"},{n:"Manav Khandelwal",r:"FIVE",t:"Very good service. Very friendly & cooperative staff.",d:"2026-06-08"},{n:"Anita K1969",r:"FIVE",t:"",d:"2026-06-07"},{n:"Tanvi Sharma",r:"FIVE",t:"Vishal Sharma very cooperative and good behaviour",d:"2026-06-04"},{n:"Gunjan Gahlot",r:"FIVE",t:"Excellent performance by Kanchan Sharma",d:"2026-06-03"},{n:"Jitender Boora",r:"FIVE",t:"Very good",d:"2026-06-03"},{n:"md shams tabrez",r:"FIVE",t:"",d:"2026-05-28"},{n:"Kavita Sunhotra",r:"FIVE",t:"Overoll very gud experince",d:"2026-05-16"},{n:"Dr. Anurag Verma",r:"FOUR",t:"Overall good experience",d:"2026-05-16"}]},
+  { id:"ai-healthcare", name:"AI HEALTHCARE", city:"", rating:4.9, count:237,
+    reviews:[{n:"Gopal Limbu",r:"TWO",t:"",d:"2026-06-22"},{n:"Ankit Jain",r:"FIVE",t:"",d:"2026-06-11"},{n:"Ritik Raj",r:"FIVE",t:"It was a good experience.",d:"2026-06-09"},{n:"Arnab Chatterjee",r:"FIVE",t:"Excellent service. Super smooth.",d:"2026-06-07"},{n:"Chandra Narayan",r:"FOUR",t:"Over all good. No waiting time. Cleanliness is good.",d:"2026-06-06"},{n:"Sandeep Verma",r:"FOUR",t:"",d:"2026-05-30"},{n:"Rakesh Mishra",r:"FIVE",t:"Its a very nice experience. Excellent behavior and maintain hygiene.",d:"2026-05-27"},{n:"Vishal Singh",r:"FIVE",t:"Doctor was very polite and communication was helpful",d:"2026-05-27"},{n:"Yogendranath Kang",r:"FIVE",t:"Diligent team and timely tests helped in fast completion.",d:"2026-05-23"},{n:"utkarsh bhargava",r:"FIVE",t:"",d:"2026-05-23"}]},
+  { id:"prakash-path-lab", name:"PRAKASH PATH LAB", city:"", rating:null, count:null, reviews:[] },
+  { id:"accured-diagnostics", name:"ACCURED DIAGNOSTICS", city:"", rating:4.8, count:51, reviews:[] },
+  { id:"nt-pro-lab", name:"NT PRO LAB", city:"", rating:4.9, count:98, reviews:[] },
+  { id:"fifty-one-plus-east-delhi", name:"FIFTY ONE PLUS LAB", city:"East Delhi", rating:5.0, count:null,
+    reviews:[{n:"Yugank Jain",r:"FIVE",t:"Great",d:"2026-06-09"},{n:"RAVI KANT",r:"FIVE",t:"Very nice service and good behaviour",d:"2026-05-11"},{n:"Arun Gupta",r:"FIVE",t:"",d:"2026-04-05"},{n:"Ashish Manna",r:"FIVE",t:"Best centre",d:"2026-03-08"},{n:"Gusain Mahender",r:"FIVE",t:"Sanu ji kya sath acha laga or behewir is all so best",d:"2026-03-01"}]},
+  { id:"bharatiya-path-lab", name:"BHARATIYA PATH LAB", city:"", rating:4.5, count:52,
+    reviews:[{n:"Satish kimar",r:"FIVE",t:"Very good and experienced staff with good testing facilities",d:"2026-06-03"},{n:"miraj ahmad",r:"FIVE",t:"",d:"2026-05-24"},{n:"Jeet Pandey",r:"FIVE",t:"Hassle-free medical checkup at home. Very Professional and good behaviour.",d:"2026-05-23"},{n:"Vivek Sharma",r:"FIVE",t:"",d:"2026-05-23"},{n:"Sachin Arya",r:"FIVE",t:"Lab is too good",d:"2026-05-22"},{n:"robin rawat",r:"FIVE",t:"Nice environment",d:"2026-05-22"},{n:"Vikas Kumar",r:"FOUR",t:"",d:"2026-05-22"},{n:"Deepak Pant",r:"FIVE",t:"The person is professional and took the sample without pain.",d:"2026-05-18"},{n:"Aman Agarwal",r:"FIVE",t:"Great service by Mr. Sarfaraz. He is very humble.",d:"2026-05-18"},{n:"Sumit Mittal",r:"FIVE",t:"",d:"2026-05-16"}]},
+  { id:"nirog-labcare", name:"NIROG LABCARE", city:"", rating:5.0, count:29,
+    reviews:[{n:"vedant goyal",r:"FIVE",t:"",d:"2026-05-15"},{n:"Upendra Baghel",r:"FIVE",t:"5",d:"2026-05-14"},{n:"Saurabh Goyal",r:"FOUR",t:"Good service",d:"2026-05-14"},{n:"Satu With English",r:"FIVE",t:"Good service timely complete all test",d:"2026-05-14"},{n:"Vedant Patni",r:"FIVE",t:"",d:"2026-05-13"},{n:"Ram Avatar Diwakar",r:"FIVE",t:"Good facility",d:"2026-05-12"},{n:"Roshni Kushwah",r:"FIVE",t:"Good service",d:"2026-05-12"},{n:"Bhavna Kushawah",r:"FIVE",t:"Good service",d:"2026-05-12"},{n:"Neelam Sharma",r:"FIVE",t:"Good service",d:"2026-05-12"},{n:"Pallavi Kush",r:"FIVE",t:"Good service",d:"2026-05-12"}]},
+  { id:"eezee-pathlabs", name:"EEZEE PATHLABS", city:"", rating:4.9, count:134,
+    reviews:[{n:"Surinder Rana",r:"FIVE",t:"",d:"2026-06-26"},{n:"Rithik Kumar",r:"FIVE",t:"",d:"2026-06-25"},{n:"mohit sharma",r:"FIVE",t:"",d:"2026-06-25"},{n:"Neeraj Singh",r:"FIVE",t:"Good service nice behaviour, home collection",d:"2026-06-23"},{n:"Sam Nain",r:"FIVE",t:"Nice lab with the good result all over.",d:"2026-06-23"},{n:"Mohd Firoz",r:"FIVE",t:"Good staff and services",d:"2026-06-23"},{n:"Shrey Joshi",r:"FIVE",t:"Nice and fast results good team here.",d:"2026-06-23"},{n:"alok rohilla",r:"FIVE",t:"Very cooperative and informative staff.",d:"2026-06-22"},{n:"sanjeev jha",r:"FIVE",t:"Excellent service and abhishek provided good lab services",d:"2026-06-20"},{n:"Aarti Chitkara",r:"FIVE",t:"Excellent staff, very cooperative",d:"2026-06-20"}]},
+  { id:"red-diagnostics", name:"RED DIAGNOSTICS", city:"Noida", rating:4.8, count:143,
+    reviews:[{n:"Shivangi Sharma",r:"FIVE",t:"",d:"2026-06-19"},{n:"Prashant Singh",r:"TWO",t:"Very disappointing experience. The staff was unresponsive, and the overall process felt highly unorganized.",d:"2026-06-06"},{n:"Ankur Srivastava",r:"FIVE",t:"All tests were quick and upto the mark.",d:"2026-06-09"},{n:"Shivani Yadav",r:"FIVE",t:"",d:"2026-06-08"},{n:"Harsh Pal",r:"FIVE",t:"Salman it's was good",d:"2026-06-06"},{n:"Pawan Verma",r:"FIVE",t:"It was good experience with Salman. He took blood without any pain.",d:"2026-06-06"},{n:"sanjeet kumar",r:"FIVE",t:"",d:"2026-06-05"},{n:"Rajeev Kumar",r:"FIVE",t:"",d:"2026-06-05"},{n:"ONEPLUS LAB",r:"FIVE",t:"Good Service staff behaviour good",d:"2026-05-30"},{n:"rachna Arora",r:"ONE",t:"Highly unprofessional cheat customers. Multiple times I had to check myself for test coverage. Highly unethical and unreliable diagnostic centre.",d:"2026-05-12"}]},
+  { id:"serum-inc", name:"SERUM Inc.", city:"", rating:5.0, count:1,
+    reviews:[{n:"Dinesh Kumar",r:"FIVE",t:"Good service",d:"2026-06-05"}]},
+  { id:"my-choice-lab", name:"My Choice Lab", city:"", rating:4.8, count:37,
+    reviews:[{n:"Roshni Devi",r:"FIVE",t:"Service is good",d:"2026-06-20"},{n:"Bipul Dixit",r:"FIVE",t:"Service was really good",d:"2026-06-14"},{n:"Relayssig contacts",r:"FIVE",t:"",d:"2026-06-11"},{n:"Mukesh Gupta",r:"FIVE",t:"",d:"2026-06-10"},{n:"manoj kumar",r:"THREE",t:"Visual Sharma Good and nice behaved",d:"2026-06-10"},{n:"Jpverma Verma",r:"FIVE",t:"All staff are very good and Dr Sanjeev was very humble and polite.",d:"2026-06-09"},{n:"Manish Srivastava",r:"FIVE",t:"",d:"2026-06-05"},{n:"Rajesh Kumar Jha",r:"FIVE",t:"",d:"2026-06-03"},{n:"Abha Jha",r:"FIVE",t:"Good lab and Staff behavior is very nice",d:"2026-06-03"},{n:"Soniya Chauhan",r:"FIVE",t:"",d:"2026-05-27"}]},
+  { id:"surbhi-care", name:"SURBHI CARE", city:"", rating:4.8, count:142,
+    reviews:[{n:"Vikram Sharma",r:"FIVE",t:"good performance by kanchan sharma",d:"2026-06-21"},{n:"Vinesh Kumar",r:"FIVE",t:"Kanchan shrama is very good and polite",d:"2026-06-21"},{n:"Pradeep Rawat",r:"FIVE",t:"I appreciate this team because of great support and smooth experience specially mrs Kanchan Sharma ji.",d:"2026-06-21"},{n:"Aparana Srivastav",r:"FIVE",t:"Kanchan sharma, thank you, support staff and hygienic technician.",d:"2026-06-21"},{n:"sujeet Kumar",r:"FIVE",t:"She has done a good work",d:"2026-06-20"},{n:"Amit Kumar",r:"FIVE",t:"Kanchan Sharma, she is well trained and nice",d:"2026-06-20"},{n:"Vicky Kumar",r:"FIVE",t:"Good care for patients",d:"2026-06-18"},{n:"Sushma Mimrot",r:"FIVE",t:"Good and polite behaviour with client",d:"2026-06-18"},{n:"Manish Pacherwal",r:"FIVE",t:"Ms Kanchan Sharma came to collect sample. She is very professional.",d:"2026-06-18"},{n:"Priyanka Porwal",r:"FIVE",t:"The way of dealing of Miss Kanchan sharma is very appreciable.",d:"2026-06-18"}]},
+  { id:"d-care-diagnostics", name:"D CARE Diagnostics", city:"", rating:4.6, count:67,
+    reviews:[{n:"Hari Malhotra",r:"FOUR",t:"Very Good services",d:"2026-05-25"},{n:"Lalit Thapa",r:"FIVE",t:"It was a good experience. Especially Sameer was polite overall NICE.",d:"2026-05-25"},{n:"Naveen Kumar",r:"FIVE",t:"Experience is good",d:"2026-05-24"},{n:"Abhishek Yadav",r:"FIVE",t:"Polite staff, good service",d:"2026-05-23"},{n:"Simpi Jha",r:"FOUR",t:"",d:"2026-05-23"},{n:"neha maini",r:"ONE",t:"",d:"2026-05-22"},{n:"Sandeep Bahuguna",r:"FIVE",t:"Mr. Ajit goswami and his team has good experience. Impressed with their support.",d:"2026-05-17"},{n:"Krishna Kumar Yadav",r:"FIVE",t:"Good and fast service.",d:"2026-05-16"},{n:"Nitin Rajput",r:"TWO",t:"Good lab",d:"2026-05-11"},{n:"Minakshi Singh",r:"FIVE",t:"Best lab service",d:"2026-05-10"}]},
+  { id:"fifty-one-plus-noida", name:"FIFTY ONE PLUS LAB", city:"Noida", rating:4.7, count:745,
+    reviews:[{n:"Gajendra kumar",r:"FIVE",t:"it is a very good lab and staff is very co operative and active.",d:"2026-06-26"},{n:"ashu singh",r:"ONE",t:"There are n number of labs in Noida. If someone is choosing your laboratory you could have atleast stapled the report pages in the correct sequence.",d:"2026-06-25"},{n:"VISHWAJIT KUMAR",r:"FIVE",t:"",d:"2026-06-20"},{n:"Punit",r:"FIVE",t:"Good",d:"2026-06-13"},{n:"Rahul Sangwan",r:"FIVE",t:"Good services, nice staff",d:"2026-06-13"},{n:"Abhay Chauhan",r:"FIVE",t:"Overall best experience with 51 plus labs. The staffing was really helpful.",d:"2026-06-13"},{n:"Radhe Radhe",r:"ONE",t:"Service bad",d:"2026-06-03"},{n:"Aarna Grover",r:"THREE",t:"",d:"2026-06-11"},{n:"Vipin Kushwaha",r:"FIVE",t:"Vishal sharma is very polite and humble person. Good behaviour",d:"2026-06-10"},{n:"Vikas Chauhan",r:"FIVE",t:"Experience very good, staff behaviour so nice",d:"2026-06-09"}]},
+  { id:"vachana-diagnostic", name:"Vachana Diagnostic Laboratory", city:"", rating:5.0, count:9,
+    reviews:[{n:"Mohammad Moosa",r:"FIVE",t:"I was impressed by the staff behaviour and the fact that they conduct the management tests very well.",d:"2026-06-01"},{n:"Jitendra Kumar",r:"FIVE",t:"Amazing",d:"2026-05-20"},{n:"Gaurav Kumar",r:"FIVE",t:"Nice lab",d:"2026-05-20"},{n:"Suraj Mathur",r:"FIVE",t:"Good lab",d:"2026-05-20"},{n:"Annu singh",r:"FIVE",t:"Excellent Lab",d:"2026-05-20"},{n:"Ajeet Thakur",r:"FIVE",t:"Good lab",d:"2026-05-20"},{n:"Pankaj Raj",r:"FIVE",t:"Nice lab",d:"2026-05-11"},{n:"Radha Yadav",r:"FIVE",t:"Good lab",d:"2026-05-10"},{n:"ALLIED HEALTH",r:"FIVE",t:"",d:"2026-05-10"}]},
+  { id:"fifty-one-plus-meerut", name:"FIFTY ONE PLUS LAB", city:"Meerut", rating:4.9, count:176,
+    reviews:[{n:"ललित कुमार",r:"FIVE",t:"Good staff somaiya",d:"2026-06-23"},{n:"Neeru Sharma",r:"FIVE",t:"Best lab for health checkup, good behaviour of staff",d:"2026-06-20"},{n:"Aman Raghav",r:"FIVE",t:"Good Facility",d:"2026-06-18"},{n:"Prerna Gandhi",r:"FIVE",t:"Service is very good",d:"2026-06-18"},{n:"Rinku Sharma",r:"FIVE",t:"",d:"2026-06-18"},{n:"Harsh Gupta",r:"FIVE",t:"Staff behaviour good",d:"2026-06-10"},{n:"priyanshi sharma",r:"FIVE",t:"",d:"2026-06-10"},{n:"Ekansh Jain",r:"FIVE",t:"Ok",d:"2026-06-02"},{n:"UPENDRA KUMAR",r:"FIVE",t:"",d:"2026-05-28"},{n:"UTKARSH RASTOGI",r:"ONE",t:"Irresponsible staff. Waited 1 hour after appointment",d:"2026-05-27"}]},
+  { id:"prime-diagnostic", name:"Prime Diagnostic Pathology", city:"", rating:4.9, count:91,
+    reviews:[{n:"Amit Singh",r:"FIVE",t:"Special thanks to Kulwant Thakur for his excellent support. Very professional, polite, and helpful.",d:"2026-06-23"},{n:"Manmohan Singh",r:"FIVE",t:"Good work by Shubhash",d:"2026-05-22"},{n:"mohit kumar",r:"FIVE",t:"Excellence job by subhash. Nice person",d:"2026-05-22"},{n:"aimless life",r:"FIVE",t:"Subhash is excellent and very professional in his work",d:"2026-05-22"},{n:"Dinesh Kumar",r:"FIVE",t:"Subhash is very good person",d:"2026-05-21"},{n:"Rajendra P Raj",r:"FIVE",t:"Subhash nice guy, very professional working",d:"2026-05-21"},{n:"kailash kumar",r:"FIVE",t:"Subhash",d:"2026-05-20"},{n:"Raj Chauhan",r:"FIVE",t:"Very Corprative and supportive Staff Name Subhas",d:"2026-05-19"},{n:"Mahendar Singh",r:"FIVE",t:"Shubhash good best service",d:"2026-05-19"},{n:"Praveen Kumar",r:"FIVE",t:"",d:"2026-05-19"}]},
+  { id:"dayal-diagnostic", name:"DAYAL DIAGNOSTIC CENTER", city:"", rating:4.3, count:37,
+    reviews:[{n:"muzib khan",r:"FIVE",t:"Excellent services by Sonam. Proper health checkup.",d:"2026-06-22"},{n:"Mandavi Sarraf",r:"FIVE",t:"Staff there was cooperative. Ms. Sonam ensured my smooth health checkups",d:"2026-06-18"},{n:"Bhumi Enterprises",r:"FIVE",t:"Dr. Nempal Singh good Behaviour and good management.",d:"2026-06-11"},{n:"Shashank",r:"ONE",t:"Worst Diagnostic centre with the worst staff. They don't have their own machine for the test. Pathetic experience.",d:"2026-06-07"},{n:"Gaurav Saxena",r:"THREE",t:"",d:"2026-06-06"},{n:"Om Narayan Agnihotri",r:"FIVE",t:"All the staff members behaved professional and all the test was done properly.",d:"2026-05-29"},{n:"SHOBHA WATI",r:"FIVE",t:"Sonam is too good here, taken very small time and all the test are done.",d:"2026-05-28"},{n:"Dr.ANIKET PANDEY",r:"FIVE",t:"Well and good management. She is good and do all procedure very efficiently.",d:"2026-05-26"},{n:"Avantika Singh",r:"FIVE",t:"Very good service. Mr shaizy saifi centre head is good person is very helpful",d:"2026-05-24"},{n:"ALKA GARG",r:"FIVE",t:"Sonam is good person is very helpful person",d:"2026-05-24"}]},
+  { id:"chaitanya-lifecare", name:"Chaitanya LifeCare", city:"", rating:4.6, count:23,
+    reviews:[{n:"Ashish Singh",r:"FIVE",t:"ADVANCED MACHINE AND FAST TESTING AND SKILLED TECH PEOPLE SEAMLESS EXPERIENCE",d:"2026-05-23"},{n:"PUNEET Omar",r:"FIVE",t:"Good experience, polite person interaction",d:"2026-05-15"},{n:"Amit singh Arora",r:"ONE",t:"",d:"2026-05-12"},{n:"Radhika",r:"ONE",t:"Good",d:"2026-05-12"},{n:"Raju Awasthi",r:"FIVE",t:"Very nice service",d:"2026-05-11"},{n:"Nirupma Mazumdar",r:"FIVE",t:"",d:"2026-05-10"},{n:"RAM SAGAR SINGH",r:"FIVE",t:"Very Good Experience",d:"2026-05-10"},{n:"VATSAL SAHU",r:"FIVE",t:"Most supportive staff I ever met.",d:"2026-05-09"},{n:"BABA Shiv",r:"FIVE",t:"Best service & humble nature",d:"2026-05-09"},{n:"ankit Pal",r:"FIVE",t:"👍",d:"2026-05-08"}]},
+  { id:"fifty-one-plus-delhi", name:"FIFTY ONE PLUS LAB", city:"Delhi", rating:4.9, count:116,
+    reviews:[{n:"Saurabh Verma",r:"FIVE",t:"Good experience",d:"2026-06-23"},{n:"Piyush Arora",r:"FOUR",t:"Good. Hygienic lab with supportive and good physicians",d:"2026-06-07"},{n:"Praveen Sharma",r:"FIVE",t:"Good staff",d:"2026-06-01"},{n:"prakash bothra",r:"FIVE",t:"",d:"2026-05-31"},{n:"Tushar Das",r:"FIVE",t:"All the tests were done appropriately with excellent hospitality.",d:"2026-05-30"},{n:"adeel ahmad",r:"FIVE",t:"Fully convinced with the service of this lab.",d:"2026-05-29"},{n:"Saleena Chaudhary",r:"FIVE",t:"",d:"2026-05-24"},{n:"Shalabh Gupta",r:"FIVE",t:"Very prompt and courteous staff. Everything done professionally and timely",d:"2026-05-24"},{n:"Saree Family",r:"FIVE",t:"",d:"2026-05-23"},{n:"Jatin Yadav",r:"FIVE",t:"Very quick and efficient service. The staff is well trained and cooperative.",d:"2026-05-23"}]},
+  { id:"konica-imaging", name:"KONICA Imaging & Diagnostic Center", city:"", rating:4.7, count:69,
+    reviews:[{n:"Sachin Mathur",r:"FIVE",t:"Service Good",d:"2026-06-10"},{n:"pappu kumr",r:"FOUR",t:"Vishal Sharma today done my medical very good",d:"2026-06-07"},{n:"Nikhil Aggarwal",r:"FIVE",t:"Good experience",d:"2026-06-07"},{n:"ARCHHANA Suuri",r:"FIVE",t:"Good experience",d:"2026-06-06"},{n:"Hrishikesh Bothe",r:"FIVE",t:"Very good experience",d:"2026-06-06"},{n:"rohan agrawal",r:"FIVE",t:"Good service done by Sailendra. All test conducted well with proper procedure.",d:"2026-06-06"},{n:"prateek chugh",r:"FIVE",t:"",d:"2026-06-05"},{n:"Shailendra Tinguriya",r:"FIVE",t:"Good service and supportive.",d:"2026-06-05"},{n:"Arjun Mishra",r:"FIVE",t:"Employee vishal ji was very cooperative",d:"2026-06-05"},{n:"Raminder Pal Singh",r:"FIVE",t:"Vishal Sharma did medical today",d:"2026-06-04"}]},
+  { id:"amino-diagnostics", name:"Amino Diagnostics", city:"", rating:4.9, count:511,
+    reviews:[{n:"Manoj Kumar",r:"FIVE",t:"Ayan came to my house for my medical checkup he was so nice polite and professional",d:"2026-06-18"},{n:"shubham jain",r:"FIVE",t:"Mr. Ayan came to take samples for test. He was very diligent and careful.",d:"2026-06-18"},{n:"Brajesh Sahani",r:"FIVE",t:"",d:"2026-06-17"},{n:"Sandeep Mishra",r:"FIVE",t:"Mr. Vishal ji done commendable work. Service on time. Neat and clean.",d:"2026-06-15"},{n:"Gᴀᴜᴛᴀϻ Miຮhʀa",r:"FOUR",t:"Vishal sharma, good person and very fast checkup and decent",d:"2026-06-15"},{n:"Dr raj Prasad",r:"FIVE",t:"Good attitude and skill",d:"2026-06-14"},{n:"Tarun055",r:"FIVE",t:"Mr Ayan was excellent, they come on time and take blood without painfull string incerting",d:"2026-06-14"},{n:"Sunny Choudhary",r:"FIVE",t:"I had a great experience with Dr. Vishal Sharma.",d:"2026-06-14"},{n:"kumar Kavindra",r:"FIVE",t:"Ayan a lab technician is very punctual on time to collect sample.",d:"2026-06-14"},{n:"Parmanand Prakash",r:"FIVE",t:"Mr. Ayan came at my home timely as per our discussion.",d:"2026-06-14"}]},
+];
+
+const ALERT_MAX = 2;
+const branches = [];
+const alerts = [];
+
+for (const lab of RAW) {
+  const reviews = lab.reviews.map(r => {
+    const rNum = toNum(r.r);
+    return {
+      reviewId: uid(lab.id, r.n, r.d),
+      reviewerName: r.n,
+      rating: rNum,
+      text: r.t || "",
+      publishTime: r.d ? r.d + "T00:00:00.000Z" : null,
+      relativeTime: "",
+      sentiment: sentiment(rNum),
+      source: "google_business_profile"
+    };
+  });
+
+  branches.push({
+    id: lab.id, name: lab.name, city: lab.city,
+    rating: lab.rating, reviewCount: lab.count,
+    reviews, lastSyncedAt: new Date().toISOString()
+  });
+
+  for (const r of reviews) {
+    if (r.rating != null && r.rating <= ALERT_MAX) {
+      alerts.push({
+        branchId: lab.id, branchName: lab.name,
+        reviewId: r.reviewId, rating: r.rating,
+        text: r.text, reviewerName: r.reviewerName,
+        createdAt: r.publishTime || new Date().toISOString()
+      });
+    }
+  }
+}
+
+alerts.sort((a,b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+const out = { generatedAt: new Date().toISOString(), branches, alerts };
+const outPath = require("path").join(__dirname, "..", "public", "data.json");
+require("fs").writeFileSync(outPath, JSON.stringify(out, null, 2));
+console.log(`✅ Wrote ${outPath}`);
+console.log(`   ${branches.length} branches | ${alerts.length} alerts (≤${ALERT_MAX}★)`);
+branches.forEach(b => console.log(`   ${b.rating ?? "—"}★  ${b.name} (${b.city || "—"}) — ${b.reviews.length} reviews`));
