@@ -52,15 +52,18 @@ async function getAccessToken() {
 const RATING = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
 const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
 
-async function fetchReviewsForLocation(token, accountName, locationId) {
+// Uses mybusinessreviews API v1 — no account ID needed, just location ID
+async function fetchReviewsForLocation(token, locationId) {
   const reviews = [];
   let pageToken = '';
-  const locName = locationId.startsWith('locations/') ? locationId : `locations/${locationId}`;
+  // locationId from labs.json is like "locations/17578348237633385948"
+  // strip the "locations/" prefix to get just the numeric ID
+  const locId = locationId.replace(/^locations\//, '');
   do {
-    const url = `https://mybusiness.googleapis.com/v4/${accountName}/${locName}/reviews` +
+    const url = `https://mybusinessreviews.googleapis.com/v1/locations/${locId}/reviews` +
       (pageToken ? `?pageToken=${encodeURIComponent(pageToken)}` : '');
     const res = await httpsGet(url, token);
-    if (res.error) { console.warn(`  Warning: ${res.error.message}`); break; }
+    if (res.error) { console.warn(`  [${res.error.code}] ${res.error.message}`); break; }
     for (const r of (res.reviews || [])) {
       const rating = RATING[r.starRating] || 0;
       reviews.push({
@@ -82,19 +85,7 @@ async function main() {
 
   console.log('Getting access token...');
   const token = await getAccessToken();
-
-  console.log('Fetching accounts...');
-  // Try v4 API first (avoids quota issues with the newer account management API)
-  let accountName;
-  const v4Res = await httpsGet('https://mybusiness.googleapis.com/v4/accounts', token);
-  if (v4Res.accounts?.length) {
-    accountName = v4Res.accounts[0].name;
-  } else {
-    const v1Res = await httpsGet('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', token);
-    if (!v1Res.accounts?.length) throw new Error('No accounts found: ' + JSON.stringify(v1Res));
-    accountName = v1Res.accounts[0].name;
-  }
-  console.log(`Account: ${accountName}`);
+  console.log('Access token OK');
 
   const labsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../labs.json'), 'utf8'));
   const labs = labsData.labs || labsData;
@@ -104,7 +95,7 @@ async function main() {
 
   for (const lab of labs) {
     process.stdout.write(`Fetching ${lab.name}... `);
-    const reviews = await fetchReviewsForLocation(token, accountName, lab.locationId);
+    const reviews = await fetchReviewsForLocation(token, lab.locationId);
     const avgRating = reviews.length
       ? +(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1) : 0;
 
