@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-06-27T10:54:19.795Z",
+  "generatedAt": "2026-06-27T13:04:20.756Z",
   "branches": [
     {
       "id": "om-biocare",
       "name": "Om Biocare",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 146,
+      "rating": 5,
+      "reviewCount": 724,
       "reviews": [
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aTWREVnhNek5EWmxjeE5UaEVYMGhhV1ZKc2JtYxAB",
-          "reviewerName": "Dipak Doshi",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kT2FFbDJlUzFTVTJ4RVVVMHRZMTlUWW10dlVsRRAB",
+          "reviewerName": "Raseena Niloffar",
           "rating": 5,
-          "text": "Easy way of booking blood collection with personalised touch. Friendly technicians. On time collection. Exhaustive and comprehensive reports. Pricing is the most reasonable.",
-          "publishTime": "2026-06-03T05:06:05.830259526Z",
+          "text": "I took a CRP blood test from Biocare Diagnostic Centre Lab. They provided home sample collection service, which was very convenient. The staff came on time and collected the blood sample in a safe and professional manner. I received the results quickly. The service was fast, hygienic, and reliable. I am very satisfied with their response and support. Highly recommended",
+          "publishTime": "2026-03-02T03:46:20.914281575Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pSM2FrcE9VRXB2UTNsWE1rc3dVVUV0TFU5MWFsRRAB",
-          "reviewerName": "ramanamurty malla",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CYVRFMTFaM00yY0VGcE1uazVWbk5YVTFkUk5IYxAB",
+          "reviewerName": "Nandhini Jaya",
           "rating": 5,
-          "text": "Extremely happy with over all service. Chetna reached our home early morning at appointed time at 12 hour notice and finished job.We are very happy with het dedication and communication skills. Thx",
-          "publishTime": "2026-01-24T13:08:32.057206860Z",
+          "text": "A lady who is so humble and quick i was gone to this lab due to nearby home for blood CBC count. She is very quick and no pain while taking the blood. I recommend this lab 100%✅ but make sure you done a phone call of lab is opened or not and then visit the place and surely the calls are answering at any time. THANK YOU BIOCARE",
+          "publishTime": "2026-05-23T12:14:52.456152561Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkcFpVRk5jbmhsVWpGRU1XUkNhbVJFWms1YVIyYxAB",
-          "reviewerName": "Jay Ash",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25aMFh6ZGpXbWhmYVhSd01FUkJabmRLYzFwQk4wRRAB",
+          "reviewerName": "Sarath N",
           "rating": 5,
-          "text": "Very Good Service and timely reports...\nGood Efforts by Om Lab",
-          "publishTime": "2026-01-22T06:57:03.562754958Z",
+          "text": "The Friendliest Lab Experience You'll Find!\nI absolutely strongly recommend this lab for all your blood work and routine health checks. Dealing with health information can be stressful, but this team genuinely operates as a friendly, caring sanctuary.\nThey treat every patient like their own family member. What truly sets them apart is their incredible patience and dedication to clarity. If you’re worried about asking a \"silly\" question or needing something explained for the tenth time (a fear we all have when it comes to our health!), fear not! They never hesitate to walk you through the process and your results, ensuring you feel completely informed and at ease.\nThis is the place to go if you want professional care delivered with a huge dose of kindness",
+          "publishTime": "2025-11-14T15:45:57.266163062Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1b1dHUTVVamRHYmxKRmREZzJNRU0xVG5ka1gwRRAB",
-          "reviewerName": "Rajkamal Shah",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKWVpIUjZTMmx2TVZCNFFsbEdOSHBMZW01TU9WRRAB",
+          "reviewerName": "Sekar Sangaiah",
           "rating": 5,
-          "text": "Good & polite person who came to collect sample for examination, faster delivery of reports",
-          "publishTime": "2026-02-05T16:56:35.381115639Z",
+          "text": "It is a very good budget friendly lab. The lady is very customer friendly and pleasant. She comes home promptly to collect the blood sample free of cost and informs you over phone when the report is ready. Very nice experience",
+          "publishTime": "2026-01-08T05:54:20.305113582Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJaUcO6L7H5zsRG3opwvToSpM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21rdFRIbHBORUl4Vkhwak5XMXZMVWhmVkVwRVRVRRAB",
-          "reviewerName": "Darshan Bhagat",
+          "reviewId": "places/ChIJa4KhLvdfUjoRjyA7JsaZIQk/reviews/Ci9DQUlRQUNvZENodHljRjlvT25keE1sbHBSMlI1ZGtSalFUWXhkWEZoVEVwWGQyYxAB",
+          "reviewerName": "Sangeetha Thiyagarajan",
           "rating": 5,
-          "text": "VERY GOOD LAB. SPECIAL SERVICE DOOR TO DOOR AVAILABLE, AND TIE UP WITH CA IS GOOD, REASONABLE AND GOOD PACKAGE.",
-          "publishTime": "2025-10-09T07:18:56.951457431Z",
+          "text": "I searched for “best blood test lab near me” online and that’s how I found Biocare Diagnostic Lab. I stay in Pallavaram, so the location was very convenient. Their master health checkup was very accurate and the reports were delivered quickly without any delay. The best part is that the cost is very affordable compared to other labs. The home sample collection was smooth, hygienic and the staff were friendly. I’m very satisfied and highly recommend Biocare Lab for anyone looking for reliable and trustworthy blood test services near Pallavaram.",
+          "publishTime": "2025-11-15T17:17:49.578059988Z",
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:02.939Z"
+      "lastSyncedAt": "2026-06-27T13:04:03.709Z"
     },
     {
       "id": "tridot-care",
@@ -99,7 +99,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:03.662Z"
+      "lastSyncedAt": "2026-06-27T13:04:04.444Z"
     },
     {
       "id": "ai-healthcare",
@@ -149,7 +149,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:04.384Z"
+      "lastSyncedAt": "2026-06-27T13:04:05.231Z"
     },
     {
       "id": "prakash-path-lab",
@@ -199,7 +199,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:05.109Z"
+      "lastSyncedAt": "2026-06-27T13:04:06.044Z"
     },
     {
       "id": "accured-diagnostics",
@@ -249,7 +249,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:05.840Z"
+      "lastSyncedAt": "2026-06-27T13:04:06.773Z"
     },
     {
       "id": "nt-pro-lab",
@@ -299,7 +299,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:06.601Z"
+      "lastSyncedAt": "2026-06-27T13:04:07.485Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
@@ -349,7 +349,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:07.381Z"
+      "lastSyncedAt": "2026-06-27T13:04:08.317Z"
     },
     {
       "id": "bharatiya-path-lab",
@@ -399,7 +399,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:08.113Z"
+      "lastSyncedAt": "2026-06-27T13:04:09.042Z"
     },
     {
       "id": "nirog-labcare",
@@ -449,7 +449,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:08.826Z"
+      "lastSyncedAt": "2026-06-27T13:04:09.784Z"
     },
     {
       "id": "eezee-pathlabs",
@@ -499,7 +499,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:09.540Z"
+      "lastSyncedAt": "2026-06-27T13:04:10.500Z"
     },
     {
       "id": "red-diagnostics",
@@ -549,7 +549,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:10.255Z"
+      "lastSyncedAt": "2026-06-27T13:04:11.229Z"
     },
     {
       "id": "serum-inc",
@@ -599,57 +599,57 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:10.933Z"
+      "lastSyncedAt": "2026-06-27T13:04:11.997Z"
     },
     {
       "id": "my-choice-lab",
       "name": "My Choice Lab",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 37,
+      "rating": 3.3,
+      "reviewCount": 14,
       "reviews": [
         {
-          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sRlRVVkJiV1ZQTTJ0RFJHOTVNRmR6VjI1T1luYxAB",
-          "reviewerName": "Tusher Debbarma",
+          "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChdDSUhNMG9nS0VJQ0FnSUNINXA3c3hRRRAB",
+          "reviewerName": "Cody White",
+          "rating": 1,
+          "text": "I have been receiving a bill from this place for over 6 months. Every time I call, nobody answers. I leave messages to no response.. I have no clue what the bill is for? I don't remember going to any appointment here. If I had, it was through my employer while in the laborers' union. This bill should have been sent to my employer if that was the case. Trying to contact them for answers has gotten me nowhere. I'm at a loss with what to do. I hope legal action is not required, but I am ready to go that route! This is absurd and NO WAY to run a business.",
+          "publishTime": "2024-09-04T13:30:01.949982Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChZDSUhNMG9nS0VJQ0FnSUNYNGYyUUx3EAE",
+          "reviewerName": "Denise Watts",
+          "rating": 1,
+          "text": "I have Medicaid. I paid 2 bills by accident. I am a single mother of two and receive SSI. I was told 3 months ago I would receive my refund. By Federal law they can NOT bill me OR take my money. I have called multiple times and they have refused to return my call OR refund my money. I have had Medicaid since 2009 due to being hit head on in an auto accident. This is ridiculous. Now I have to contact and involve the more people. This is crazy. I use to do billing for my mother's office. I know the laws!",
+          "publishTime": "2024-10-17T13:45:20.662451Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChZDSUhNMG9nS0VJQ0FnSUNXNWFUdkZnEAE",
+          "reviewerName": "Trevor Clark",
+          "rating": 1,
+          "text": "I have notified you four separate times, this being my fifth, you are violating HIPPA. PLEASE STOP FAXING 20+ PATIENTS' LAB RECORDS TO ME THAT DO NOT BELONG TO ME. This is happening daily. I do not want or need other people's medical records. I am not even a client of yours or a doctor. This is my fifth time asking you to stop. I have currently received over 218 people's lab results since I first requested you to STOP FAXING THEM TO ME over a week again and it happens again every day.",
+          "publishTime": "2022-03-03T02:31:57.058304Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChdDSUhNMG9nS0VJQ0FnSUR5NXM3NXFRRRAB",
+          "reviewerName": "Nancy Kyer",
           "rating": 5,
-          "text": "Excellent services from the lab in the Mayur Vihar phase 1 area, specially the waiting time is very very low..",
-          "publishTime": "2026-05-09T09:05:06.127382577Z",
+          "text": "Impressive laboratory all around, super fast results and our urologists love the reports. Helps treat the patient correctly the first time.",
+          "publishTime": "2021-03-06T00:33:44.880030Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t4d1gwVjRSVEpqTW0xUWVtOXhPVlpzWmtob1gxRRAB",
-          "reviewerName": "Himanshu Batheja",
-          "rating": 5,
-          "text": "Best service and staff are very cooperative thanks for Dr Sanjeev",
-          "publishTime": "2026-05-09T05:53:03.064041149Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tnNU1EazNNVlJvU0ZOTVVHSlpaM1V0T0VZMVExRRAB",
-          "reviewerName": "Abha Jha",
-          "rating": 5,
-          "text": "Good lab and Staff behavior is very nice",
-          "publishTime": "2026-06-03T06:58:35.986178325Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aSk9VcHJiMU5uYzA1bFNHaEthVU5WVnpsTGFYYxAB",
-          "reviewerName": "Vikram Singh Rajput",
-          "rating": 5,
-          "text": "Had a very interesting session with Faizal ji regarding my medical fitness examination.\nHe did all the medical examinations with very much care and ease at the same time.\nThanks.",
-          "publishTime": "2025-10-02T03:50:34.475375348Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/ChZDSUhNMG9nS0VJQ0FnSUM5eEo3UWF3EAE",
-          "reviewerName": "Pradeep Kumar Kaushik",
-          "rating": 5,
-          "text": "Mr Aman Sharam, Centre Head did my TMT very expertly and dedicatedly. The service on the lab is timely and effective.",
-          "publishTime": "2024-03-02T06:02:23.797381Z",
-          "sentiment": "positive"
+          "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChdDSUhNMG9nS0VJQ0FnSUM4aVAzOTF3RRAB",
+          "reviewerName": "Ben Edwards",
+          "rating": 1,
+          "text": "Can’t get anyone to answer my call or return call after leaving message. Keep getting a bill that I have already paid. Awful customer service if you  won’t answer your phone.",
+          "publishTime": "2020-06-22T19:42:09.375799Z",
+          "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:11.646Z"
+      "lastSyncedAt": "2026-06-27T13:04:12.688Z"
     },
     {
       "id": "surbhi-care",
@@ -699,7 +699,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:12.342Z"
+      "lastSyncedAt": "2026-06-27T13:04:13.427Z"
     },
     {
       "id": "d-care-diagnostics",
@@ -749,7 +749,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:13.038Z"
+      "lastSyncedAt": "2026-06-27T13:04:14.106Z"
     },
     {
       "id": "fifty-one-plus-noida",
@@ -799,7 +799,7 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:13.753Z"
+      "lastSyncedAt": "2026-06-27T13:04:14.807Z"
     },
     {
       "id": "vachana-diagnostic",
@@ -849,7 +849,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:14.471Z"
+      "lastSyncedAt": "2026-06-27T13:04:15.507Z"
     },
     {
       "id": "fifty-one-plus-meerut",
@@ -899,57 +899,57 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:15.203Z"
+      "lastSyncedAt": "2026-06-27T13:04:16.238Z"
     },
     {
       "id": "prime-diagnostic",
       "name": "Prime Diagnostic Pathology",
       "city": "",
       "rating": 4.9,
-      "reviewCount": 109,
+      "reviewCount": 91,
       "reviews": [
         {
-          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkSVkybzViVFpwVVVZME4wdFZiME01V0dnMFRWRRAB",
-          "reviewerName": "Sanjeet Vishwakarma",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OeU4yODBWV2RSZG1aeWMwSnRTa0ZyVnpkQlpXYxAB",
+          "reviewerName": "KAPISH KUMAR",
           "rating": 5,
-          "text": "Best lab in this area, very low rate compared to other labs in surrounding area. They give discounts also. Staff is also polite and well trained. Toilet is clean and hygienic. Lab is managed by pathologist himself so report authenticity is top class. I will definitely recommend it.",
-          "publishTime": "2025-12-02T08:02:12.369942972Z",
+          "text": "Mr subash today visit my residence for some lab tests and basic medical detail very good behaviour coperative staff thank you mr subash for helping",
+          "publishTime": "2026-05-18T05:35:35.006628443Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CMVducFdTRTQ1YVdKTmFXcHVZbkpQTkV4RVZWRRAB",
-          "reviewerName": "Diksha Mohit",
-          "rating": 5,
-          "text": "Very prompt in providing reports on whatsapp as well. Accept online payments and on door tests with minimum charges. Highly skilled technicians and lab work is accurate. Dr. Dhiraj sir is very polite and kind. Highly recommended.",
-          "publishTime": "2025-10-31T09:28:15.582621211Z",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21oMWMwcExPVTVwU21kWlFVUTRhRk5pTTB0TldVRRAB",
+          "reviewerName": "ankur atri",
+          "rating": 4,
+          "text": "Very good experience with mr. Subhash\nHe was very professional and samples were taken without any pain",
+          "publishTime": "2026-05-04T03:59:01.146294208Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT201dFlYQjVSR3R3TTNob1pYVmlRbGhyYXpWa05rRRAB",
-          "reviewerName": "Komal Aher",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT205aU5YQXhkVWxWUW1kWGNESmhXRmc1YW1WRU9HYxAB",
+          "reviewerName": "Ashendra Singh",
           "rating": 5,
-          "text": "Quick, supportive and helfpul.\nHad a smooth experience at the pathology lab—polite and helpful staff, clean and well-organized facility, quick and almost painless blood draw, and reports delivered within a day.",
-          "publishTime": "2026-01-20T09:51:59.893183152Z",
+          "text": "Health check up was done smoothly without any issue. Dharmendra reached on time for the check. His behaviour is very good and much professional.",
+          "publishTime": "2025-09-20T07:38:56.735155899Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xWWVVWWmhVMGxLYmpreVRqVTBPVTlmTmtSTlVIYxAB",
-          "reviewerName": "J C",
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tGM1pUbDNRVjlaZG5sTVQxZDZWSGR6Ykc1UVZGRRAB",
+          "reviewerName": "Abhisek Sarkar (Abhisek)",
           "rating": 5,
-          "text": "Recently visited this pathology lab for some routine tests, and overall, I had a smooth experience. The staff were polite and helpful, they explained the process clearly and made me feel comfortable. The place was clean and well-organized, which gave me confidence in their standards. The blood draw was quick and almost painless and I got my reports within a day. They also sent everything over whats app, so I didn’t have to go back just to collect the results. I would definitely recommend it to my family and friends",
-          "publishTime": "2025-12-03T15:42:50.816365877Z",
+          "text": "Very Good service, quick and nice behaviour. 100% recommendation",
+          "publishTime": "2026-05-11T01:30:46.048117033Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJ__CLy_S55zsRDtZM7BZM3JY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21sUFlucDNhRFJZU1RaUmRIUXhjemRTWlV0ZlZHYxAB",
-          "reviewerName": "Mahendra Tayade",
-          "rating": 5,
-          "text": "Very good pathology lab in thane savarkar nagar. Cheapest in this area and gave very good discount. Got accurate reports and on time. I will definitely recommend it.",
-          "publishTime": "2026-02-08T10:08:11.516576225Z",
-          "sentiment": "positive"
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
+          "reviewerName": "yash jain",
+          "rating": 1,
+          "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
+          "publishTime": "2026-01-10T06:16:13.800982140Z",
+          "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:15.904Z"
+      "lastSyncedAt": "2026-06-27T13:04:16.945Z"
     },
     {
       "id": "dayal-diagnostic",
@@ -999,7 +999,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:16.615Z"
+      "lastSyncedAt": "2026-06-27T13:04:17.668Z"
     },
     {
       "id": "chaitanya-lifecare",
@@ -1049,57 +1049,57 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:17.285Z"
+      "lastSyncedAt": "2026-06-27T13:04:18.327Z"
     },
     {
       "id": "fifty-one-plus-delhi",
       "name": "FIFTY ONE PLUS LAB, DELHI",
       "city": "Delhi",
-      "rating": 4.9,
-      "reviewCount": 116,
+      "rating": 4.7,
+      "reviewCount": 746,
       "reviews": [
         {
-          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xaSVQwTkhTRGRqY2tsaWFrWkVia3B3WjFOTVMzYxAB",
-          "reviewerName": "Jatin Yadav",
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSaVlVRnNXRzVuUmt3MFJrZHJWRlJtTFRoTWMzYxAB",
+          "reviewerName": "Piyush Rana",
           "rating": 5,
-          "text": "Very quick and efficient service. The staff is well trained and cooperative. The facility is very clean and hygienic.\nHighly recommend\nThank you",
-          "publishTime": "2026-05-23T05:11:03.184503538Z",
+          "text": "The lab provides quick and efficient testing services. The staff is well-organized, and the overall experience is smooth. The space is well-maintained and comfortable. Overall, a very good diagnostic center",
+          "publishTime": "2026-03-23T02:58:28.045328842Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xac2F6aFJYemRPV2t0cVIxRkRPSHBYYTNReVMzYxAB",
-          "reviewerName": "manmohan sullhan",
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wemRtNTFiWEZuYlc5M056bE1iWEEwWDI1c2JHYxAB",
+          "reviewerName": "SHIV SHANKAR",
           "rating": 5,
-          "text": "Good experience at fifty one plus labs delhi. Staff is supportive and professional. Good experience technician, smooth sample collection, and got my reports on time. Recommended.\nThank you.",
-          "publishTime": "2026-05-05T01:52:15.297446339Z",
+          "text": "I had a great experience at FIFTY ONE PLUS LAB, Noida (One Plus Lab). The lab facilities are excellent, and all the staff are very cooperative and professional. The staff is courteous, and the entire process went smoothly. The lab environment is clean and organized. Overall, this is a great lab, and I highly recommend its services.",
+          "publishTime": "2026-06-02T07:01:38.606609771Z",
           "sentiment": "positive"
         },
         {
-          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkMmJqZ3dSREJEUjNGUVJFTnZXbll4TlMxdmRXYxAB",
-          "reviewerName": "Utkarsh Bairagi",
-          "rating": 5,
-          "text": "Great service done by Faisal he is very smart and intellectual he done the medical within 10 minutes of time thank you mr Faisal God bless you bro",
-          "publishTime": "2025-10-05T03:48:43.863523908Z",
-          "sentiment": "positive"
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT2VWSjBVVmhoTkdwdGNXSnBXVFpWZG1jdFlXYxAB",
+          "reviewerName": "Bot Unanalyzed",
+          "rating": 1,
+          "text": "Completely unprofessional, nobody comes on time when I reached only a dog is there. My reporting time was 8 AM  and when I called they mention that staff comes by 8:30 to 9. Also an unhygienic place.",
+          "publishTime": "2026-04-20T02:33:14.517414053Z",
+          "sentiment": "negative"
         },
         {
-          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoSVowUmhTbWx1ZFdneWRVZDNTSEZ2TWxST1MwRRAB",
-          "reviewerName": "Tushar Das",
-          "rating": 5,
-          "text": "All the tests were done appropriately with excellent hospitality. Behaviour od staffs were extremely good.",
-          "publishTime": "2026-05-30T05:01:21.683150373Z",
-          "sentiment": "positive"
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCV1pqZEVWRWwwTjBkV2RUUXRRekZGZVhOV1RuYxAB",
+          "reviewerName": "Pankaj Gupta",
+          "rating": 1,
+          "text": "I was quite impressed when I visited but after two months, my opinion is totally changed.\nQuality /test results are bad even though they are quite fast.\n\nI had Niva Bupa insurance and this lab has a tie up for annual check up with them.\n\nI saw the reviews and booked my wife's annual health check up. I was quite impressed with the clockwork speed they work. Everything was working as well oiled machine and within 1 hour everything was done (including ultrasound, pap smear etc.). Both of us were quite impressed with the efficiency of the lab at that time (second week of October 2025).\n\nFast forward to Last week of November (6 weeks post annual check up), my wife had quite sever pain in abdomen. We went for ultrasound to a different lab and doctor said she is having stone in kidney(5mm) and gall bladder (3mm).\n\nSo, yes they are fast & efficient but quality is not reliable and for health, quality of tests is of highest importance and NOT HOW FAST You can provide the service.\n\nI will not recommend this lab to anyone.",
+          "publishTime": "2025-12-23T01:36:20.999827311Z",
+          "sentiment": "negative"
         },
         {
-          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GMWRESmxVRlZ4Unkxa2NsQnFTVzVtYmtGNFYzYxAB",
-          "reviewerName": "HAREEMA NAJAM",
-          "rating": 5,
-          "text": "Fifty one plus is a very good lab. Excellent service and friendly staff.\nRecommended\nThank you",
-          "publishTime": "2026-05-12T07:54:45.886064165Z",
-          "sentiment": "positive"
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xZM09USlRNVk5KYjNWSWMzZFJZbHBtVmw5WlNIYxAB",
+          "reviewerName": "Yogendra Singh",
+          "rating": 1,
+          "text": "Three days of no showing up; they provide home collection appointments daily, and requests for 12 hours fasting.\n\nDay 1: Sir, I am late, so I prefer not to come; it's hot\nDay 2: My bike isn't working. I said, I am happy to wait, but he insisted on rescheduling for the next day\nDay 3: Sir, I am sick, so I won't be coming. No response to messages or calls.\n\nExtremely horrible service. Pathetic on-call staff with no respect for time and life.\n\nI wish the government would cancel their license.",
+          "publishTime": "2026-05-22T03:39:26.258896957Z",
+          "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:18.005Z"
+      "lastSyncedAt": "2026-06-27T13:04:18.967Z"
     },
     {
       "id": "konica-imaging",
@@ -1149,7 +1149,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:18.690Z"
+      "lastSyncedAt": "2026-06-27T13:04:19.669Z"
     },
     {
       "id": "amino-diagnostics",
@@ -1199,7 +1199,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-27T10:54:19.395Z"
+      "lastSyncedAt": "2026-06-27T13:04:20.357Z"
     }
   ],
   "alerts": [
@@ -1249,6 +1249,42 @@
       "createdAt": "2024-07-17T14:01:21.417930Z"
     },
     {
+      "branchId": "my-choice-lab",
+      "branchName": "My Choice Lab",
+      "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChdDSUhNMG9nS0VJQ0FnSUNINXA3c3hRRRAB",
+      "rating": 1,
+      "text": "I have been receiving a bill from this place for over 6 months. Every time I call, nobody answers. I leave messages to no response.. I have no clue what the bill is for? I don't remember going to any appointment here. If I had, it was through my employer while in the laborers' union. This bill should have been sent to my employer if that was the case. Trying to contact them for answers has gotten me nowhere. I'm at a loss with what to do. I hope legal action is not required, but I am ready to go that route! This is absurd and NO WAY to run a business.",
+      "reviewerName": "Cody White",
+      "createdAt": "2024-09-04T13:30:01.949982Z"
+    },
+    {
+      "branchId": "my-choice-lab",
+      "branchName": "My Choice Lab",
+      "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChZDSUhNMG9nS0VJQ0FnSUNYNGYyUUx3EAE",
+      "rating": 1,
+      "text": "I have Medicaid. I paid 2 bills by accident. I am a single mother of two and receive SSI. I was told 3 months ago I would receive my refund. By Federal law they can NOT bill me OR take my money. I have called multiple times and they have refused to return my call OR refund my money. I have had Medicaid since 2009 due to being hit head on in an auto accident. This is ridiculous. Now I have to contact and involve the more people. This is crazy. I use to do billing for my mother's office. I know the laws!",
+      "reviewerName": "Denise Watts",
+      "createdAt": "2024-10-17T13:45:20.662451Z"
+    },
+    {
+      "branchId": "my-choice-lab",
+      "branchName": "My Choice Lab",
+      "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChZDSUhNMG9nS0VJQ0FnSUNXNWFUdkZnEAE",
+      "rating": 1,
+      "text": "I have notified you four separate times, this being my fifth, you are violating HIPPA. PLEASE STOP FAXING 20+ PATIENTS' LAB RECORDS TO ME THAT DO NOT BELONG TO ME. This is happening daily. I do not want or need other people's medical records. I am not even a client of yours or a doctor. This is my fifth time asking you to stop. I have currently received over 218 people's lab results since I first requested you to STOP FAXING THEM TO ME over a week again and it happens again every day.",
+      "reviewerName": "Trevor Clark",
+      "createdAt": "2022-03-03T02:31:57.058304Z"
+    },
+    {
+      "branchId": "my-choice-lab",
+      "branchName": "My Choice Lab",
+      "reviewId": "places/ChIJMcEE84eqbIgRIohY8y8SDm8/reviews/ChdDSUhNMG9nS0VJQ0FnSUM4aVAzOTF3RRAB",
+      "rating": 1,
+      "text": "Can’t get anyone to answer my call or return call after leaving message. Keep getting a bill that I have already paid. Awful customer service if you  won’t answer your phone.",
+      "reviewerName": "Ben Edwards",
+      "createdAt": "2020-06-22T19:42:09.375799Z"
+    },
+    {
       "branchId": "fifty-one-plus-noida",
       "branchName": "FIFTY ONE PLUS LAB, NOIDA",
       "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT2VWSjBVVmhoTkdwdGNXSnBXVFpWZG1jdFlXYxAB",
@@ -1285,6 +1321,15 @@
       "createdAt": "2026-04-20T04:06:57.730193496Z"
     },
     {
+      "branchId": "prime-diagnostic",
+      "branchName": "Prime Diagnostic Pathology",
+      "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
+      "rating": 1,
+      "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
+      "reviewerName": "yash jain",
+      "createdAt": "2026-01-10T06:16:13.800982140Z"
+    },
+    {
       "branchId": "dayal-diagnostic",
       "branchName": "DAYAL DIAGNOSTIC CENTER",
       "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poSVNHWkRVVXhsVFZwTFpFZGpPVTFQUlRCdlptYxAB",
@@ -1301,6 +1346,33 @@
       "text": "Worst dignostic center with worst staff member..\nDon't go for it...\nThey will collect the sample and sent to other lab for testing.. a normal blood test also take 48 to 72 hrs..\nWorst experience with Dayal Dignostic",
       "reviewerName": "Sushant Singh",
       "createdAt": "2025-12-13T11:29:56.764505820Z"
+    },
+    {
+      "branchId": "fifty-one-plus-delhi",
+      "branchName": "FIFTY ONE PLUS LAB, DELHI",
+      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT2VWSjBVVmhoTkdwdGNXSnBXVFpWZG1jdFlXYxAB",
+      "rating": 1,
+      "text": "Completely unprofessional, nobody comes on time when I reached only a dog is there. My reporting time was 8 AM  and when I called they mention that staff comes by 8:30 to 9. Also an unhygienic place.",
+      "reviewerName": "Bot Unanalyzed",
+      "createdAt": "2026-04-20T02:33:14.517414053Z"
+    },
+    {
+      "branchId": "fifty-one-plus-delhi",
+      "branchName": "FIFTY ONE PLUS LAB, DELHI",
+      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCV1pqZEVWRWwwTjBkV2RUUXRRekZGZVhOV1RuYxAB",
+      "rating": 1,
+      "text": "I was quite impressed when I visited but after two months, my opinion is totally changed.\nQuality /test results are bad even though they are quite fast.\n\nI had Niva Bupa insurance and this lab has a tie up for annual check up with them.\n\nI saw the reviews and booked my wife's annual health check up. I was quite impressed with the clockwork speed they work. Everything was working as well oiled machine and within 1 hour everything was done (including ultrasound, pap smear etc.). Both of us were quite impressed with the efficiency of the lab at that time (second week of October 2025).\n\nFast forward to Last week of November (6 weeks post annual check up), my wife had quite sever pain in abdomen. We went for ultrasound to a different lab and doctor said she is having stone in kidney(5mm) and gall bladder (3mm).\n\nSo, yes they are fast & efficient but quality is not reliable and for health, quality of tests is of highest importance and NOT HOW FAST You can provide the service.\n\nI will not recommend this lab to anyone.",
+      "reviewerName": "Pankaj Gupta",
+      "createdAt": "2025-12-23T01:36:20.999827311Z"
+    },
+    {
+      "branchId": "fifty-one-plus-delhi",
+      "branchName": "FIFTY ONE PLUS LAB, DELHI",
+      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xZM09USlRNVk5KYjNWSWMzZFJZbHBtVmw5WlNIYxAB",
+      "rating": 1,
+      "text": "Three days of no showing up; they provide home collection appointments daily, and requests for 12 hours fasting.\n\nDay 1: Sir, I am late, so I prefer not to come; it's hot\nDay 2: My bike isn't working. I said, I am happy to wait, but he insisted on rescheduling for the next day\nDay 3: Sir, I am sick, so I won't be coming. No response to messages or calls.\n\nExtremely horrible service. Pathetic on-call staff with no respect for time and life.\n\nI wish the government would cancel their license.",
+      "reviewerName": "Yogendra Singh",
+      "createdAt": "2026-05-22T03:39:26.258896957Z"
     }
   ]
 }
