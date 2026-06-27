@@ -1693,6 +1693,30 @@ function reviewerAvatar(name) {
 
 // ─── BOOT ────────────────────────────────────────────────────────────────────
 loadData();
+
+// Auto-refresh every 5 minutes — silently checks if generatedAt changed
+let _lastGeneratedAt = null;
+setInterval(async () => {
+  try {
+    const r = await fetch('./data.json?t=' + Date.now());
+    const newData = await r.json();
+    if (_lastGeneratedAt && newData.generatedAt !== _lastGeneratedAt) {
+      DATA = newData;
+      buildAllReviews();
+      renderAll();
+      const rel = relTime(new Date(DATA.generatedAt));
+      document.getElementById('syncStatus').textContent = 'Synced ' + rel;
+      document.getElementById('dataTimestamp').textContent = 'Last sync: ' + rel;
+      toast('✓ Dashboard updated with new reviews');
+    }
+    _lastGeneratedAt = newData.generatedAt;
+  } catch(e) { /* silent fail */ }
+}, 5 * 60 * 1000);
+
+// Set initial generatedAt after first load
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => { if (DATA) _lastGeneratedAt = DATA.generatedAt; }, 3000);
+});
 </script>
 </body>
 </html>
