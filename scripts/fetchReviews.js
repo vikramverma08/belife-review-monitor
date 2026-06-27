@@ -1,102 +1,128 @@
-// scripts/fetchReviews.js
-// Reads labs.json, pulls reviews for each lab from Outscraper, and writes
-// public/data.json — the single file the dashboard reads. No database needed.
-//
-// Run it:
-//   OUTSCRAPER_API_KEY=xxxx node scripts/fetchReviews.js     (bash)
-//   $env:OUTSCRAPER_API_KEY="xxxx"; node scripts/fetchReviews.js   (PowerShell)
-//
-// In GitHub Actions the key comes from a repo secret (see the workflow file).
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
 
-const fs = require("fs");
-const path = require("path");
-const { getReviews } = require("../outscraperClient");
+const CLIENT_ID = process.env.GBP_CLIENT_ID;
+const CLIENT_SECRET = process.env.GBP_CLIENT_SECRET;
+const REFRESH_TOKEN = process.env.GBP_REFRESH_TOKEN;
 
-const ROOT = path.join(__dirname, "..");
-const LABS_FILE = path.join(ROOT, "labs.json");
-const OUT_FILE = path.join(ROOT, "public", "data.json");
+function httpsPost(hostname, urlPath, body) {
+  return new Promise((resolve, reject) => {
+    const buf = Buffer.from(body);
+    const req = https.request({
+      hostname, path: urlPath, method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': buf.length }
+    }, res => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => { try { resolve(JSON.parse(data)); } catch(e) { reject(new Error(data)); } });
+    });
+    req.on('error', reject);
+    req.write(buf);
+    req.end();
+  });
+}
 
-const REVIEWS_PER_LAB = 10; // keep small to conserve free credits
-const ALERT_AT_OR_BELOW = 2; // a review at/under this many stars raises an alert
+function httpsGet(url, accessToken) {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const req = https.request({
+      hostname: u.hostname, path: u.pathname + u.search, method: 'GET',
+      headers: { Authorization: `Bearer ${accessToken}` }
+    }, res => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => { try { resolve(JSON.parse(data)); } catch(e) { reject(new Error(data)); } });
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+async function getAccessToken() {
+  const body = new URLSearchParams({
+    client_id: CLIENT_ID, client_secret: CLIENT_SECRET,
+    refresh_token: REFRESH_TOKEN, grant_type: 'refresh_token'
+  }).toString();
+  const res = await httpsPost('oauth2.googleapis.com', '/token', body);
+  if (!res.access_token) throw new Error(`Token error: ${JSON.stringify(res)}`);
+  return res.access_token;
+}
+
+const RATING = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
+const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
+
+async function fetchReviewsForLocation(token, accountName, locationId) {
+  const reviews = [];
+  let pageToken = '';
+  const locName = locationId.startsWith('locations/') ? locationId : `locations/${locationId}`;
+  do {
+    const url = `https://mybusiness.googleapis.com/v4/${accountName}/${locName}/reviews` +
+      (pageToken ? `?pageToken=${encodeURIComponent(pageToken)}` : '');
+    const res = await httpsGet(url, token);
+    if (res.error) { console.warn(`  Warning: ${res.error.message}`); break; }
+    for (const r of (res.reviews || [])) {
+      const rating = RATING[r.starRating] || 0;
+      reviews.push({
+        reviewId: r.reviewId,
+        reviewerName: r.reviewer?.displayName || 'Anonymous',
+        rating, text: r.comment || '',
+        publishTime: r.createTime,
+        sentiment: sentiment(rating)
+      });
+    }
+    pageToken = res.nextPageToken || '';
+  } while (pageToken);
+  return reviews;
+}
 
 async function main() {
-  const apiKey = process.env.OUTSCRAPER_API_KEY;
-  if (!apiKey) {
-    console.error("Missing OUTSCRAPER_API_KEY. Set it as an env var and re-run.");
-    process.exit(1);
-  }
+  if (!CLIENT_ID || !CLIENT_SECRET || !REFRESH_TOKEN)
+    throw new Error('Missing env: GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN');
 
-  const { labs } = JSON.parse(fs.readFileSync(LABS_FILE, "utf8"));
-  if (!Array.isArray(labs) || !labs.length) {
-    console.error("labs.json has no labs. Add at least one.");
-    process.exit(1);
-  }
+  console.log('Getting access token...');
+  const token = await getAccessToken();
+
+  console.log('Fetching accounts...');
+  const accountsRes = await httpsGet('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', token);
+  if (!accountsRes.accounts?.length) throw new Error('No accounts: ' + JSON.stringify(accountsRes));
+  const accountName = accountsRes.accounts[0].name;
+  console.log(`Account: ${accountName}`);
+
+  const labsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../labs.json'), 'utf8'));
+  const labs = labsData.labs || labsData;
 
   const branches = [];
   const alerts = [];
 
   for (const lab of labs) {
-    process.stdout.write(`Fetching "${lab.name || lab.query}"… `);
-    try {
-      const data = await getReviews(apiKey, lab.query, { reviewsLimit: REVIEWS_PER_LAB });
-      if (!data.found) {
-        console.log("not found");
-        branches.push({ ...baseBranch(lab), error: "not found" });
-        continue;
-      }
+    process.stdout.write(`Fetching ${lab.name}... `);
+    const reviews = await fetchReviewsForLocation(token, accountName, lab.locationId);
+    const avgRating = reviews.length
+      ? +(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1) : 0;
 
-      branches.push({
-        ...baseBranch(lab),
-        name: lab.name || data.name,
-        rating: data.rating,
-        reviewCount: data.totalReviewCount,
-        reviews: data.reviews,
-        lastSyncedAt: new Date().toISOString(),
+    for (const r of reviews) {
+      if (r.rating <= 2) alerts.push({
+        branchId: lab.id, branchName: lab.name,
+        reviewId: r.reviewId, rating: r.rating,
+        text: r.text, reviewerName: r.reviewerName,
+        createdAt: r.publishTime
       });
-
-      // Any low-star review in this batch becomes an alert.
-      for (const r of data.reviews) {
-        if (r.rating != null && r.rating <= ALERT_AT_OR_BELOW) {
-          alerts.push({
-            branchId: lab.id,
-            branchName: lab.name || data.name,
-            reviewId: r.reviewId,
-            rating: r.rating,
-            text: r.text,
-            reviewerName: r.reviewerName,
-            createdAt: r.publishTime || new Date().toISOString(),
-          });
-        }
-      }
-      console.log(`ok (${data.rating ?? "—"}★, ${data.reviews.length} reviews)`);
-    } catch (e) {
-      console.log(`error: ${e.message}`);
-      branches.push({ ...baseBranch(lab), error: e.message });
     }
+
+    branches.push({
+      id: lab.id, name: lab.name, city: lab.city || '',
+      rating: avgRating, reviewCount: reviews.length,
+      reviews, lastSyncedAt: new Date().toISOString()
+    });
+
+    console.log(`${reviews.length} reviews, avg ${avgRating}`);
+    await new Promise(r => setTimeout(r, 300));
   }
 
-  // Newest alerts first.
-  alerts.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
-
-  const out = { generatedAt: new Date().toISOString(), branches, alerts };
-  fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
-  fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2));
-  console.log(`\nWrote ${OUT_FILE} — ${branches.length} branches, ${alerts.length} alerts.`);
+  const output = { generatedAt: new Date().toISOString(), branches, alerts };
+  fs.writeFileSync(path.join(__dirname, '../docs/data.json'), JSON.stringify(output, null, 2));
+  console.log(`\nDone: ${branches.length} branches, ${alerts.length} alerts`);
 }
 
-function baseBranch(lab) {
-  return {
-    id: lab.id,
-    name: lab.name || "",
-    city: lab.city || "",
-    rating: null,
-    reviewCount: 0,
-    reviews: [],
-    lastSyncedAt: null,
-  };
-}
-
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+main().catch(err => { console.error(err.message); process.exit(1); });
