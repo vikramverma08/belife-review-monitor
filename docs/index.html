@@ -503,7 +503,84 @@ tr:hover td{background:rgba(14,94,92,.03);}
 </head>
 <body>
 
-<div class="app">
+<!-- LOGIN GATE -->
+<div id="loginGate" style="
+  position:fixed;inset:0;z-index:9999;
+  background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Geist',-apple-system,sans-serif;
+">
+  <div style="
+    background:var(--bg-card);border:1px solid var(--line);border-radius:24px;
+    padding:44px 48px;width:min(420px,92vw);
+    box-shadow:0 24px 64px rgba(14,33,29,.12);
+    animation:fadeIn .4s cubic-bezier(.4,0,.2,1);
+  ">
+    <!-- Logo -->
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <div style="
+        width:42px;height:42px;border-radius:12px;
+        background:linear-gradient(135deg,#0E5E5C,#053F3D);
+        display:grid;place-items:center;color:#FBF8F1;
+        font-family:'Instrument Serif',serif;font-size:24px;font-style:italic;
+        box-shadow:0 4px 14px rgba(14,94,92,.3);
+      ">B</div>
+      <div>
+        <div style="font-family:'Instrument Serif',serif;font-size:24px;letter-spacing:-.01em;">BeLife</div>
+        <div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);">Review Monitor</div>
+      </div>
+    </div>
+
+    <!-- Heading -->
+    <div style="font-family:'Instrument Serif',serif;font-size:28px;letter-spacing:-.02em;margin-bottom:6px;">Welcome back</div>
+    <div style="font-size:13px;color:var(--ink-mute);margin-bottom:28px;">Enter your password to access the dashboard</div>
+
+    <!-- Input -->
+    <div id="loginError" style="
+      display:none;background:var(--accent-soft);border:1px solid rgba(200,75,49,.2);
+      border-radius:10px;padding:10px 14px;font-size:12.5px;color:var(--accent);
+      margin-bottom:14px;font-weight:500;
+    ">Incorrect password. Please try again.</div>
+
+    <div style="position:relative;margin-bottom:16px;">
+      <input id="loginInput" type="password" placeholder="Enter password"
+        onkeydown="if(event.key==='Enter')checkLogin()"
+        style="
+          width:100%;padding:13px 48px 13px 16px;
+          border:1.5px solid var(--line);border-radius:12px;
+          font-family:'Geist',-apple-system,sans-serif;font-size:14px;
+          background:var(--bg);color:var(--ink);outline:none;
+          transition:all .2s;
+        "
+        onfocus="this.style.borderColor='var(--primary)';this.style.boxShadow='0 0 0 3px var(--primary-soft)'"
+        onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'"
+      >
+      <button onclick="toggleLoginEye(this)" style="
+        position:absolute;right:14px;top:50%;transform:translateY(-50%);
+        background:none;border:none;cursor:pointer;color:var(--ink-mute);padding:4px;
+      ">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+    </div>
+
+    <button onclick="checkLogin()" style="
+      width:100%;padding:13px;border-radius:12px;border:none;cursor:pointer;
+      background:linear-gradient(135deg,#0E5E5C,#053F3D);color:#FBF8F1;
+      font-family:'Geist',-apple-system,sans-serif;font-size:14px;font-weight:600;
+      box-shadow:0 4px 14px rgba(14,94,92,.3);
+      transition:all .2s cubic-bezier(.4,0,.2,1);
+    "
+    onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 20px rgba(14,94,92,.4)'"
+    onmouseout="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(14,94,92,.3)'"
+    >Access Dashboard →</button>
+
+    <div style="margin-top:20px;padding-top:18px;border-top:1px solid var(--line-soft);font-size:11.5px;color:var(--ink-mute);text-align:center;">
+      BeLife Diagnostics · Private Dashboard · 24 Partner Labs
+    </div>
+  </div>
+</div>
+
+<div class="app" id="mainApp" style="display:none;">
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-header">
@@ -1691,8 +1768,47 @@ function reviewerAvatar(name) {
   return `<div class="reviewer-avatar" style="background:${color}">${initials}</div>`;
 }
 
+// ─── AUTH ────────────────────────────────────────────────────────────────────
+const PASS = 'Belife@ASH';
+
+function checkLogin() {
+  const val = document.getElementById('loginInput').value;
+  if (val === PASS) {
+    sessionStorage.setItem('bl_auth', '1');
+    document.getElementById('loginGate').style.display = 'none';
+    document.getElementById('mainApp').style.display = 'grid';
+    loadData();
+  } else {
+    const err = document.getElementById('loginError');
+    err.style.display = 'block';
+    const inp = document.getElementById('loginInput');
+    inp.style.borderColor = 'var(--accent)';
+    inp.style.boxShadow = '0 0 0 3px var(--accent-soft)';
+    inp.value = '';
+    inp.focus();
+    setTimeout(() => { inp.style.borderColor='var(--line)'; inp.style.boxShadow='none'; }, 2000);
+  }
+}
+
+function toggleLoginEye(btn) {
+  const inp = document.getElementById('loginInput');
+  if (inp.type === 'password') {
+    inp.type = 'text';
+    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
+  } else {
+    inp.type = 'password';
+    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+  }
+}
+
 // ─── BOOT ────────────────────────────────────────────────────────────────────
-loadData();
+if (sessionStorage.getItem('bl_auth') === '1') {
+  document.getElementById('loginGate').style.display = 'none';
+  document.getElementById('mainApp').style.display = 'grid';
+  loadData();
+} else {
+  document.getElementById('loginInput').focus();
+}
 
 // Auto-refresh every 5 minutes — silently checks if generatedAt changed
 let _lastGeneratedAt = null;
