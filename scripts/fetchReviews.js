@@ -2,16 +2,30 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const CLIENT_ID = process.env.GBP_CLIENT_ID;
-const CLIENT_SECRET = process.env.GBP_CLIENT_SECRET;
-const REFRESH_TOKEN = process.env.GBP_REFRESH_TOKEN;
+const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
-function httpsPost(hostname, urlPath, body) {
+function httpsGet(url) {
   return new Promise((resolve, reject) => {
-    const buf = Buffer.from(body);
+    const u = new URL(url);
     const req = https.request({
-      hostname, path: urlPath, method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': buf.length }
+      hostname: u.hostname, path: u.pathname + u.search, method: 'GET'
+    }, res => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => { try { resolve(JSON.parse(data)); } catch(e) { reject(new Error(data)); } });
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+function httpsPost(url, headers, body) {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const buf = Buffer.from(JSON.stringify(body));
+    const req = https.request({
+      hostname: u.hostname, path: u.pathname, method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Content-Length': buf.length, ...headers }
     }, res => {
       let data = '';
       res.on('data', c => data += c);
@@ -23,69 +37,43 @@ function httpsPost(hostname, urlPath, body) {
   });
 }
 
-function httpsGet(url, accessToken) {
-  return new Promise((resolve, reject) => {
-    const u = new URL(url);
-    const req = https.request({
-      hostname: u.hostname, path: u.pathname + u.search, method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` }
-    }, res => {
-      let data = '';
-      res.on('data', c => data += c);
-      res.on('end', () => { try { resolve(JSON.parse(data)); } catch(e) { reject(new Error(data)); } });
-    });
-    req.on('error', reject);
-    req.end();
-  });
-}
-
-async function getAccessToken() {
-  const body = new URLSearchParams({
-    client_id: CLIENT_ID, client_secret: CLIENT_SECRET,
-    refresh_token: REFRESH_TOKEN, grant_type: 'refresh_token'
-  }).toString();
-  const res = await httpsPost('oauth2.googleapis.com', '/token', body);
-  if (!res.access_token) throw new Error(`Token error: ${JSON.stringify(res)}`);
-  return res.access_token;
-}
-
-const RATING = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
+const RATING_NUM = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
 const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
 
-// Uses mybusinessreviews API v1 — no account ID needed, just location ID
-async function fetchReviewsForLocation(token, locationId) {
+// Search for a place by name and get its Place ID
+async function findPlaceId(labName, labCity) {
+  const query = encodeURIComponent(`${labName} ${labCity || ''} India`);
+  const url = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${query}&inputtype=textquery&fields=place_id,name&key=${PLACES_API_KEY}`;
+  const res = await httpsGet(url);
+  if (res.candidates?.length) return res.candidates[0].place_id;
+  return null;
+}
+
+// Get reviews for a Place ID using Places API (New)
+async function fetchReviewsForPlace(placeId) {
+  const url = `https://places.googleapis.com/v1/places/${placeId}`;
+  const res = await httpsPost(url, {
+    'X-Goog-Api-Key': PLACES_API_KEY,
+    'X-Goog-FieldMask': 'reviews,rating,userRatingCount'
+  }, {});
+
   const reviews = [];
-  let pageToken = '';
-  // locationId from labs.json is like "locations/17578348237633385948"
-  // strip the "locations/" prefix to get just the numeric ID
-  const locId = locationId.replace(/^locations\//, '');
-  do {
-    const url = `https://mybusinessreviews.googleapis.com/v1/locations/${locId}/reviews` +
-      (pageToken ? `?pageToken=${encodeURIComponent(pageToken)}` : '');
-    const res = await httpsGet(url, token);
-    if (res.error) { console.warn(`  [${res.error.code}] ${res.error.message}`); break; }
-    for (const r of (res.reviews || [])) {
-      const rating = RATING[r.starRating] || 0;
-      reviews.push({
-        reviewId: r.reviewId,
-        reviewerName: r.reviewer?.displayName || 'Anonymous',
-        rating, text: r.comment || '',
-        publishTime: r.createTime,
-        sentiment: sentiment(rating)
-      });
-    }
-    pageToken = res.nextPageToken || '';
-  } while (pageToken);
-  return reviews;
+  for (const r of (res.reviews || [])) {
+    const rating = r.rating || 0;
+    reviews.push({
+      reviewId: r.name || `${placeId}-${r.publishTime}`,
+      reviewerName: r.authorAttribution?.displayName || 'Anonymous',
+      rating,
+      text: r.text?.text || r.originalText?.text || '',
+      publishTime: r.publishTime,
+      sentiment: sentiment(rating)
+    });
+  }
+  return { reviews, avgRating: res.rating || 0, totalCount: res.userRatingCount || 0 };
 }
 
 async function main() {
-  if (!CLIENT_ID || !CLIENT_SECRET || !REFRESH_TOKEN)
-    throw new Error('Missing env: GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN');
-
-  console.log('Getting access token...');
-  const token = await getAccessToken();
-  console.log('Access token OK');
+  if (!PLACES_API_KEY) throw new Error('Missing env: GOOGLE_PLACES_API_KEY');
 
   const labsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../labs.json'), 'utf8'));
   const labs = labsData.labs || labsData;
@@ -95,9 +83,22 @@ async function main() {
 
   for (const lab of labs) {
     process.stdout.write(`Fetching ${lab.name}... `);
-    const reviews = await fetchReviewsForLocation(token, lab.locationId);
-    const avgRating = reviews.length
-      ? +(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1) : 0;
+
+    // Find place ID
+    const placeId = await findPlaceId(lab.name, lab.city);
+    if (!placeId) {
+      console.log(`Place not found, skipping`);
+      branches.push({
+        id: lab.id, name: lab.name, city: lab.city || '',
+        rating: 0, reviewCount: 0, reviews: [],
+        lastSyncedAt: new Date().toISOString()
+      });
+      await new Promise(r => setTimeout(r, 200));
+      continue;
+    }
+
+    // Fetch reviews
+    const { reviews, avgRating, totalCount } = await fetchReviewsForPlace(placeId);
 
     for (const r of reviews) {
       if (r.rating <= 2) alerts.push({
@@ -110,11 +111,13 @@ async function main() {
 
     branches.push({
       id: lab.id, name: lab.name, city: lab.city || '',
-      rating: avgRating, reviewCount: reviews.length,
-      reviews, lastSyncedAt: new Date().toISOString()
+      rating: avgRating,
+      reviewCount: totalCount,
+      reviews,
+      lastSyncedAt: new Date().toISOString()
     });
 
-    console.log(`${reviews.length} reviews, avg ${avgRating}`);
+    console.log(`${reviews.length} reviews shown, overall avg ${avgRating} (${totalCount} total)`);
     await new Promise(r => setTimeout(r, 300));
   }
 
