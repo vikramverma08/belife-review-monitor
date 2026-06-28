@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-28T09:32:03.191Z",
+  "generatedAt": "2026-06-28T09:56:28.030Z",
   "branches": [
     {
       "id": "om-biocare",
       "name": "Om Biocare",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT214NFRTMXJVakpmYXpacmJXdHpiVTVhY0hwd1pGRRAB",
@@ -49,14 +49,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:55.145Z"
+      "lastSyncedAt": "2026-06-28T09:56:19.991Z"
     },
     {
       "id": "tridot-care",
       "name": "TRIDOT CARE Pvt.Ltd.",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xBMFQyNDFNblJuWlZVd1pFWk9hSFI0Um1SM1ZtYxAB",
@@ -99,14 +99,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:55.475Z"
+      "lastSyncedAt": "2026-06-28T09:56:20.338Z"
     },
     {
       "id": "ai-healthcare",
       "name": "AI HEALTHCARE",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJgTJtyQixwogRj3x-wWtEBDo/reviews/ChdDSUhNMG9nS0VJQ0FnTURvclBXZjF3RRAB",
@@ -149,14 +149,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:55.823Z"
+      "lastSyncedAt": "2026-06-28T09:56:20.690Z"
     },
     {
       "id": "prakash-path-lab",
       "name": "PRAKASH PATH LAB",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT214bk1rcFZSa2w1Vm5WRGVWTTRPRXh4WTFwS00xRRAB",
@@ -199,14 +199,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:56.170Z"
+      "lastSyncedAt": "2026-06-28T09:56:21.036Z"
     },
     {
       "id": "accured-diagnostics",
       "name": "ACCURED DIAGNOSTICS",
       "city": "",
-      "rating": 2.6,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ack4yZGllWFpWZUdaVVp6YzNhRkZYYVdWeGRYYxAB",
@@ -249,14 +249,14 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:56.516Z"
+      "lastSyncedAt": "2026-06-28T09:56:21.365Z"
     },
     {
       "id": "nt-pro-lab",
       "name": "NT PRO LAB",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aVlJFMXZVbXh3YUROck1HeDBObXhPYm14dE4yYxAB",
@@ -299,14 +299,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:56.848Z"
+      "lastSyncedAt": "2026-06-28T09:56:21.707Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
       "name": "FIFTY ONE PLUS LAB, EAST DELHI",
       "city": "East Delhi",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJiwXmgO39DDkRDh8ySTCfq70/reviews/Ci9DQUlRQUNvZENodHljRjlvT210a1VXWm5NMGMxV1ZCaGNVTk1RVEp6VXpGNGRYYxAB",
@@ -349,14 +349,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:57.196Z"
+      "lastSyncedAt": "2026-06-28T09:56:22.050Z"
     },
     {
       "id": "bharatiya-path-lab",
       "name": "BHARATIYA PATH LAB",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xGM2VtNVZlbHBYWm5sTE0ySkhlVmhUU25GdlJsRRAB",
@@ -399,14 +399,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:57.526Z"
+      "lastSyncedAt": "2026-06-28T09:56:22.398Z"
     },
     {
       "id": "nirog-labcare",
       "name": "NIROG LABCARE",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0WE5FUlhiV3BQYTJSUlFYVk5ibnBHUWxZNGJuYxAB",
@@ -449,14 +449,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:57.859Z"
+      "lastSyncedAt": "2026-06-28T09:56:22.727Z"
     },
     {
       "id": "eezee-pathlabs",
       "name": "EEZEE PATHLABS",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5YU5qSllSa3hmVTFWR1dEVkZSMDlzZEhSMVJFRRAB",
@@ -499,14 +499,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:58.203Z"
+      "lastSyncedAt": "2026-06-28T09:56:23.056Z"
     },
     {
       "id": "red-diagnostics",
       "name": "RED DIAGNOSTICS",
       "city": "",
-      "rating": 4.2,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tNek5sUTROVU5RVTNKWmVHbDNibFpYTkRWRFdVRRAB",
@@ -549,14 +549,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:58.551Z"
+      "lastSyncedAt": "2026-06-28T09:56:23.388Z"
     },
     {
       "id": "serum-inc",
       "name": "SERUM Inc.",
       "city": "",
-      "rating": 5,
-      "reviewCount": 1,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJy0LNtefnDDkRNE09dZSUkG8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSclNHRkRZemxFY1Y4ellrRnRNWFZ2V0hCR05VRRAB",
@@ -567,14 +567,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:58.902Z"
+      "lastSyncedAt": "2026-06-28T09:56:23.719Z"
     },
     {
       "id": "my-choice-lab",
       "name": "My Choice Lab",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tnNU1EazNNVlJvU0ZOTVVHSlpaM1V0T0VZMVExRRAB",
@@ -617,14 +617,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:59.233Z"
+      "lastSyncedAt": "2026-06-28T09:56:24.065Z"
     },
     {
       "id": "surbhi-care",
       "name": "SURBHI CARE",
       "city": "",
-      "rating": 4.6,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21Wc2RXeEdYM2c1VDFwcmVIcDBZVmRUZUdkRFRVRRAB",
@@ -667,14 +667,14 @@
           "sentiment": "neutral"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:59.578Z"
+      "lastSyncedAt": "2026-06-28T09:56:24.396Z"
     },
     {
       "id": "d-care-diagnostics",
       "name": "D CARE Diagnostics",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsc2REVlNjRkZFVVhOSE5FcHBWVEpuYUV4MlNXYxAB",
@@ -717,14 +717,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:31:59.909Z"
+      "lastSyncedAt": "2026-06-28T09:56:24.728Z"
     },
     {
       "id": "fifty-one-plus-noida",
       "name": "FIFTY ONE PLUS LAB, NOIDA",
       "city": "Noida",
-      "rating": 2.6,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wemRtNTFiWEZuYlc5M056bE1iWEEwWDI1c2JHYxAB",
@@ -767,14 +767,14 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:00.239Z"
+      "lastSyncedAt": "2026-06-28T09:56:25.057Z"
     },
     {
       "id": "vachana-diagnostic",
       "name": "Vachana Diagnostic Laboratory",
       "city": "Etah Uttar Pradesh",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tWbVJsOWlTVVpWUTAxdFRVaGZkWFJ4WkhSVGRWRRAB",
@@ -817,14 +817,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:00.569Z"
+      "lastSyncedAt": "2026-06-28T09:56:25.387Z"
     },
     {
       "id": "fifty-one-plus-meerut",
       "name": "FIFTY ONE PLUS LAB MEERUT",
       "city": "Meerut",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT214SlJVRlpPSEJUVWpkUmJYQjFkR1JyUm1KWFUyYxAB",
@@ -867,14 +867,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:00.902Z"
+      "lastSyncedAt": "2026-06-28T09:56:25.717Z"
     },
     {
       "id": "prime-diagnostic",
       "name": "Prime Diagnostic Pathology",
       "city": "",
-      "rating": 4,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OeU4yODBWV2RSZG1aeWMwSnRTa0ZyVnpkQlpXYxAB",
@@ -917,14 +917,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:01.236Z"
+      "lastSyncedAt": "2026-06-28T09:56:26.046Z"
     },
     {
       "id": "dayal-diagnostic",
       "name": "DAYAL DIAGNOSTIC CENTER",
       "city": "",
-      "rating": 3.4,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poSVNHWkRVVXhsVFZwTFpFZGpPVTFQUlRCdlptYxAB",
@@ -967,14 +967,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:01.567Z"
+      "lastSyncedAt": "2026-06-28T09:56:26.393Z"
     },
     {
       "id": "chaitanya-lifecare",
       "name": "Chaitanya LifeCare",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xCYWRDMVdRamhVZWpjM05XSTNORmQxUnpoUVMwRRAB",
@@ -1017,14 +1017,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:01.900Z"
+      "lastSyncedAt": "2026-06-28T09:56:26.722Z"
     },
     {
       "id": "fifty-one-plus-delhi",
       "name": "FIFTY ONE PLUS LAB, DELHI",
       "city": "Delhi",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoSVowUmhTbWx1ZFdneWRVZDNTSEZ2TWxST1MwRRAB",
@@ -1067,14 +1067,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:02.230Z"
+      "lastSyncedAt": "2026-06-28T09:56:27.052Z"
     },
     {
       "id": "konica-imaging",
       "name": "KONICA Imaging & Diagnostic Center",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pSVGFVOTZOVWRaUmpaSWFHNTVNbEpzT0hCbFMyYxAB",
@@ -1117,14 +1117,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:02.561Z"
+      "lastSyncedAt": "2026-06-28T09:56:27.384Z"
     },
     {
       "id": "amino-diagnostics",
       "name": "Amino Diagnostics",
       "city": "",
-      "rating": 5,
-      "reviewCount": 5,
+      "rating": 0,
+      "reviewCount": 0,
       "reviews": [
         {
           "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoR2VVaEdlSGh2Um5CdFNHMW5iMjlLU25KeVpGRRAB",
@@ -1167,7 +1167,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:32:02.891Z"
+      "lastSyncedAt": "2026-06-28T09:56:27.730Z"
     }
   ],
   "alerts": []
