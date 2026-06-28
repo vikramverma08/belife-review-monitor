@@ -92,29 +92,47 @@ async function main() {
   const labsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../labs.json'), 'utf8'));
   const labs = labsData.labs || labsData;
 
+  // Load existing data to merge (accumulate) reviews — never lose old reviews
+  const dataPath = path.join(__dirname, '../docs/data.json');
+  let existingBranches = {};
+  try {
+    const existing = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    for (const b of (existing.branches || [])) {
+      existingBranches[b.id] = b.reviews || [];
+    }
+  } catch(e) { /* first run, no existing data */ }
+
   const branches = [];
   const alerts = [];
 
   for (const lab of labs) {
     process.stdout.write(`\nFetching ${lab.name}... `);
 
-    // Use lab.query from labs.json — specific enough to find the correct BeLife partner
     const searchQuery = lab.query || `${lab.name} ${lab.city || ''} India`;
     const placeId = await findPlaceId(searchQuery);
     if (!placeId) {
       console.log('Place not found, skipping');
       branches.push({
         id: lab.id, name: lab.name, city: lab.city || '',
-        rating: 0, reviewCount: 0, reviews: [],
+        rating: 0, reviewCount: 0, reviews: existingBranches[lab.id] || [],
         lastSyncedAt: new Date().toISOString()
       });
       await new Promise(r => setTimeout(r, 200));
       continue;
     }
 
-    const { reviews, avgRating, totalCount } = await fetchReviewsForPlace(placeId);
+    const { reviews: newReviews, avgRating, totalCount } = await fetchReviewsForPlace(placeId);
 
-    for (const r of reviews) {
+    // Merge: combine new reviews with old, deduplicate by reviewId, sort newest first
+    const oldReviews = existingBranches[lab.id] || [];
+    const allById = {};
+    for (const r of oldReviews) allById[r.reviewId] = r;
+    for (const r of newReviews) allById[r.reviewId] = r; // new overwrites old (rating may change)
+    const mergedReviews = Object.values(allById).sort((a, b) =>
+      new Date(b.publishTime) - new Date(a.publishTime)
+    );
+
+    for (const r of newReviews) {
       if (r.rating <= 2) alerts.push({
         branchId: lab.id, branchName: lab.name,
         reviewId: r.reviewId, rating: r.rating,
@@ -127,16 +145,16 @@ async function main() {
       id: lab.id, name: lab.name, city: lab.city || '',
       rating: avgRating,
       reviewCount: totalCount,
-      reviews,
+      reviews: mergedReviews,
       lastSyncedAt: new Date().toISOString()
     });
 
-    console.log(`${reviews.length} reviews shown, avg ${avgRating} (${totalCount} total)`);
+    console.log(`${newReviews.length} new fetched, ${mergedReviews.length} total stored, avg ${avgRating} (${totalCount} total)`);
     await new Promise(r => setTimeout(r, 400));
   }
 
   const output = { generatedAt: new Date().toISOString(), branches, alerts };
-  fs.writeFileSync(path.join(__dirname, '../docs/data.json'), JSON.stringify(output, null, 2));
+  fs.writeFileSync(dataPath, JSON.stringify(output, null, 2));
   console.log(`\nDone: ${branches.length} branches, ${alerts.length} alerts`);
 }
 
