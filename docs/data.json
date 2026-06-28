@@ -1,23 +1,105 @@
 {
-  "generatedAt": "2026-06-28T06:45:50.303Z",
+  "generatedAt": "2026-06-28T06:50:34.316Z",
   "branches": [
     {
       "id": "om-biocare",
       "name": "Om Biocare",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:35.388Z"
+      "rating": 4.9,
+      "reviewCount": 13,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT21SUlUyYzBWbFk0UjFkSVNVOWtaWEl5UjJ4dU4yYxAB",
+          "reviewerName": "Abhishek Pandey",
+          "rating": 5,
+          "text": "Excellent service like diagnostic related,home services etc.",
+          "publishTime": "2026-05-23T05:31:12.642698459Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKWFIybFJRVTl0VWxkS1lWQlNUSFkyYjBORGJrRRAB",
+          "reviewerName": "Incredible Divyansh pandit",
+          "rating": 5,
+          "text": "Very good service and gentlemen visited very polite and professional",
+          "publishTime": "2026-05-09T05:12:43.256439681Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s0eldHeHlUR3MwZEdaQ2NuSlZNRmQwU21oa2VWRRAB",
+          "reviewerName": "abhay solanki",
+          "rating": 5,
+          "text": "V good",
+          "publishTime": "2026-05-23T04:46:20.662218286Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5cVgwVnRZblYyT0RGcmJXZDNZVWhaYm1kSU5FRRAB",
+          "reviewerName": "jeetu solanki",
+          "rating": 5,
+          "text": "Excellent",
+          "publishTime": "2026-05-23T04:47:13.084449833Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT214NFRTMXJVakpmYXpacmJXdHpiVTVhY0hwd1pGRRAB",
+          "reviewerName": "Tejveer Singh",
+          "rating": 5,
+          "text": "Good service 👍",
+          "publishTime": "2026-06-20T03:34:35.794954725Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:19.279Z"
     },
     {
       "id": "tridot-care",
       "name": "TRIDOT CARE Pvt.Ltd.",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:36.121Z"
+      "rating": 4.9,
+      "reviewCount": 63,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25Od1REVjZhV05CU0d0MWFGTXlkeTFmTkVob05WRRAB",
+          "reviewerName": "Ankush Gulati",
+          "rating": 5,
+          "text": "Really good experience at Tridot Care. The staff was polite and helpful, and everything was handled professionally. The technician was experienced, sample collection was smooth without any hassle, and I got my reports on time. Overall, very satisfied with the service. Recommended. Thank you!",
+          "publishTime": "2026-05-06T04:53:22.728895105Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25vNFRUbDFNWGhDYTNSRkxUVTJOSFZTWDFGRWNsRRAB",
+          "reviewerName": "Pramod Bansal",
+          "rating": 5,
+          "text": "Good experience at tridot care . Staff is supportive and professional. Good experience technician, smooth sample collection, and got my reports on time. Recommended.\nThank you.",
+          "publishTime": "2026-05-03T10:38:15.133245071Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xBMFQyNDFNblJuWlZVd1pFWk9hSFI0Um1SM1ZtYxAB",
+          "reviewerName": "Manav Khandelwal",
+          "rating": 5,
+          "text": "Very good service.Specially Home visit by Shailender. Very friendly & cooperative staff.",
+          "publishTime": "2026-06-08T03:30:30.712430056Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kNWRpMWliRGxRWkVoT2VUVlFPWGx2Y0VaTU5VRRAB",
+          "reviewerName": "Rakesh Joshi",
+          "rating": 5,
+          "text": "Thanks. No waiting time, done very quickly. Office is clean. Staff is also good. Everything goes very smoothly. One request to staff, disposal glasses for drinking water should me kept in proper manner.",
+          "publishTime": "2025-10-07T04:46:22.353156800Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25vNE9FdDJVR2syYkhsT1l6UmFSVU5rV1RjeE4yYxAB",
+          "reviewerName": "abhimanyu singh",
+          "rating": 5,
+          "text": "Thanks for the great experience. No waiting, prompt service and all of the above all staff is supportive and soft spoken.\nThanks.",
+          "publishTime": "2025-12-23T07:41:44.328711729Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:20.048Z"
     },
     {
       "id": "ai-healthcare",
@@ -26,197 +108,1117 @@
       "rating": 0,
       "reviewCount": 0,
       "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:36.794Z"
+      "lastSyncedAt": "2026-06-28T06:50:20.709Z"
     },
     {
       "id": "prakash-path-lab",
       "name": "PRAKASH PATH LAB",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:37.439Z"
+      "rating": 5,
+      "reviewCount": 208,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pNMWQycGxOWE15Y2s1WlNXZEtTVWxhTmt0dU5VRRAB",
+          "reviewerName": "Vipin Mishra",
+          "rating": 5,
+          "text": "Staff is very kind and polite. On asking they have provide me valid discount and did not bother for anything, in my case I was looking for OPG X-ray, guess what, they have done it all within 15 minutes (report time included). Their services are excellent and effective.",
+          "publishTime": "2025-10-28T08:13:03.120281934Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tSUmRqZGlSME5LU1RVeGVYUklibFl0UVd4WVozYxAB",
+          "reviewerName": "Rakhi Chauhan",
+          "rating": 5,
+          "text": "I really had good experience over here..\nStaff is very good..neat and clean lab",
+          "publishTime": "2026-02-14T10:20:18.029559806Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GS1VreDVTMVJNTWxwZlZWZ3RVa3RUUW5oTWNFRRAB",
+          "reviewerName": "Osho Prajapati",
+          "rating": 5,
+          "text": "⭐️⭐️⭐️⭐️⭐️\nExcellent Service and Cooperative Staff!\n\nI had a very good experience at Prakash Path and USG Center. The diagnostic services are accurate, timely, and handled with great care. The staff is polite and professional, and the facilities are clean and well-maintained.\n\nA special mention to Mr. Mehraj, who is extremely helpful, cooperative, and patient-friendly. He guided us through the whole process smoothly and ensured everything was done without any hassle.\n\nHighly recommend Prakash Path and USG Center for reliable reports and excellent customer service!",
+          "publishTime": "2025-11-11T06:53:59.599867081Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT25VNFRrRjRNa2RxYW01dWNHbHRTWFJqTUY5dWVuYxAB",
+          "reviewerName": "bhawna m",
+          "rating": 5,
+          "text": "Excellent services and support, must visit",
+          "publishTime": "2026-03-21T14:22:12.729797970Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT214bk1rcFZSa2w1Vm5WRGVWTTRPRXh4WTFwS00xRRAB",
+          "reviewerName": "MEENA KASHYAP",
+          "rating": 5,
+          "text": "This is very nice lab and thanks to reetu .\nReetu is very great staff in center.\nShe is Brilliant.\nAnd very nice behavior .\nVery nicely talking patient. ❤❤❤❤❤❤❤❤\nJust amazing",
+          "publishTime": "2026-04-03T16:47:46.787890695Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:21.361Z"
     },
     {
       "id": "accured-diagnostics",
       "name": "ACCURED DIAGNOSTICS",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:38.141Z"
+      "rating": 4.7,
+      "reviewCount": 202,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25KTFYzVnBjRTFxTVZka1RXVnhNbEJqVEhRM05uYxAB",
+          "reviewerName": "Sunil M",
+          "rating": 5,
+          "text": "Went with expecting lot of waiting time but it’s happened with short period of time, well behaved people around and they will response immediately towards the patient. Over all excellent experience with Doctors and nurses. Special thanks to 1st floor reception who communicated very professional and polite. Highly recommended place for health checkup.",
+          "publishTime": "2026-02-14T08:13:13.629589577Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ack4yZGllWFpWZUdaVVp6YzNhRkZYYVdWeGRYYxAB",
+          "reviewerName": "vinay s",
+          "rating": 1,
+          "text": "Not Recommended\n\n1. The diagnostic center should have informed us in advance that a male doctor would be performing the ultrasound. We were not notified and were surprised at the time of the scan.\n2. The reception team assured us that a 3D scan would be provided if the baby's face was visible. However, the doctor declined the 3D scan outright, citing that we were already at 36 weeks. We chose this center primarily for the 3D scan and feel misled by the incorrect information provided.\n3. Hygiene - they gave cloth instead of tissue to wipe the fluid used in ultrasound. Very unhygienic",
+          "publishTime": "2026-06-12T14:20:32.890831520Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSM2FEUTBWbWxFTVVWalpHNXpMVWhrTkdsTmFuYxAB",
+          "reviewerName": "Deepa Ven",
+          "rating": 1,
+          "text": "No value for patient’s time.\nFacilities are good but staff doesn’t value one’s time. We waited for more than an hour after doctor/respective person arrival only because he entered a board room meeting after coming instead of attending patients who were already waiting for him. Please value someone time.",
+          "publishTime": "2026-01-17T15:55:02.420636597Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xnM2JpMUtZaTFFV0RaWWNFazVOMlV3U2taRWMxRRAB",
+          "reviewerName": "Avinash Babu",
+          "rating": 1,
+          "text": "They don’t have basic sense. Initially, they said the doctor would come in 5 minutes, but he arrived after 1 hour.\nIf you don’t have any time constraints and no other work, only then should you visit here.\nIf you need quick service, there are several diagnostic centers around that you can visit.\n\nI have bill — it’s genuine review",
+          "publishTime": "2026-01-11T08:39:00.474511806Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pWaVUzaHdNVEJNTmpWMlEzbExOMVo0Y1VsMVpGRRAB",
+          "reviewerName": "Muni Golden Eagle",
+          "rating": 5,
+          "text": "⭐⭐⭐⭐⭐\"I had a great experience at [accurad diagnostic centre]. The staff is professional, well-behaved, and efficient. I was in and out for my scan very quickly. The facility was clean and sanitized, which made me feel safe. Highly recommended for accurate and prompt services!\"thank you...",
+          "publishTime": "2026-05-01T10:15:33.203140996Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:22.086Z"
     },
     {
       "id": "nt-pro-lab",
       "name": "NT PRO LAB",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:38.756Z"
+      "rating": 4.9,
+      "reviewCount": 99,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25oblIzUjZTVVJVZFhJM1owTTFSWGwzT0ZKcFlXYxAB",
+          "reviewerName": "rahul soni",
+          "rating": 5,
+          "text": "I had a wonderful experience! The home sample collection service was prompt, and the technician was courteous, well-dressed, and extremely professional. The blood draw was completely painless, and I received my reliable reports exactly when promised. Excellent service.",
+          "publishTime": "2026-05-31T02:34:51.122026794Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tJdFZsUjNVVUV3TUdsSU16UjNVMFpHWjFFNFlVRRAB",
+          "reviewerName": "Kanishk Tyagi",
+          "rating": 5,
+          "text": "NT PRO LAB provides smooth and timely testing services with excellent accuracy.\nThe staff is professional, friendly, and always ready to help patients.\nReports are delivered quickly, making the whole process stress-free and reliable.\nHighly recommended for quality diagnostics and outstanding customer care.",
+          "publishTime": "2026-05-23T02:34:19.824163611Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkeGJ6azNTVlZ0U0dSTk1teFZjVEo2WldJdFVtYxAB",
+          "reviewerName": "Shiv Kumar",
+          "rating": 5,
+          "text": "Ayan Khan visited at home. He was polite and  courteous. He showed his ID and explained the about the process. Everything was done smoothly within 25min.",
+          "publishTime": "2026-05-31T16:31:11.918111454Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aVlJFMXZVbXh3YUROck1HeDBObXhPYm14dE4yYxAB",
+          "reviewerName": "Hemant Jain",
+          "rating": 5,
+          "text": "Ayan Khan was assisting me. Very professional and greatly skilled person. All the test were very easily done by him",
+          "publishTime": "2026-06-01T12:00:26.561259966Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2w5MlVERmpXa1pwWTI1M2FtY3RZbUpPUVc0NFlVRRAB",
+          "reviewerName": "sohan badsiwal",
+          "rating": 5,
+          "text": "Client name: sohan\nDate: 08/05/2026\nGood experience at nt pro lab  .Staff is supportive and professional. Good experience technician, smooth sample collection, and got my reports on time. Recommended.\nThank you.",
+          "publishTime": "2026-05-08T02:40:44.697977621Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:22.743Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
       "name": "FIFTY ONE PLUS LAB, EAST DELHI",
       "city": "East Delhi",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:39.412Z"
+      "rating": 5,
+      "reviewCount": 5,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJiwXmgO39DDkRDh8ySTCfq70/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wNWNHMVhRWEpPY1hFelMyTlhkWFoxZDBoV2RFRRAB",
+          "reviewerName": "RAVI KANT",
+          "rating": 5,
+          "text": "Very nice service and good behaviour",
+          "publishTime": "2026-05-11T05:22:22.432011371Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJiwXmgO39DDkRDh8ySTCfq70/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkdkxXVm9ORlF3UzBwNlF6STBVRlpJYVZKd2RVRRAB",
+          "reviewerName": "Ashish Manna",
+          "rating": 5,
+          "text": "Best centre",
+          "publishTime": "2026-03-08T04:07:12.599999834Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJiwXmgO39DDkRDh8ySTCfq70/reviews/Ci9DQUlRQUNvZENodHljRjlvT210a1VXWm5NMGMxV1ZCaGNVTk1RVEp6VXpGNGRYYxAB",
+          "reviewerName": "Yugank Jain",
+          "rating": 5,
+          "text": "Great",
+          "publishTime": "2026-06-09T04:51:49.144949586Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJiwXmgO39DDkRDh8ySTCfq70/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tSTGQwOVhiV1Z5UVVwcFlXNXNhRkZtUzFoUk5XYxAB",
+          "reviewerName": "Gusain Mahender",
+          "rating": 5,
+          "text": "Sanu ji, did you like it and your behavior is all so best.",
+          "publishTime": "2026-03-01T05:04:22.744336020Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJiwXmgO39DDkRDh8ySTCfq70/reviews/Ci9DQUlRQUNvZENodHljRjlvT25rMVdUWnJaMkZ5WXpWcU5VeHZWVkpRY1VnMk9GRRAB",
+          "reviewerName": "Arun Gupta",
+          "rating": 5,
+          "text": "",
+          "publishTime": "2026-04-05T04:51:50.582916739Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:23.396Z"
     },
     {
       "id": "bharatiya-path-lab",
       "name": "BHARATIYA PATH LAB",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:40.045Z"
+      "rating": 4.5,
+      "reviewCount": 52,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xGM2VtNVZlbHBYWm5sTE0ySkhlVmhUU25GdlJsRRAB",
+          "reviewerName": "Jeet Pandey",
+          "rating": 5,
+          "text": "Hassle-free medical checkup at home.\nMiraj and Jyoti both were very Professional and good behaviour person. I recommend everyone for the medical checkup.",
+          "publishTime": "2026-05-23T06:25:01.672104512Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT20xeFdFdFZWbUZUV2psblYxSjJWa1JDVEd4eE1XYxAB",
+          "reviewerName": "Shivendra Chaudhary",
+          "rating": 5,
+          "text": "Experience of getting all my tests done under health insurance was satisfactory. Staff was cooperative and experienced",
+          "publishTime": "2026-05-16T04:27:34.447504021Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tKek4xUnJVMTlHV1hsYVptcGtRbTAzWjNReU4wRRAB",
+          "reviewerName": "rohit saboo",
+          "rating": 5,
+          "text": "Good service - with punctuality and politeness. Didn’t feel the pain during blood test. Good work Sarfraz Ali.",
+          "publishTime": "2025-09-05T02:05:44.479027695Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xZd01EUk5NRGxKV21KYVZXNWxkV3MwZWtSVk4zYxAB",
+          "reviewerName": "Aman Agarwal",
+          "rating": 5,
+          "text": "Great service by Mr. Sarfaraz. He is very humble.",
+          "publishTime": "2026-05-18T02:35:53.941338014Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT214TVdsSkpOR3RDVW5KS1lsVk1RVkV5YkZoQ1IzYxAB",
+          "reviewerName": "Sushil Verma",
+          "rating": 5,
+          "text": "I am satisfied to blood sample collection\nYou reached at time thanks\nSarfraz",
+          "publishTime": "2026-05-02T03:50:14.366363250Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:24.028Z"
     },
     {
       "id": "nirog-labcare",
       "name": "NIROG LABCARE",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:40.705Z"
+      "rating": 5,
+      "reviewCount": 29,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0WE5FUlhiV3BQYTJSUlFYVk5ibnBHUWxZNGJuYxAB",
+          "reviewerName": "Satu With English",
+          "rating": 5,
+          "text": "Good service timely complete all test",
+          "publishTime": "2026-05-14T02:36:04.530398325Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poaWREWlpUMFY2ZFd4elNXUjVaMTg0WWxwR2RVRRAB",
+          "reviewerName": "Sachin",
+          "rating": 5,
+          "text": "Very good facility",
+          "publishTime": "2026-05-11T15:23:13.752414534Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT210U1Z6UkdhbVp5Y2pkMWFGWjZTbmh2WHpkMFlsRRAB",
+          "reviewerName": "Madhu Pal",
+          "rating": 5,
+          "text": "Very good lab faslit",
+          "publishTime": "2026-05-10T12:33:06.723641283Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GZlNEbDBZMWxuU0ZCd1dXWk9abkZKWlhvdFdVRRAB",
+          "reviewerName": "Shalini Pal",
+          "rating": 5,
+          "text": "Nice feslity lab",
+          "publishTime": "2026-05-10T13:43:44.084415146Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2taVFIzcGhhbGd4V0VSTVV6TkJUekpmY21aeFVFRRAB",
+          "reviewerName": "angel aditi",
+          "rating": 5,
+          "text": "Best facility lab",
+          "publishTime": "2026-05-11T12:37:12.391711248Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:24.666Z"
     },
     {
       "id": "eezee-pathlabs",
       "name": "EEZEE PATHLABS",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:41.337Z"
+      "rating": 4.9,
+      "reviewCount": 136,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsMldrNVRiVGRmZGtOaFIzQkhUVWRtU1RVMFMwRRAB",
+          "reviewerName": "kd. singh",
+          "rating": 5,
+          "text": "“Excellent laboratory service. The staff was polite, professional, and very helpful. The sample collection process was smooth and hygienic, and the reports were delivered on time. The technicians explained everything clearly and made me feel comfortable. I highly recommend this lab for accurate testing and quality service.”",
+          "publishTime": "2026-05-30T05:19:57.191784345Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5YU5qSllSa3hmVTFWR1dEVkZSMDlzZEhSMVJFRRAB",
+          "reviewerName": "Jaspreet Kour",
+          "rating": 5,
+          "text": "Excellent service! The staff at Easy Path Lab is very friendly and supportive. The clinic is clean, hygienic, and well-organized. I am very satisfied with my experience and would highly recommend it.",
+          "publishTime": "2026-06-03T04:23:16.511717559Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KVGNEQlJXV2xrU20wM1ZqUnRURlJJV1daaU9IYxAB",
+          "reviewerName": "avinash verma",
+          "rating": 5,
+          "text": "“Had a smooth experience at the lab. Staff was polite, sample collection was hygienic, and reports were delivered on time. The technicians were professional and explained the process clearly. Overall, reliable service and good management.”",
+          "publishTime": "2026-05-09T04:37:37.974922278Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KQk1ISlVPWFkzYURVelZrOVFOVkEyTnpSbVpIYxAB",
+          "reviewerName": "Ajay Kumar",
+          "rating": 5,
+          "text": "Received best hospitalise, cooperative and supportive service by floor team. Very good hygiene and housekeeping. Well behavior and activities done by team. Much appreciated Arif and Sonali",
+          "publishTime": "2025-11-09T06:13:47.840542682Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCbmQydDBNMkp1UmpKNFdXcE9jalF5TW5RdE9GRRAB",
+          "reviewerName": "Bijaylaxmi Biswal",
+          "rating": 4,
+          "text": "Good atmosphere, staff's are cooperative nd friendly.we had a great experience here specially my child was enjoying there as we had there for a long time so we're cautious about him.",
+          "publishTime": "2026-05-02T04:48:18.816073952Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:25.296Z"
     },
     {
       "id": "red-diagnostics",
       "name": "RED DIAGNOSTICS",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:41.950Z"
+      "rating": 4.8,
+      "reviewCount": 143,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tNek5sUTROVU5RVTNKWmVHbDNibFpYTkRWRFdVRRAB",
+          "reviewerName": "Pawan Verma",
+          "rating": 5,
+          "text": "It was good experience with Salman. He took blood without any pain. I have good experience here",
+          "publishTime": "2026-06-06T04:42:46.356209981Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKU2VuTnNaRGhKV1RSUFEzWklhRVI2Y0d4UVUwRRAB",
+          "reviewerName": "Kunal Nagar",
+          "rating": 5,
+          "text": "I had a great experience with Red Diagnostics. I had booked by health checkup via HDFC Life. I was attended by Sarfaraz Ali, really a trained personnel. Highly appreciate the services.",
+          "publishTime": "2025-09-29T04:01:21.164522735Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT205V2MxUXhTbkZDWDFCdE5tbHpiSHBCVm1GSlYzYxAB",
+          "reviewerName": "rachna Arora",
+          "rating": 1,
+          "text": "Highly unprofessional cheat customers I shared doctor prescription with all test details to be done and asked for price asking ensure all test are covered but these people are fraudsters multiple times I had to check myself for test coverage and they were trying to collect money without covering test and now when I visited doctor came to know that test not covered and when I message see attached response highly unethical and unreliable diagnostic centre will not recommend anyone going forward",
+          "publishTime": "2026-05-12T12:42:00.229243041Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tob2RVRnlTMHhIY25nNFowWTJTVTQzYmpoU05uYxAB",
+          "reviewerName": "dilip sharma",
+          "rating": 5,
+          "text": "Arun yadav behaviour is good, he came on time and polite also",
+          "publishTime": "2026-05-06T02:13:14.844514420Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/ChZDSUhNMG9nS0VKdWhxcjN3ejduMkt3EAE",
+          "reviewerName": "Yash Singh",
+          "rating": 5,
+          "text": "I had a great experience at Red diagnostics. Everything is so systematic and radiologists are so experienced and helpful.\nI have gone through my corporate plan of Gold Health complete check up. I really loved their services, hygiene and on time delivery of reports.",
+          "publishTime": "2025-05-11T08:30:37.917570Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:25.906Z"
     },
     {
       "id": "serum-inc",
       "name": "SERUM Inc.",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:42.559Z"
+      "rating": 5,
+      "reviewCount": 1,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJy0LNtefnDDkRNE09dZSUkG8/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSclNHRkRZemxFY1Y4ellrRnRNWFZ2V0hCR05VRRAB",
+          "reviewerName": "Dinesh Kumar",
+          "rating": 5,
+          "text": "Good service",
+          "publishTime": "2026-06-05T04:27:43.892142975Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:26.530Z"
     },
     {
       "id": "my-choice-lab",
       "name": "My Choice Lab",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:43.178Z"
+      "rating": 4.8,
+      "reviewCount": 37,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sRlRVVkJiV1ZQTTJ0RFJHOTVNRmR6VjI1T1luYxAB",
+          "reviewerName": "Tusher Debbarma",
+          "rating": 5,
+          "text": "Excellent services from the lab in the Mayur Vihar phase 1 area, specially the waiting time is very very low..",
+          "publishTime": "2026-05-09T09:05:06.127382577Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t4d1gwVjRSVEpqTW0xUWVtOXhPVlpzWmtob1gxRRAB",
+          "reviewerName": "Himanshu Batheja",
+          "rating": 5,
+          "text": "Best service and staff are very cooperative thanks for Dr Sanjeev",
+          "publishTime": "2026-05-09T05:53:03.064041149Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tnNU1EazNNVlJvU0ZOTVVHSlpaM1V0T0VZMVExRRAB",
+          "reviewerName": "Abha Jha",
+          "rating": 5,
+          "text": "Good lab and Staff behavior is very nice",
+          "publishTime": "2026-06-03T06:58:35.986178325Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aSk9VcHJiMU5uYzA1bFNHaEthVU5WVnpsTGFYYxAB",
+          "reviewerName": "Vikram Singh Rajput",
+          "rating": 5,
+          "text": "Had a very interesting session with Faizal ji regarding my medical fitness examination.\nHe did all the medical examinations with very much care and ease at the same time.\nThanks.",
+          "publishTime": "2025-10-02T03:50:34.475375348Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/ChZDSUhNMG9nS0VJQ0FnSUM5eEo3UWF3EAE",
+          "reviewerName": "Pradeep Kumar Kaushik",
+          "rating": 5,
+          "text": "Mr Aman Sharam, Centre Head did my TMT very expertly and dedicatedly. The service on the lab is timely and effective.",
+          "publishTime": "2024-03-02T06:02:23.797381Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:27.131Z"
     },
     {
       "id": "surbhi-care",
       "name": "SURBHI CARE",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:43.767Z"
+      "rating": 4.8,
+      "reviewCount": 142,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2kxbFdsSjBSekppUVZCc1IySnZNM1ZLWDIwd1RsRRAB",
+          "reviewerName": "MrAshishnegi",
+          "rating": 3,
+          "text": "We had lots of difficulties to find the location. There is no board no poster or banner about the lab. We reach at 8:35 am however the lab open at 9am and in Google map at their location show the lab open at 8am which is false. We asked 2-3 people about the lab but no one knows about this. Finally we called at their given number and they guide wrong direction. We ask one more guy which he guide us to find exact place. Also till time lab tech came. He was nice and talk gently and we don't have any issue with his work however we are not satisfied with lab Report specially my wife sgpt and ldl triglycerides and vldl is high. Also if we go to other pathlab they provide us serial number so we can download the report at same day but they have procedure if you are going to their location frm your health insurance you have to download report from their we or app. Hope they will consider this feedback specially some direction or location they will mark so people don't have to roam here and there for finding lab.",
+          "publishTime": "2025-09-28T01:50:01.034759131Z",
+          "sentiment": "neutral"
+        },
+        {
+          "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21Wc2RXeEdYM2c1VDFwcmVIcDBZVmRUZUdkRFRVRRAB",
+          "reviewerName": "Aakanksha",
+          "rating": 5,
+          "text": "Nice performance and she is very polite in whole process by Kanchan sharma.",
+          "publishTime": "2026-06-08T02:09:37.908844885Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pBNVltUXdkM1JITFRnMGJqZHZYMWRCYm1waU5GRRAB",
+          "reviewerName": "Ravikant Pathlan",
+          "rating": 5,
+          "text": "Very good service and timely done all the test and collect sample from home",
+          "publishTime": "2026-05-27T04:04:08.975254296Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT201Vk9DMTNOa2QyVGtselV6WlVSa0ZYY0c1WVdHYxAB",
+          "reviewerName": "Chhaya Jindal",
+          "rating": 5,
+          "text": "Such a wonderful behaviour I like it's very much ❤️❤️❤️",
+          "publishTime": "2026-06-01T04:28:56.698737812Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pjNVFqRjJjR2hMUTJGMmQzRnpjSE5yUmxJelZIYxAB",
+          "reviewerName": "Ankush Agarwal",
+          "rating": 5,
+          "text": "Tara Shankar Ji came to take the Sample collection.....job done effortlessly...good behaviour...thanks",
+          "publishTime": "2026-05-10T02:32:46.000547488Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:27.751Z"
     },
     {
       "id": "d-care-diagnostics",
       "name": "D CARE Diagnostics",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:44.390Z"
+      "rating": 4.5,
+      "reviewCount": 68,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT21wNWFGaG1jVFpyVlVWWU5sVlpNRzVJUjBjNVpIYxAB",
+          "reviewerName": "Sandeep Bahuguna",
+          "rating": 5,
+          "text": "It was really amazing experience with them, Mr. Ajit goswami and his team has good experience to deal with customer. Impressed with thier support and experience.\n\nThier lab service really appreciated and highly recommended.",
+          "publishTime": "2026-05-17T06:00:56.152052940Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsc2REVlNjRkZFVVhOSE5FcHBWVEpuYUV4MlNXYxAB",
+          "reviewerName": "Lalit Thapa",
+          "rating": 5,
+          "text": "It was a good experience All Staff  and especially Sameer was polite overall NICE",
+          "publishTime": "2026-05-25T07:09:17.475733026Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GeFVWaG5abHBNYlhscVZIYzVPSGhwUm1WNWFFRRAB",
+          "reviewerName": "Deepak Singh",
+          "rating": 5,
+          "text": "Very good service and specially mr.pradeep os very kind and knowledgeable person.",
+          "publishTime": "2026-05-09T04:54:43.674565167Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GelIzUm5abDlLT0ZvMFlscG9TVU40VVRSV1ZGRRAB",
+          "reviewerName": "Subodh Gupta",
+          "rating": 5,
+          "text": "A very professional and polite Physico Coming for blood test (Name :- Ajit Goswami)",
+          "publishTime": "2026-05-03T05:58:26.024771575Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0dU1HOVdlR2xWTnpaV2RqVTFkbUp5YVdWMWVXYxAB",
+          "reviewerName": "jixie george",
+          "rating": 5,
+          "text": "Mr Abhay and Ms Mamta were on time and followed the whole procedure and made the process very easy and smooth.",
+          "publishTime": "2025-09-10T03:55:21.430330899Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:28.363Z"
     },
     {
       "id": "fifty-one-plus-noida",
       "name": "FIFTY ONE PLUS LAB, NOIDA",
       "city": "Noida",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:45.029Z"
+      "rating": 4.7,
+      "reviewCount": 748,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSaVlVRnNXRzVuUmt3MFJrZHJWRlJtTFRoTWMzYxAB",
+          "reviewerName": "Piyush Rana",
+          "rating": 5,
+          "text": "The lab provides quick and efficient testing services. The staff is well-organized, and the overall experience is smooth. The space is well-maintained and comfortable. Overall, a very good diagnostic center",
+          "publishTime": "2026-03-23T02:58:28.045328842Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wemRtNTFiWEZuYlc5M056bE1iWEEwWDI1c2JHYxAB",
+          "reviewerName": "SHIV SHANKAR",
+          "rating": 5,
+          "text": "I had a great experience at FIFTY ONE PLUS LAB, Noida (One Plus Lab). The lab facilities are excellent, and all the staff are very cooperative and professional. The staff is courteous, and the entire process went smoothly. The lab environment is clean and organized. Overall, this is a great lab, and I highly recommend its services.",
+          "publishTime": "2026-06-02T07:01:38.606609771Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT2VWSjBVVmhoTkdwdGNXSnBXVFpWZG1jdFlXYxAB",
+          "reviewerName": "Bot Unanalyzed",
+          "rating": 1,
+          "text": "Completely unprofessional, nobody comes on time when I reached only a dog is there. My reporting time was 8 AM  and when I called they mention that staff comes by 8:30 to 9. Also an unhygienic place.",
+          "publishTime": "2026-04-20T02:33:14.517414053Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCV1pqZEVWRWwwTjBkV2RUUXRRekZGZVhOV1RuYxAB",
+          "reviewerName": "Pankaj Gupta",
+          "rating": 1,
+          "text": "I was quite impressed when I visited but after two months, my opinion is totally changed.\nQuality /test results are bad even though they are quite fast.\n\nI had Niva Bupa insurance and this lab has a tie up for annual check up with them.\n\nI saw the reviews and booked my wife's annual health check up. I was quite impressed with the clockwork speed they work. Everything was working as well oiled machine and within 1 hour everything was done (including ultrasound, pap smear etc.). Both of us were quite impressed with the efficiency of the lab at that time (second week of October 2025).\n\nFast forward to Last week of November (6 weeks post annual check up), my wife had quite sever pain in abdomen. We went for ultrasound to a different lab and doctor said she is having stone in kidney(5mm) and gall bladder (3mm).\n\nSo, yes they are fast & efficient but quality is not reliable and for health, quality of tests is of highest importance and NOT HOW FAST You can provide the service.\n\nI will not recommend this lab to anyone.",
+          "publishTime": "2025-12-23T01:36:20.999827311Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xZM09USlRNVk5KYjNWSWMzZFJZbHBtVmw5WlNIYxAB",
+          "reviewerName": "Yogendra Singh",
+          "rating": 1,
+          "text": "Three days of no showing up; they provide home collection appointments daily, and requests for 12 hours fasting.\n\nDay 1: Sir, I am late, so I prefer not to come; it's hot\nDay 2: My bike isn't working. I said, I am happy to wait, but he insisted on rescheduling for the next day\nDay 3: Sir, I am sick, so I won't be coming. No response to messages or calls.\n\nExtremely horrible service. Pathetic on-call staff with no respect for time and life.\n\nI wish the government would cancel their license.",
+          "publishTime": "2026-05-22T03:39:26.258896957Z",
+          "sentiment": "negative"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:29.010Z"
     },
     {
       "id": "vachana-diagnostic",
       "name": "Vachana Diagnostic Laboratory",
       "city": "Etah Uttar Pradesh",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:45.672Z"
+      "rating": 5,
+      "reviewCount": 9,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tWbVJsOWlTVVpWUTAxdFRVaGZkWFJ4WkhSVGRWRRAB",
+          "reviewerName": "Mohammad Moosa",
+          "rating": 5,
+          "text": "When I went to the lab, I was impressed by the staff behaviour and the fact that they conduct the management tests very well and also give 100% correct reports.",
+          "publishTime": "2026-06-01T10:27:02.911008653Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT205NGRIbFVTa1pNTVVOTmFFUlVaMnhqUzFVM01rRRAB",
+          "reviewerName": "Suraj Mathur",
+          "rating": 5,
+          "text": "Good lab",
+          "publishTime": "2026-05-20T16:26:13.549062365Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT21nd2FHbFdlV2R6VW1wRU1HTTFlRUV4UzNWM2NsRRAB",
+          "reviewerName": "Gaurav Kumar",
+          "rating": 5,
+          "text": "Nice lab",
+          "publishTime": "2026-05-20T16:28:59.208974976Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pObVRVdGZjVjlrTFdkWlMwZElNRTVUVTNZeE4wRRAB",
+          "reviewerName": "Ajeet Thakur",
+          "rating": 5,
+          "text": "Good lab",
+          "publishTime": "2026-05-20T16:17:27.749015329Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsNU1ESnVVV2xIYzBOTWVDMWZXVzVUUm5OMmIwRRAB",
+          "reviewerName": "Jitendra Kumar",
+          "rating": 5,
+          "text": "Amazing",
+          "publishTime": "2026-05-20T16:39:38.122280763Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:29.637Z"
     },
     {
       "id": "fifty-one-plus-meerut",
       "name": "FIFTY ONE PLUS LAB MEERUT",
       "city": "Meerut",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:46.313Z"
+      "rating": 4.9,
+      "reviewCount": 175,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2w5dFpHbDJVM0E1ZEZwVWFscEpUMGQ0WlRGQ1pYYxAB",
+          "reviewerName": "Aman Bajpai",
+          "rating": 5,
+          "text": "Over all best and unexpected experience\nWell behaving and cooperative staff",
+          "publishTime": "2026-02-19T05:29:38.146285309Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT214SlJVRlpPSEJUVWpkUmJYQjFkR1JyUm1KWFUyYxAB",
+          "reviewerName": "ruchika chaudhary",
+          "rating": 5,
+          "text": "Well mannered & Coperative Staff, fully satisfied. Nice experience.",
+          "publishTime": "2026-03-09T04:40:37.311210441Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pVMFlYZ3lkRWhJY1ZOWlNtTjNWSGswY0hWM2EzYxAB",
+          "reviewerName": "A Google User",
+          "rating": 5,
+          "text": "Best health checkup and very good 👍 behaviour.\nPlease visit and use",
+          "publishTime": "2026-03-08T04:41:06.901046409Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2w4d2RUSTBTMUZ3YWpCWlZHbEVWMEp6Yms5eFdVRRAB",
+          "reviewerName": "Varun Singh",
+          "rating": 5,
+          "text": "Very nice experience and cooperative staff",
+          "publishTime": "2026-01-10T05:32:55.145604686Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tzM2Fsa3RkM1JsVEdOdVVsQlJYemcyWkhJdFdYYxAB",
+          "reviewerName": "Chaudhary Vishal Jaglan",
+          "rating": 5,
+          "text": "Staff are so good . Every staff nature is very polite and environment is very peace of mind. Thank you.✨♥️",
+          "publishTime": "2026-01-10T05:03:50.955233617Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:30.284Z"
     },
     {
       "id": "prime-diagnostic",
       "name": "Prime Diagnostic Pathology",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:46.924Z"
+      "rating": 4.9,
+      "reviewCount": 91,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OeU4yODBWV2RSZG1aeWMwSnRTa0ZyVnpkQlpXYxAB",
+          "reviewerName": "KAPISH KUMAR",
+          "rating": 5,
+          "text": "Mr subash today visit my residence for some lab tests and basic medical detail very good behaviour coperative staff thank you mr subash for helping",
+          "publishTime": "2026-05-18T05:35:35.006628443Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21oMWMwcExPVTVwU21kWlFVUTRhRk5pTTB0TldVRRAB",
+          "reviewerName": "ankur atri",
+          "rating": 4,
+          "text": "Very good experience with mr. Subhash\nHe was very professional and samples were taken without any pain",
+          "publishTime": "2026-05-04T03:59:01.146294208Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT205aU5YQXhkVWxWUW1kWGNESmhXRmc1YW1WRU9HYxAB",
+          "reviewerName": "Ashendra Singh",
+          "rating": 5,
+          "text": "Health check up was done smoothly without any issue. Dharmendra reached on time for the check. His behaviour is very good and much professional.",
+          "publishTime": "2025-09-20T07:38:56.735155899Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tGM1pUbDNRVjlaZG5sTVQxZDZWSGR6Ykc1UVZGRRAB",
+          "reviewerName": "Abhisek Sarkar (Abhisek)",
+          "rating": 5,
+          "text": "Very Good service, quick and nice behaviour. 100% recommendation",
+          "publishTime": "2026-05-11T01:30:46.048117033Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
+          "reviewerName": "yash jain",
+          "rating": 1,
+          "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
+          "publishTime": "2026-01-10T06:16:13.800982140Z",
+          "sentiment": "negative"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:30.902Z"
     },
     {
       "id": "dayal-diagnostic",
       "name": "DAYAL DIAGNOSTIC CENTER",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:47.508Z"
+      "rating": 4.3,
+      "reviewCount": 36,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5SmEyZDZhV3g2UkdNMWMzUjFMVk5aT0hOUVVYYxAB",
+          "reviewerName": "Om Narayan Agnihotri",
+          "rating": 5,
+          "text": "I have visited today at dayal diagnostic centre for my health checkup. All the staff members behaved professional and all the test was done properly. Special thanks to Sonam mam. Thank you.",
+          "publishTime": "2026-05-29T05:42:36.431870098Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poSVNHWkRVVXhsVFZwTFpFZGpPVTFQUlRCdlptYxAB",
+          "reviewerName": "Shashank",
+          "rating": 1,
+          "text": "Worst Diagnostic centre with the worst staff first of all they don't have their own machine for the test they are aligned with another hospital in that process there is zero help from the staff. It's a pathetic experience here never going there",
+          "publishTime": "2026-06-07T06:29:40.441475108Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25SclRtMU9PRXd5TFdkMFZVMXRNVXRvWlhaRVNYYxAB",
+          "reviewerName": "Travelling Sky",
+          "rating": 5,
+          "text": "Professionally sound and individual knows his job. Dayal Diagnostic Centre using new Kits and equipment.\nThe samples were collected at home by Mr Shashank Bisht on 04 Sept 2025.\nThank you for seamless service.",
+          "publishTime": "2025-09-04T04:41:33.979637988Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25oak5XNTZNVWx5VG1WM2JVNVJOblZoVFROelJuYxAB",
+          "reviewerName": "Sushant Singh",
+          "rating": 1,
+          "text": "Worst dignostic center with worst staff member..\nDon't go for it...\nThey will collect the sample and sent to other lab for testing.. a normal blood test also take 48 to 72 hrs..\nWorst experience with Dayal Dignostic",
+          "publishTime": "2025-12-13T11:29:56.764505820Z",
+          "sentiment": "negative"
+        },
+        {
+          "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wTExWYzROalpYZWxKQllYTk9hVUV0WkRkcU4wRRAB",
+          "reviewerName": "ROHIT RAJ",
+          "rating": 5,
+          "text": "Service seems to be very good\nTeams is very good and helpful\nSpecially mr. Shaizy is very helpful and provide good guidance",
+          "publishTime": "2026-05-23T09:32:04.314831816Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:31.494Z"
     },
     {
       "id": "chaitanya-lifecare",
       "name": "Chaitanya LifeCare",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:48.117Z"
+      "rating": 4.6,
+      "reviewCount": 23,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xCYWRDMVdRamhVZWpjM05XSTNORmQxUnpoUVMwRRAB",
+          "reviewerName": "Ashish Singh",
+          "rating": 5,
+          "text": "ADVANCED MACHINE AND FAST TESTING AND SKILLED TECH PEOPLE SEAMLESS EXPERIENCE",
+          "publishTime": "2026-05-23T02:16:48.737743155Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ZMVlWQlRhVVJZTURoNmNGVjBiMlYyVUdOelpsRRAB",
+          "reviewerName": "PUNEET Omar",
+          "rating": 5,
+          "text": "Good experience,  polite person interaction",
+          "publishTime": "2026-05-15T03:25:07.078676435Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1R2MxWkdPV0ozTjNOWlVqQmhWbkp5VTJsblRVRRAB",
+          "reviewerName": "BABA Shiv",
+          "rating": 5,
+          "text": "Best service & humble nature",
+          "publishTime": "2026-05-09T03:00:38.657299068Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tNNWJIVktPVGwyVUZZeWVUQlRkMUZ0V2xCUlFXYxAB",
+          "reviewerName": "Raju Awasthi",
+          "rating": 5,
+          "text": "Very nice service",
+          "publishTime": "2026-05-11T04:00:10.653603774Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT214RE0xSnRTRFJTYlVWMVlXNTFUV3R5Y0ROVFdFRRAB",
+          "reviewerName": "ankit Pal",
+          "rating": 5,
+          "text": "👍",
+          "publishTime": "2026-05-08T13:52:57.985245420Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:32.096Z"
     },
     {
       "id": "fifty-one-plus-delhi",
       "name": "FIFTY ONE PLUS LAB, DELHI",
       "city": "Delhi",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:48.715Z"
+      "rating": 4.9,
+      "reviewCount": 116,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xaSVQwTkhTRGRqY2tsaWFrWkVia3B3WjFOTVMzYxAB",
+          "reviewerName": "Jatin Yadav",
+          "rating": 5,
+          "text": "Very quick and efficient service. The staff is well trained and cooperative. The facility is very clean and hygienic.\nHighly recommend\nThank you",
+          "publishTime": "2026-05-23T05:11:03.184503538Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xac2F6aFJYemRPV2t0cVIxRkRPSHBYYTNReVMzYxAB",
+          "reviewerName": "manmohan sullhan",
+          "rating": 5,
+          "text": "Good experience at fifty one plus labs delhi. Staff is supportive and professional. Good experience technician, smooth sample collection, and got my reports on time. Recommended.\nThank you.",
+          "publishTime": "2026-05-05T01:52:15.297446339Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xkMmJqZ3dSREJEUjNGUVJFTnZXbll4TlMxdmRXYxAB",
+          "reviewerName": "Utkarsh Bairagi",
+          "rating": 5,
+          "text": "Great service done by Faisal he is very smart and intellectual he done the medical within 10 minutes of time thank you mr Faisal God bless you bro",
+          "publishTime": "2025-10-05T03:48:43.863523908Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoSVowUmhTbWx1ZFdneWRVZDNTSEZ2TWxST1MwRRAB",
+          "reviewerName": "Tushar Das",
+          "rating": 5,
+          "text": "All the tests were done appropriately with excellent hospitality. Behaviour od staffs were extremely good.",
+          "publishTime": "2026-05-30T05:01:21.683150373Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GMWRESmxVRlZ4Unkxa2NsQnFTVzVtYmtGNFYzYxAB",
+          "reviewerName": "HAREEMA NAJAM",
+          "rating": 5,
+          "text": "Fifty one plus is a very good lab. Excellent service and friendly staff.\nRecommended\nThank you",
+          "publishTime": "2026-05-12T07:54:45.886064165Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:32.712Z"
     },
     {
       "id": "konica-imaging",
       "name": "KONICA Imaging & Diagnostic Center",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:49.319Z"
+      "rating": 4.7,
+      "reviewCount": 69,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pSVGFVOTZOVWRaUmpaSWFHNTVNbEpzT0hCbFMyYxAB",
+          "reviewerName": "rohan agrawal",
+          "rating": 5,
+          "text": "Good service done by Sailendra . All test conducted well with proper procedure.",
+          "publishTime": "2026-06-06T02:22:37.039373228Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tSbU1tWjJWV2wwZG5sTFVVUjBWRkpPTWpNM04wRRAB",
+          "reviewerName": "Madan Singh Deora",
+          "rating": 5,
+          "text": "Very good experience and jitendra ji was so helpful and genuine person\nShare everything in detail during medical\nThanks a lot for support Konica imaging.",
+          "publishTime": "2025-11-17T07:32:16.292400814Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT205NVFqRjBOams0WmxjNWNrcE9Sek5pUWpWNVZrRRAB",
+          "reviewerName": "Sunny Khowal",
+          "rating": 4,
+          "text": "Very good gesture and timings good next time I definitely come thanks coperate",
+          "publishTime": "2026-05-24T05:00:25.078329300Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT201WWVsVmtZVE5TZERWMWFtNURSeTFaV1RGbWQxRRAB",
+          "reviewerName": "Tarun Jain",
+          "rating": 5,
+          "text": "Location main road near Royal palace.",
+          "publishTime": "2025-10-30T06:27:23.152258008Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s4M1pHWlFTRFppUVVoTlUzSlZXVGwyWWtKU01GRRAB",
+          "reviewerName": "Ravinder Singh",
+          "rating": 5,
+          "text": "Tx the staff is very hospitable and caring it was very nice experience thanks",
+          "publishTime": "2026-05-30T05:12:35.771310616Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:33.315Z"
     },
     {
       "id": "amino-diagnostics",
       "name": "Amino Diagnostics",
       "city": "",
-      "rating": 0,
-      "reviewCount": 0,
-      "reviews": [],
-      "lastSyncedAt": "2026-06-28T06:45:49.902Z"
+      "rating": 4.9,
+      "reviewCount": 512,
+      "reviews": [
+        {
+          "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aSWRXOXNlbXR4WDNCdU1HdExNRTVwY0RkM01GRRAB",
+          "reviewerName": "ABHISHEK GUPTA",
+          "rating": 5,
+          "text": "The staff Ayan Khan was courteous and polite in his conversation with us. Highly satisfied with the services. Appreciate the punctual time.",
+          "publishTime": "2026-05-30T02:56:08.447175888Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pWSVdtcDBRbXRWUzFkUlVETXdiRVZwUVZkUGMwRRAB",
+          "reviewerName": "VVN K",
+          "rating": 5,
+          "text": "I would like to commend the lab assistant KANCHAN SHARMA for her  efficiency and professionalism. The blood draw was quick and nearly painless, and she confirmed all my details accurately before starting. It made what is usually a stressful experience much easier.\"",
+          "publishTime": "2026-05-13T03:26:48.658032581Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xWYWRVRllVbkF6VG1wSVpqUjBNMll4YmtWUVpYYxAB",
+          "reviewerName": "Sandeep Singh",
+          "rating": 5,
+          "text": "Client name: Sandeep Bisht\nDate: 10/05/2026\nGood experience at amino diagnostic centre.Staff is supportive and professional. Good experience technician, smooth sample collection, and got my reports on time. Recommended.\nThank you.",
+          "publishTime": "2026-05-10T03:23:12.792611824Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT2psR1oweHFVRWswVEhaZlZHeFlRbWcxWWpCM2NIYxAB",
+          "reviewerName": "Hannu Malik",
+          "rating": 5,
+          "text": "Had a great experience at Amino Diagnostic Centre. The staff was professional and cooperative. The centre is clean and well-equipped. Got my reports on time without any hassle. Highly recommended.",
+          "publishTime": "2026-05-02T04:50:33.360916602Z",
+          "sentiment": "positive"
+        },
+        {
+          "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoR2VVaEdlSGh2Um5CdFNHMW5iMjlLU25KeVpGRRAB",
+          "reviewerName": "yugesh",
+          "rating": 5,
+          "text": "I had a medical test from Amino Diagnostics. Ayan Khan, the examiner, was very professional and conducted the test very well, clearing all my doubts. A great thumbs up for Ayan Khan.",
+          "publishTime": "2026-05-30T05:38:06.908123067Z",
+          "sentiment": "positive"
+        }
+      ],
+      "lastSyncedAt": "2026-06-28T06:50:33.916Z"
     }
   ],
-  "alerts": []
+  "alerts": [
+    {
+      "branchId": "accured-diagnostics",
+      "branchName": "ACCURED DIAGNOSTICS",
+      "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ack4yZGllWFpWZUdaVVp6YzNhRkZYYVdWeGRYYxAB",
+      "rating": 1,
+      "text": "Not Recommended\n\n1. The diagnostic center should have informed us in advance that a male doctor would be performing the ultrasound. We were not notified and were surprised at the time of the scan.\n2. The reception team assured us that a 3D scan would be provided if the baby's face was visible. However, the doctor declined the 3D scan outright, citing that we were already at 36 weeks. We chose this center primarily for the 3D scan and feel misled by the incorrect information provided.\n3. Hygiene - they gave cloth instead of tissue to wipe the fluid used in ultrasound. Very unhygienic",
+      "reviewerName": "vinay s",
+      "createdAt": "2026-06-12T14:20:32.890831520Z"
+    },
+    {
+      "branchId": "accured-diagnostics",
+      "branchName": "ACCURED DIAGNOSTICS",
+      "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSM2FEUTBWbWxFTVVWalpHNXpMVWhrTkdsTmFuYxAB",
+      "rating": 1,
+      "text": "No value for patient’s time.\nFacilities are good but staff doesn’t value one’s time. We waited for more than an hour after doctor/respective person arrival only because he entered a board room meeting after coming instead of attending patients who were already waiting for him. Please value someone time.",
+      "reviewerName": "Deepa Ven",
+      "createdAt": "2026-01-17T15:55:02.420636597Z"
+    },
+    {
+      "branchId": "accured-diagnostics",
+      "branchName": "ACCURED DIAGNOSTICS",
+      "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xnM2JpMUtZaTFFV0RaWWNFazVOMlV3U2taRWMxRRAB",
+      "rating": 1,
+      "text": "They don’t have basic sense. Initially, they said the doctor would come in 5 minutes, but he arrived after 1 hour.\nIf you don’t have any time constraints and no other work, only then should you visit here.\nIf you need quick service, there are several diagnostic centers around that you can visit.\n\nI have bill — it’s genuine review",
+      "reviewerName": "Avinash Babu",
+      "createdAt": "2026-01-11T08:39:00.474511806Z"
+    },
+    {
+      "branchId": "red-diagnostics",
+      "branchName": "RED DIAGNOSTICS",
+      "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT205V2MxUXhTbkZDWDFCdE5tbHpiSHBCVm1GSlYzYxAB",
+      "rating": 1,
+      "text": "Highly unprofessional cheat customers I shared doctor prescription with all test details to be done and asked for price asking ensure all test are covered but these people are fraudsters multiple times I had to check myself for test coverage and they were trying to collect money without covering test and now when I visited doctor came to know that test not covered and when I message see attached response highly unethical and unreliable diagnostic centre will not recommend anyone going forward",
+      "reviewerName": "rachna Arora",
+      "createdAt": "2026-05-12T12:42:00.229243041Z"
+    },
+    {
+      "branchId": "fifty-one-plus-noida",
+      "branchName": "FIFTY ONE PLUS LAB, NOIDA",
+      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT2VWSjBVVmhoTkdwdGNXSnBXVFpWZG1jdFlXYxAB",
+      "rating": 1,
+      "text": "Completely unprofessional, nobody comes on time when I reached only a dog is there. My reporting time was 8 AM  and when I called they mention that staff comes by 8:30 to 9. Also an unhygienic place.",
+      "reviewerName": "Bot Unanalyzed",
+      "createdAt": "2026-04-20T02:33:14.517414053Z"
+    },
+    {
+      "branchId": "fifty-one-plus-noida",
+      "branchName": "FIFTY ONE PLUS LAB, NOIDA",
+      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCV1pqZEVWRWwwTjBkV2RUUXRRekZGZVhOV1RuYxAB",
+      "rating": 1,
+      "text": "I was quite impressed when I visited but after two months, my opinion is totally changed.\nQuality /test results are bad even though they are quite fast.\n\nI had Niva Bupa insurance and this lab has a tie up for annual check up with them.\n\nI saw the reviews and booked my wife's annual health check up. I was quite impressed with the clockwork speed they work. Everything was working as well oiled machine and within 1 hour everything was done (including ultrasound, pap smear etc.). Both of us were quite impressed with the efficiency of the lab at that time (second week of October 2025).\n\nFast forward to Last week of November (6 weeks post annual check up), my wife had quite sever pain in abdomen. We went for ultrasound to a different lab and doctor said she is having stone in kidney(5mm) and gall bladder (3mm).\n\nSo, yes they are fast & efficient but quality is not reliable and for health, quality of tests is of highest importance and NOT HOW FAST You can provide the service.\n\nI will not recommend this lab to anyone.",
+      "reviewerName": "Pankaj Gupta",
+      "createdAt": "2025-12-23T01:36:20.999827311Z"
+    },
+    {
+      "branchId": "fifty-one-plus-noida",
+      "branchName": "FIFTY ONE PLUS LAB, NOIDA",
+      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xZM09USlRNVk5KYjNWSWMzZFJZbHBtVmw5WlNIYxAB",
+      "rating": 1,
+      "text": "Three days of no showing up; they provide home collection appointments daily, and requests for 12 hours fasting.\n\nDay 1: Sir, I am late, so I prefer not to come; it's hot\nDay 2: My bike isn't working. I said, I am happy to wait, but he insisted on rescheduling for the next day\nDay 3: Sir, I am sick, so I won't be coming. No response to messages or calls.\n\nExtremely horrible service. Pathetic on-call staff with no respect for time and life.\n\nI wish the government would cancel their license.",
+      "reviewerName": "Yogendra Singh",
+      "createdAt": "2026-05-22T03:39:26.258896957Z"
+    },
+    {
+      "branchId": "prime-diagnostic",
+      "branchName": "Prime Diagnostic Pathology",
+      "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
+      "rating": 1,
+      "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
+      "reviewerName": "yash jain",
+      "createdAt": "2026-01-10T06:16:13.800982140Z"
+    },
+    {
+      "branchId": "dayal-diagnostic",
+      "branchName": "DAYAL DIAGNOSTIC CENTER",
+      "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poSVNHWkRVVXhsVFZwTFpFZGpPVTFQUlRCdlptYxAB",
+      "rating": 1,
+      "text": "Worst Diagnostic centre with the worst staff first of all they don't have their own machine for the test they are aligned with another hospital in that process there is zero help from the staff. It's a pathetic experience here never going there",
+      "reviewerName": "Shashank",
+      "createdAt": "2026-06-07T06:29:40.441475108Z"
+    },
+    {
+      "branchId": "dayal-diagnostic",
+      "branchName": "DAYAL DIAGNOSTIC CENTER",
+      "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25oak5XNTZNVWx5VG1WM2JVNVJOblZoVFROelJuYxAB",
+      "rating": 1,
+      "text": "Worst dignostic center with worst staff member..\nDon't go for it...\nThey will collect the sample and sent to other lab for testing.. a normal blood test also take 48 to 72 hrs..\nWorst experience with Dayal Dignostic",
+      "reviewerName": "Sushant Singh",
+      "createdAt": "2025-12-13T11:29:56.764505820Z"
+    }
+  ]
 }
