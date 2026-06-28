@@ -56,20 +56,6 @@ function httpsGet(url, headers = {}) {
 const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
 const STAR_MAP = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
 
-async function getAccountId(accessToken) {
-  const res = await httpsGet(
-    'https://mybusinessaccountmanagement.googleapis.com/v1/accounts',
-    { Authorization: `Bearer ${accessToken}` }
-  );
-  console.log('Accounts API response:', JSON.stringify(res).slice(0, 300));
-  const accounts = res.accounts || [];
-  if (!accounts.length) throw new Error('No accounts found. Response: ' + JSON.stringify(res));
-  // Use first account; name is like "accounts/XXXXXXXXXX"
-  const accountName = accounts[0].name;
-  console.log('Using account:', accountName);
-  return accountName.replace('accounts/', '');
-}
-
 async function fetchReviewsForLocation(accessToken, accountId, locationId) {
   const numericId = locationId.replace('locations/', '');
   const url = `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${numericId}/reviews?pageSize=50`;
@@ -78,6 +64,12 @@ async function fetchReviewsForLocation(accessToken, accountId, locationId) {
 
   if (res.error) {
     throw new Error(`API error ${res.error.code}: ${res.error.message}`);
+  }
+
+  // Log raw response shape for first call to help debug
+  if (!fetchReviewsForLocation._logged) {
+    fetchReviewsForLocation._logged = true;
+    console.log('Sample API response keys:', Object.keys(res), '| reviews count:', (res.reviews||[]).length);
   }
 
   const reviews = [];
@@ -117,8 +109,7 @@ async function main() {
   const accessToken = await getAccessToken();
   console.log('Access token obtained.\n');
 
-  console.log('Fetching account ID...');
-  const accountId = await getAccountId(accessToken);
+  const accountId = '116306995816497970771';
 
   const branches = [];
   const alerts = [];
