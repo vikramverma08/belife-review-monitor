@@ -26,7 +26,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
+          cp docs/data.json /tmp/data.json
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/data.json docs/data.json
           git add docs/data.json
           git diff --staged --quiet || git commit -m "chore: refresh review data [skip ci]"
-          git push
+          git push origin main
