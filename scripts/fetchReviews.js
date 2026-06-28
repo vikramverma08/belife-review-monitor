@@ -62,14 +62,14 @@ async function fetchReviewsForLocation(accessToken, accountId, locationId) {
 
   const res = await httpsGet(url, { Authorization: `Bearer ${accessToken}` });
 
-  if (res.error) {
-    throw new Error(`API error ${res.error.code}: ${res.error.message}`);
-  }
-
-  // Log raw response shape for first call to help debug
+  // Always log first response to debug
   if (!fetchReviewsForLocation._logged) {
     fetchReviewsForLocation._logged = true;
-    console.log('Sample API response keys:', Object.keys(res), '| reviews count:', (res.reviews||[]).length);
+    console.log('DEBUG first response:', JSON.stringify(res).slice(0, 500));
+  }
+
+  if (res.error) {
+    throw new Error(`API error ${res.error.code}: ${res.error.message}`);
   }
 
   const reviews = [];
