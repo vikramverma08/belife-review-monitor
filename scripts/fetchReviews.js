@@ -45,12 +45,12 @@ function httpsPost(url, headers, body) {
 const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
 
 // New Places API (v1) — Text Search to find Place ID
-async function findPlaceId(labName, labCity) {
-  const query = `${labName} ${labCity || ''} India diagnostic lab`;
+// Uses lab.query from labs.json for precise matching (avoids wrong labs with same name)
+async function findPlaceId(searchQuery) {
   const res = await httpsPost(
     'https://places.googleapis.com/v1/places:searchText',
     { 'X-Goog-Api-Key': PLACES_API_KEY, 'X-Goog-FieldMask': 'places.id,places.displayName' },
-    { textQuery: query, maxResultCount: 1 }
+    { textQuery: searchQuery, maxResultCount: 1 }
   );
   if (res.places?.length) {
     console.log(`  Found: ${res.places[0].displayName?.text}`);
@@ -98,7 +98,9 @@ async function main() {
   for (const lab of labs) {
     process.stdout.write(`\nFetching ${lab.name}... `);
 
-    const placeId = await findPlaceId(lab.name, lab.city);
+    // Use lab.query from labs.json — specific enough to find the correct BeLife partner
+    const searchQuery = lab.query || `${lab.name} ${lab.city || ''} India`;
+    const placeId = await findPlaceId(searchQuery);
     if (!placeId) {
       console.log('Place not found, skipping');
       branches.push({
