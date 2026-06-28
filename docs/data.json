@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-28T07:00:03.151Z",
+  "generatedAt": "2026-06-28T09:32:03.191Z",
   "branches": [
     {
       "id": "om-biocare",
       "name": "Om Biocare",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 13,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJb2SS7J6jDDkRpYtt04u8fiU/reviews/Ci9DQUlRQUNvZENodHljRjlvT214NFRTMXJVakpmYXpacmJXdHpiVTVhY0hwd1pGRRAB",
@@ -49,14 +49,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:47.344Z"
+      "lastSyncedAt": "2026-06-28T09:31:55.145Z"
     },
     {
       "id": "tridot-care",
       "name": "TRIDOT CARE Pvt.Ltd.",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 63,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJQQR5Q5gDDTkRiSQHP9P51XY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xBMFQyNDFNblJuWlZVd1pFWk9hSFI0Um1SM1ZtYxAB",
@@ -99,14 +99,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:48.094Z"
+      "lastSyncedAt": "2026-06-28T09:31:55.475Z"
     },
     {
       "id": "ai-healthcare",
       "name": "AI HEALTHCARE",
       "city": "",
       "rating": 5,
-      "reviewCount": 10,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJgTJtyQixwogRj3x-wWtEBDo/reviews/ChdDSUhNMG9nS0VJQ0FnTURvclBXZjF3RRAB",
@@ -149,14 +149,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:48.786Z"
+      "lastSyncedAt": "2026-06-28T09:31:55.823Z"
     },
     {
       "id": "prakash-path-lab",
       "name": "PRAKASH PATH LAB",
       "city": "",
       "rating": 5,
-      "reviewCount": 208,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJZxqfB28DDTkRCYpEllhoox0/reviews/Ci9DQUlRQUNvZENodHljRjlvT214bk1rcFZSa2w1Vm5WRGVWTTRPRXh4WTFwS00xRRAB",
@@ -199,14 +199,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:49.495Z"
+      "lastSyncedAt": "2026-06-28T09:31:56.170Z"
     },
     {
       "id": "accured-diagnostics",
       "name": "ACCURED DIAGNOSTICS",
       "city": "",
-      "rating": 4.7,
-      "reviewCount": 202,
+      "rating": 2.6,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ack4yZGllWFpWZUdaVVp6YzNhRkZYYVdWeGRYYxAB",
@@ -249,14 +249,14 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:50.218Z"
+      "lastSyncedAt": "2026-06-28T09:31:56.516Z"
     },
     {
       "id": "nt-pro-lab",
       "name": "NT PRO LAB",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 99,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJy9T_Ae8DDTkR_70wA5uy8iA/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aVlJFMXZVbXh3YUROck1HeDBObXhPYm14dE4yYxAB",
@@ -299,7 +299,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:50.892Z"
+      "lastSyncedAt": "2026-06-28T09:31:56.848Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
@@ -349,14 +349,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:51.555Z"
+      "lastSyncedAt": "2026-06-28T09:31:57.196Z"
     },
     {
       "id": "bharatiya-path-lab",
       "name": "BHARATIYA PATH LAB",
       "city": "",
-      "rating": 4.5,
-      "reviewCount": 52,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJkVy0gnjrDDkRpgMmw-kltIg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xGM2VtNVZlbHBYWm5sTE0ySkhlVmhUU25GdlJsRRAB",
@@ -399,14 +399,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:52.211Z"
+      "lastSyncedAt": "2026-06-28T09:31:57.526Z"
     },
     {
       "id": "nirog-labcare",
       "name": "NIROG LABCARE",
       "city": "",
       "rating": 5,
-      "reviewCount": 29,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJrxMiQwB5dDkRe7DX--L0qHg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0WE5FUlhiV3BQYTJSUlFYVk5ibnBHUWxZNGJuYxAB",
@@ -449,14 +449,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:52.892Z"
+      "lastSyncedAt": "2026-06-28T09:31:57.859Z"
     },
     {
       "id": "eezee-pathlabs",
       "name": "EEZEE PATHLABS",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 136,
+      "rating": 4.8,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJU7_PdFLnDDkR0naC1uQMVgQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5YU5qSllSa3hmVTFWR1dEVkZSMDlzZEhSMVJFRRAB",
@@ -499,14 +499,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:53.556Z"
+      "lastSyncedAt": "2026-06-28T09:31:58.203Z"
     },
     {
       "id": "red-diagnostics",
       "name": "RED DIAGNOSTICS",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 143,
+      "rating": 4.2,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tNek5sUTROVU5RVTNKWmVHbDNibFpYTkRWRFdVRRAB",
@@ -549,7 +549,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:54.201Z"
+      "lastSyncedAt": "2026-06-28T09:31:58.551Z"
     },
     {
       "id": "serum-inc",
@@ -567,14 +567,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:54.860Z"
+      "lastSyncedAt": "2026-06-28T09:31:58.902Z"
     },
     {
       "id": "my-choice-lab",
       "name": "My Choice Lab",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 37,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJUxSeFRLlDDkRJb0Bf1-MDXE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tnNU1EazNNVlJvU0ZOTVVHSlpaM1V0T0VZMVExRRAB",
@@ -617,14 +617,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:55.515Z"
+      "lastSyncedAt": "2026-06-28T09:31:59.233Z"
     },
     {
       "id": "surbhi-care",
       "name": "SURBHI CARE",
       "city": "",
-      "rating": 4.8,
-      "reviewCount": 142,
+      "rating": 4.6,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJ8RxtAb0FDTkRnLkj7J4hAkM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21Wc2RXeEdYM2c1VDFwcmVIcDBZVmRUZUdkRFRVRRAB",
@@ -667,14 +667,14 @@
           "sentiment": "neutral"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:56.156Z"
+      "lastSyncedAt": "2026-06-28T09:31:59.578Z"
     },
     {
       "id": "d-care-diagnostics",
       "name": "D CARE Diagnostics",
       "city": "",
-      "rating": 4.5,
-      "reviewCount": 68,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJ_bTSJonnDDkRGYHq1tlj41M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsc2REVlNjRkZFVVhOSE5FcHBWVEpuYUV4MlNXYxAB",
@@ -717,14 +717,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:56.820Z"
+      "lastSyncedAt": "2026-06-28T09:31:59.909Z"
     },
     {
       "id": "fifty-one-plus-noida",
       "name": "FIFTY ONE PLUS LAB, NOIDA",
       "city": "Noida",
-      "rating": 4.7,
-      "reviewCount": 748,
+      "rating": 2.6,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wemRtNTFiWEZuYlc5M056bE1iWEEwWDI1c2JHYxAB",
@@ -767,14 +767,14 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:57.532Z"
+      "lastSyncedAt": "2026-06-28T09:32:00.239Z"
     },
     {
       "id": "vachana-diagnostic",
       "name": "Vachana Diagnostic Laboratory",
       "city": "Etah Uttar Pradesh",
       "rating": 5,
-      "reviewCount": 9,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJsUiQf0b9dDkRfOJLTvtRe4Y/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tWbVJsOWlTVVpWUTAxdFRVaGZkWFJ4WkhSVGRWRRAB",
@@ -817,14 +817,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:58.217Z"
+      "lastSyncedAt": "2026-06-28T09:32:00.569Z"
     },
     {
       "id": "fifty-one-plus-meerut",
       "name": "FIFTY ONE PLUS LAB MEERUT",
       "city": "Meerut",
-      "rating": 4.9,
-      "reviewCount": 175,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJv7y3MWBlDDkR2g3qRAGRSzQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT214SlJVRlpPSEJUVWpkUmJYQjFkR1JyUm1KWFUyYxAB",
@@ -867,14 +867,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:58.890Z"
+      "lastSyncedAt": "2026-06-28T09:32:00.902Z"
     },
     {
       "id": "prime-diagnostic",
       "name": "Prime Diagnostic Pathology",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 91,
+      "rating": 4,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OeU4yODBWV2RSZG1aeWMwSnRTa0ZyVnpkQlpXYxAB",
@@ -917,14 +917,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T06:59:59.576Z"
+      "lastSyncedAt": "2026-06-28T09:32:01.236Z"
     },
     {
       "id": "dayal-diagnostic",
       "name": "DAYAL DIAGNOSTIC CENTER",
       "city": "",
-      "rating": 4.3,
-      "reviewCount": 36,
+      "rating": 3.4,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poSVNHWkRVVXhsVFZwTFpFZGpPVTFQUlRCdlptYxAB",
@@ -967,14 +967,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T07:00:00.209Z"
+      "lastSyncedAt": "2026-06-28T09:32:01.567Z"
     },
     {
       "id": "chaitanya-lifecare",
       "name": "Chaitanya LifeCare",
       "city": "",
-      "rating": 4.6,
-      "reviewCount": 23,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJCWFwDetHnDkR-t8naTVhHuo/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xCYWRDMVdRamhVZWpjM05XSTNORmQxUnpoUVMwRRAB",
@@ -1017,14 +1017,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T07:00:00.851Z"
+      "lastSyncedAt": "2026-06-28T09:32:01.900Z"
     },
     {
       "id": "fifty-one-plus-delhi",
       "name": "FIFTY ONE PLUS LAB, DELHI",
       "city": "Delhi",
-      "rating": 4.9,
-      "reviewCount": 116,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJ4zzHU5DjDDkRxLUbBq0lJFc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoSVowUmhTbWx1ZFdneWRVZDNTSEZ2TWxST1MwRRAB",
@@ -1067,14 +1067,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T07:00:01.503Z"
+      "lastSyncedAt": "2026-06-28T09:32:02.230Z"
     },
     {
       "id": "konica-imaging",
       "name": "KONICA Imaging & Diagnostic Center",
       "city": "",
-      "rating": 4.7,
-      "reviewCount": 69,
+      "rating": 4.8,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJA6YrNmsDDTkRIlxt04O_YDk/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pSVGFVOTZOVWRaUmpaSWFHNTVNbEpzT0hCbFMyYxAB",
@@ -1117,14 +1117,14 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T07:00:02.115Z"
+      "lastSyncedAt": "2026-06-28T09:32:02.561Z"
     },
     {
       "id": "amino-diagnostics",
       "name": "Amino Diagnostics",
       "city": "",
-      "rating": 4.9,
-      "reviewCount": 512,
+      "rating": 5,
+      "reviewCount": 5,
       "reviews": [
         {
           "reviewId": "places/ChIJxxyzzNADDTkRJIoGSDJEe_c/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoR2VVaEdlSGh2Um5CdFNHMW5iMjlLU25KeVpGRRAB",
@@ -1167,99 +1167,8 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T07:00:02.750Z"
+      "lastSyncedAt": "2026-06-28T09:32:02.891Z"
     }
   ],
-  "alerts": [
-    {
-      "branchId": "accured-diagnostics",
-      "branchName": "ACCURED DIAGNOSTICS",
-      "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ack4yZGllWFpWZUdaVVp6YzNhRkZYYVdWeGRYYxAB",
-      "rating": 1,
-      "text": "Not Recommended\n\n1. The diagnostic center should have informed us in advance that a male doctor would be performing the ultrasound. We were not notified and were surprised at the time of the scan.\n2. The reception team assured us that a 3D scan would be provided if the baby's face was visible. However, the doctor declined the 3D scan outright, citing that we were already at 36 weeks. We chose this center primarily for the 3D scan and feel misled by the incorrect information provided.\n3. Hygiene - they gave cloth instead of tissue to wipe the fluid used in ultrasound. Very unhygienic",
-      "reviewerName": "vinay s",
-      "createdAt": "2026-06-12T14:20:32.890831520Z"
-    },
-    {
-      "branchId": "accured-diagnostics",
-      "branchName": "ACCURED DIAGNOSTICS",
-      "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSM2FEUTBWbWxFTVVWalpHNXpMVWhrTkdsTmFuYxAB",
-      "rating": 1,
-      "text": "No value for patient’s time.\nFacilities are good but staff doesn’t value one’s time. We waited for more than an hour after doctor/respective person arrival only because he entered a board room meeting after coming instead of attending patients who were already waiting for him. Please value someone time.",
-      "reviewerName": "Deepa Ven",
-      "createdAt": "2026-01-17T15:55:02.420636597Z"
-    },
-    {
-      "branchId": "accured-diagnostics",
-      "branchName": "ACCURED DIAGNOSTICS",
-      "reviewId": "places/ChIJxdrSKNY9rjsRE-om0zVGe-M/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xnM2JpMUtZaTFFV0RaWWNFazVOMlV3U2taRWMxRRAB",
-      "rating": 1,
-      "text": "They don’t have basic sense. Initially, they said the doctor would come in 5 minutes, but he arrived after 1 hour.\nIf you don’t have any time constraints and no other work, only then should you visit here.\nIf you need quick service, there are several diagnostic centers around that you can visit.\n\nI have bill — it’s genuine review",
-      "reviewerName": "Avinash Babu",
-      "createdAt": "2026-01-11T08:39:00.474511806Z"
-    },
-    {
-      "branchId": "red-diagnostics",
-      "branchName": "RED DIAGNOSTICS",
-      "reviewId": "places/ChIJ2zY_wdHlDDkRlNf2Mig-3Zg/reviews/Ci9DQUlRQUNvZENodHljRjlvT205V2MxUXhTbkZDWDFCdE5tbHpiSHBCVm1GSlYzYxAB",
-      "rating": 1,
-      "text": "Highly unprofessional cheat customers I shared doctor prescription with all test details to be done and asked for price asking ensure all test are covered but these people are fraudsters multiple times I had to check myself for test coverage and they were trying to collect money without covering test and now when I visited doctor came to know that test not covered and when I message see attached response highly unethical and unreliable diagnostic centre will not recommend anyone going forward",
-      "reviewerName": "rachna Arora",
-      "createdAt": "2026-05-12T12:42:00.229243041Z"
-    },
-    {
-      "branchId": "fifty-one-plus-noida",
-      "branchName": "FIFTY ONE PLUS LAB, NOIDA",
-      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCT2VWSjBVVmhoTkdwdGNXSnBXVFpWZG1jdFlXYxAB",
-      "rating": 1,
-      "text": "Completely unprofessional, nobody comes on time when I reached only a dog is there. My reporting time was 8 AM  and when I called they mention that staff comes by 8:30 to 9. Also an unhygienic place.",
-      "reviewerName": "Bot Unanalyzed",
-      "createdAt": "2026-04-20T02:33:14.517414053Z"
-    },
-    {
-      "branchId": "fifty-one-plus-noida",
-      "branchName": "FIFTY ONE PLUS LAB, NOIDA",
-      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCV1pqZEVWRWwwTjBkV2RUUXRRekZGZVhOV1RuYxAB",
-      "rating": 1,
-      "text": "I was quite impressed when I visited but after two months, my opinion is totally changed.\nQuality /test results are bad even though they are quite fast.\n\nI had Niva Bupa insurance and this lab has a tie up for annual check up with them.\n\nI saw the reviews and booked my wife's annual health check up. I was quite impressed with the clockwork speed they work. Everything was working as well oiled machine and within 1 hour everything was done (including ultrasound, pap smear etc.). Both of us were quite impressed with the efficiency of the lab at that time (second week of October 2025).\n\nFast forward to Last week of November (6 weeks post annual check up), my wife had quite sever pain in abdomen. We went for ultrasound to a different lab and doctor said she is having stone in kidney(5mm) and gall bladder (3mm).\n\nSo, yes they are fast & efficient but quality is not reliable and for health, quality of tests is of highest importance and NOT HOW FAST You can provide the service.\n\nI will not recommend this lab to anyone.",
-      "reviewerName": "Pankaj Gupta",
-      "createdAt": "2025-12-23T01:36:20.999827311Z"
-    },
-    {
-      "branchId": "fifty-one-plus-noida",
-      "branchName": "FIFTY ONE PLUS LAB, NOIDA",
-      "reviewId": "places/ChIJt5E5KN3lDDkRNcpUh0REy4Q/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xZM09USlRNVk5KYjNWSWMzZFJZbHBtVmw5WlNIYxAB",
-      "rating": 1,
-      "text": "Three days of no showing up; they provide home collection appointments daily, and requests for 12 hours fasting.\n\nDay 1: Sir, I am late, so I prefer not to come; it's hot\nDay 2: My bike isn't working. I said, I am happy to wait, but he insisted on rescheduling for the next day\nDay 3: Sir, I am sick, so I won't be coming. No response to messages or calls.\n\nExtremely horrible service. Pathetic on-call staff with no respect for time and life.\n\nI wish the government would cancel their license.",
-      "reviewerName": "Yogendra Singh",
-      "createdAt": "2026-05-22T03:39:26.258896957Z"
-    },
-    {
-      "branchId": "prime-diagnostic",
-      "branchName": "Prime Diagnostic Pathology",
-      "reviewId": "places/ChIJC6YXGQA9DTkRxM6IcEaI15w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xJeE0xQnJlbXQxU0RaV2RHRmxZMDVCZW01d2VsRRAB",
-      "rating": 1,
-      "text": "Pathetic experience, short of staff, unhygienic place, no ultrasound facility, no proper process, first come random tests taking procedure, I had a corporate check up booking which included ultrasound as well, they didn't even had ultrasound machine and they asked to visit a different lab for the imaging. Wouldn't recommend.",
-      "reviewerName": "yash jain",
-      "createdAt": "2026-01-10T06:16:13.800982140Z"
-    },
-    {
-      "branchId": "dayal-diagnostic",
-      "branchName": "DAYAL DIAGNOSTIC CENTER",
-      "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poSVNHWkRVVXhsVFZwTFpFZGpPVTFQUlRCdlptYxAB",
-      "rating": 1,
-      "text": "Worst Diagnostic centre with the worst staff first of all they don't have their own machine for the test they are aligned with another hospital in that process there is zero help from the staff. It's a pathetic experience here never going there",
-      "reviewerName": "Shashank",
-      "createdAt": "2026-06-07T06:29:40.441475108Z"
-    },
-    {
-      "branchId": "dayal-diagnostic",
-      "branchName": "DAYAL DIAGNOSTIC CENTER",
-      "reviewId": "places/ChIJlxxkp4TxDDkRoRPGCobCtgA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25oak5XNTZNVWx5VG1WM2JVNVJOblZoVFROelJuYxAB",
-      "rating": 1,
-      "text": "Worst dignostic center with worst staff member..\nDon't go for it...\nThey will collect the sample and sent to other lab for testing.. a normal blood test also take 48 to 72 hrs..\nWorst experience with Dayal Dignostic",
-      "reviewerName": "Sushant Singh",
-      "createdAt": "2025-12-13T11:29:56.764505820Z"
-    }
-  ]
+  "alerts": []
 }
