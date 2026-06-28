@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T05:54:37.087Z",
+  "generatedAt": "2026-06-28T06:14:35.926Z",
   "branches": [
     {
       "id": "om-biocare",
@@ -49,7 +49,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:21.621Z"
+      "lastSyncedAt": "2026-06-28T06:14:20.394Z"
     },
     {
       "id": "tridot-care",
@@ -99,57 +99,16 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:22.368Z"
+      "lastSyncedAt": "2026-06-28T06:14:21.152Z"
     },
     {
       "id": "ai-healthcare",
       "name": "AI HEALTHCARE",
       "city": "",
-      "rating": 5,
-      "reviewCount": 8,
-      "reviews": [
-        {
-          "reviewId": "places/ChIJoTRFDwwtDogRIzeaYOwfcsM/reviews/ChZDSUhNMG9nS0VJQ0FnSUM1ck02OExBEAE",
-          "reviewerName": "Jon Cohee",
-          "rating": 5,
-          "text": "I want to HIGHLY recommend anyone out there needing a boost either before or after a trip/hard week/recovering from an intense workout or in preparation for any of life’s big events to please go see Dr Shammona Clark and her team at iHeal Health and Wellness. Her Ironman IV Hydration Therapy has been a game changer for me! In life we need all of the advantages we can get and having Dr. Shammona Clark on my team has made a huge difference in my ability to work and play hard! Thank you Dr Clark and team!!! #teamawesome!",
-          "publishTime": "2023-10-11T16:17:13.429530Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJoTRFDwwtDogRIzeaYOwfcsM/reviews/ChdDSUhNMG9nS0VJQ0FnSUNwcTVDVTJRRRAB",
-          "reviewerName": "L- ROD",
-          "rating": 5,
-          "text": "I recently started getting IV hydration and vitamin B shots from iheal health & wellness. Not being a fan of needles,  I was hesitant and extremely nervous. However, the staff is amazing. They are friendly, professional and informative. Not only did they calm and reassure me, but thoroughly  walked me through the process and benefits of each. The facility itself is very clean and has a soothing, welcoming environment. I highly recommend iheal health and wellness for all your healthcare needs.",
-          "publishTime": "2023-08-10T15:05:18.687016Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJoTRFDwwtDogRIzeaYOwfcsM/reviews/ChZDSUhNMG9nS0VJQ0FnSUN4N29hbWRBEAE",
-          "reviewerName": "Jenn",
-          "rating": 5,
-          "text": "I went to iheal health because I was getting lethargic & achy. I decided to get an IV infusion  to help with my issues. The staff is very professional, my appointment started as soon as I walked in the door. The IV was connected to my arm & within 40 minutes, I was done. The next day I woke up getting so much better! I felt more energy and no aches or pains! I went for a walk & felt great! Dr. Shammona & her staff are amazing!",
-          "publishTime": "2023-05-18T03:01:29.600419Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJoTRFDwwtDogRIzeaYOwfcsM/reviews/ChZDSUhNMG9nS0VJQ0FnSUR4NHJQVmJ3EAE",
-          "reviewerName": "Turon Ivy",
-          "rating": 5,
-          "text": "The quality of care is unmatched. The staff is extremely knowledgeable, takes time to answer any questions, and the facility is amazing. I will be sure to continue recommending my personal friends and family members to.take advantage of the services provided. IHeal has a staff that is geniually concerned about improving your health. Their continuity of care is exactly what is need in the health care industry.",
-          "publishTime": "2023-06-05T01:40:37.074733Z",
-          "sentiment": "positive"
-        },
-        {
-          "reviewId": "places/ChIJoTRFDwwtDogRIzeaYOwfcsM/reviews/ChZDSUhNMG9nS0VJQ0FnSURabVA3dkpREAE",
-          "reviewerName": "L Lewis",
-          "rating": 5,
-          "text": "Super friendly and professional staff. I did a foot detox and paraffin treatment. Feel lighter, relaxed and my skin is very soft. I will be going back soon.",
-          "publishTime": "2023-09-23T18:32:05.638738Z",
-          "sentiment": "positive"
-        }
-      ],
-      "lastSyncedAt": "2026-06-28T05:54:23.067Z"
+      "rating": 0,
+      "reviewCount": 0,
+      "reviews": [],
+      "lastSyncedAt": "2026-06-28T06:14:21.743Z"
     },
     {
       "id": "prakash-path-lab",
@@ -199,7 +158,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:23.768Z"
+      "lastSyncedAt": "2026-06-28T06:14:22.248Z"
     },
     {
       "id": "accured-diagnostics",
@@ -249,7 +208,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:24.465Z"
+      "lastSyncedAt": "2026-06-28T06:14:22.984Z"
     },
     {
       "id": "nt-pro-lab",
@@ -299,7 +258,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:25.129Z"
+      "lastSyncedAt": "2026-06-28T06:14:23.650Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
@@ -349,7 +308,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:25.807Z"
+      "lastSyncedAt": "2026-06-28T06:14:24.345Z"
     },
     {
       "id": "bharatiya-path-lab",
@@ -399,7 +358,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:26.471Z"
+      "lastSyncedAt": "2026-06-28T06:14:25.027Z"
     },
     {
       "id": "nirog-labcare",
@@ -449,7 +408,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:27.125Z"
+      "lastSyncedAt": "2026-06-28T06:14:25.694Z"
     },
     {
       "id": "eezee-pathlabs",
@@ -499,7 +458,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:27.770Z"
+      "lastSyncedAt": "2026-06-28T06:14:26.374Z"
     },
     {
       "id": "red-diagnostics",
@@ -549,7 +508,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:28.398Z"
+      "lastSyncedAt": "2026-06-28T06:14:27.001Z"
     },
     {
       "id": "serum-inc",
@@ -567,7 +526,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:29.027Z"
+      "lastSyncedAt": "2026-06-28T06:14:27.618Z"
     },
     {
       "id": "my-choice-lab",
@@ -617,7 +576,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:29.652Z"
+      "lastSyncedAt": "2026-06-28T06:14:28.266Z"
     },
     {
       "id": "surbhi-care",
@@ -667,7 +626,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:30.273Z"
+      "lastSyncedAt": "2026-06-28T06:14:28.904Z"
     },
     {
       "id": "d-care-diagnostics",
@@ -717,7 +676,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:30.924Z"
+      "lastSyncedAt": "2026-06-28T06:14:29.568Z"
     },
     {
       "id": "fifty-one-plus-noida",
@@ -767,7 +726,7 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:31.587Z"
+      "lastSyncedAt": "2026-06-28T06:14:30.264Z"
     },
     {
       "id": "vachana-diagnostic",
@@ -817,7 +776,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:32.236Z"
+      "lastSyncedAt": "2026-06-28T06:14:30.933Z"
     },
     {
       "id": "fifty-one-plus-meerut",
@@ -867,7 +826,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:32.906Z"
+      "lastSyncedAt": "2026-06-28T06:14:31.610Z"
     },
     {
       "id": "prime-diagnostic",
@@ -917,7 +876,7 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:33.526Z"
+      "lastSyncedAt": "2026-06-28T06:14:32.267Z"
     },
     {
       "id": "dayal-diagnostic",
@@ -967,7 +926,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:34.154Z"
+      "lastSyncedAt": "2026-06-28T06:14:32.955Z"
     },
     {
       "id": "chaitanya-lifecare",
@@ -1017,7 +976,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:34.811Z"
+      "lastSyncedAt": "2026-06-28T06:14:33.594Z"
     },
     {
       "id": "fifty-one-plus-delhi",
@@ -1067,7 +1026,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:35.430Z"
+      "lastSyncedAt": "2026-06-28T06:14:34.261Z"
     },
     {
       "id": "konica-imaging",
@@ -1117,7 +1076,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:36.066Z"
+      "lastSyncedAt": "2026-06-28T06:14:34.899Z"
     },
     {
       "id": "amino-diagnostics",
@@ -1167,7 +1126,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T05:54:36.687Z"
+      "lastSyncedAt": "2026-06-28T06:14:35.526Z"
     }
   ],
   "alerts": [
