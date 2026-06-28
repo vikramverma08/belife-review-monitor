@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T09:56:28.030Z",
+  "generatedAt": "2026-06-28T10:44:52.939Z",
   "branches": [
     {
       "id": "om-biocare",
@@ -49,7 +49,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:19.991Z"
+      "lastSyncedAt": "2026-06-28T10:44:45.232Z"
     },
     {
       "id": "tridot-care",
@@ -99,7 +99,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:20.338Z"
+      "lastSyncedAt": "2026-06-28T10:44:45.550Z"
     },
     {
       "id": "ai-healthcare",
@@ -149,7 +149,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:20.690Z"
+      "lastSyncedAt": "2026-06-28T10:44:45.882Z"
     },
     {
       "id": "prakash-path-lab",
@@ -199,7 +199,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:21.036Z"
+      "lastSyncedAt": "2026-06-28T10:44:46.215Z"
     },
     {
       "id": "accured-diagnostics",
@@ -249,7 +249,7 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:21.365Z"
+      "lastSyncedAt": "2026-06-28T10:44:46.545Z"
     },
     {
       "id": "nt-pro-lab",
@@ -299,7 +299,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:21.707Z"
+      "lastSyncedAt": "2026-06-28T10:44:46.879Z"
     },
     {
       "id": "fifty-one-plus-east-delhi",
@@ -349,7 +349,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:22.050Z"
+      "lastSyncedAt": "2026-06-28T10:44:47.196Z"
     },
     {
       "id": "bharatiya-path-lab",
@@ -399,7 +399,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:22.398Z"
+      "lastSyncedAt": "2026-06-28T10:44:47.529Z"
     },
     {
       "id": "nirog-labcare",
@@ -449,7 +449,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:22.727Z"
+      "lastSyncedAt": "2026-06-28T10:44:47.862Z"
     },
     {
       "id": "eezee-pathlabs",
@@ -499,7 +499,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:23.056Z"
+      "lastSyncedAt": "2026-06-28T10:44:48.193Z"
     },
     {
       "id": "red-diagnostics",
@@ -549,7 +549,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:23.388Z"
+      "lastSyncedAt": "2026-06-28T10:44:48.509Z"
     },
     {
       "id": "serum-inc",
@@ -567,7 +567,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:23.719Z"
+      "lastSyncedAt": "2026-06-28T10:44:48.826Z"
     },
     {
       "id": "my-choice-lab",
@@ -617,7 +617,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:24.065Z"
+      "lastSyncedAt": "2026-06-28T10:44:49.142Z"
     },
     {
       "id": "surbhi-care",
@@ -667,7 +667,7 @@
           "sentiment": "neutral"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:24.396Z"
+      "lastSyncedAt": "2026-06-28T10:44:49.458Z"
     },
     {
       "id": "d-care-diagnostics",
@@ -717,7 +717,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:24.728Z"
+      "lastSyncedAt": "2026-06-28T10:44:49.785Z"
     },
     {
       "id": "fifty-one-plus-noida",
@@ -767,7 +767,7 @@
           "sentiment": "negative"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:25.057Z"
+      "lastSyncedAt": "2026-06-28T10:44:50.102Z"
     },
     {
       "id": "vachana-diagnostic",
@@ -817,7 +817,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:25.387Z"
+      "lastSyncedAt": "2026-06-28T10:44:50.419Z"
     },
     {
       "id": "fifty-one-plus-meerut",
@@ -867,7 +867,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:25.717Z"
+      "lastSyncedAt": "2026-06-28T10:44:50.736Z"
     },
     {
       "id": "prime-diagnostic",
@@ -917,7 +917,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:26.046Z"
+      "lastSyncedAt": "2026-06-28T10:44:51.053Z"
     },
     {
       "id": "dayal-diagnostic",
@@ -967,7 +967,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:26.393Z"
+      "lastSyncedAt": "2026-06-28T10:44:51.370Z"
     },
     {
       "id": "chaitanya-lifecare",
@@ -1017,7 +1017,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:26.722Z"
+      "lastSyncedAt": "2026-06-28T10:44:51.687Z"
     },
     {
       "id": "fifty-one-plus-delhi",
@@ -1067,7 +1067,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:27.052Z"
+      "lastSyncedAt": "2026-06-28T10:44:52.004Z"
     },
     {
       "id": "konica-imaging",
@@ -1117,7 +1117,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:27.384Z"
+      "lastSyncedAt": "2026-06-28T10:44:52.322Z"
     },
     {
       "id": "amino-diagnostics",
@@ -1167,7 +1167,7 @@
           "sentiment": "positive"
         }
       ],
-      "lastSyncedAt": "2026-06-28T09:56:27.730Z"
+      "lastSyncedAt": "2026-06-28T10:44:52.639Z"
     }
   ],
   "alerts": []
