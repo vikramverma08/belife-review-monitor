@@ -61,7 +61,7 @@ async function findPlaceId(searchQuery) {
 
 // New Places API (v1) — Place Details to get reviews + rating
 async function fetchReviewsForPlace(placeId) {
-  const url = `https://places.googleapis.com/v1/places/${placeId}?reviewSort=NEWEST`;
+  const url = `https://places.googleapis.com/v1/places/${placeId}`;
   const res = await httpsGet(url, {
     'X-Goog-Api-Key': PLACES_API_KEY,
     'X-Goog-FieldMask': 'reviews,rating,userRatingCount'
