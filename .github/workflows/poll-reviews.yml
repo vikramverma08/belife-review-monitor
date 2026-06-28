@@ -32,4 +32,4 @@ jobs:
           cp /tmp/data.json docs/data.json
           git add docs/data.json
           git diff --staged --quiet || git commit -m "chore: refresh review data [skip ci]"
-          git push origin main
+          git push origin main || (git pull --rebase origin main && git push origin main)
