@@ -6,7 +6,6 @@ const CLIENT_ID     = process.env.GOOGLE_CLIENT_ID;
 const CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 const REFRESH_TOKEN = process.env.GOOGLE_REFRESH_TOKEN;
 
-// Exchange refresh token for a fresh access token
 async function getAccessToken() {
   const body = new URLSearchParams({
     client_id:     CLIENT_ID,
@@ -55,14 +54,31 @@ function httpsGet(url, headers = {}) {
 }
 
 const sentiment = r => r >= 4 ? 'positive' : r <= 2 ? 'negative' : 'neutral';
-
 const STAR_MAP = { ONE: 1, TWO: 2, THREE: 3, FOUR: 4, FIVE: 5 };
+
+async function getAccountId(accessToken) {
+  const res = await httpsGet(
+    'https://mybusinessaccountmanagement.googleapis.com/v1/accounts',
+    { Authorization: `Bearer ${accessToken}` }
+  );
+  console.log('Accounts API response:', JSON.stringify(res).slice(0, 300));
+  const accounts = res.accounts || [];
+  if (!accounts.length) throw new Error('No accounts found. Response: ' + JSON.stringify(res));
+  // Use first account; name is like "accounts/XXXXXXXXXX"
+  const accountName = accounts[0].name;
+  console.log('Using account:', accountName);
+  return accountName.replace('accounts/', '');
+}
 
 async function fetchReviewsForLocation(accessToken, accountId, locationId) {
   const numericId = locationId.replace('locations/', '');
   const url = `https://mybusiness.googleapis.com/v4/accounts/${accountId}/locations/${numericId}/reviews?pageSize=50`;
 
   const res = await httpsGet(url, { Authorization: `Bearer ${accessToken}` });
+
+  if (res.error) {
+    throw new Error(`API error ${res.error.code}: ${res.error.message}`);
+  }
 
   const reviews = [];
   for (const r of (res.reviews || [])) {
@@ -85,11 +101,9 @@ async function main() {
     throw new Error('Missing env: GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, or GOOGLE_REFRESH_TOKEN');
   }
 
-  const ACCOUNT_ID = '116306995816497970771';
   const labsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../labs.json'), 'utf8'));
   const labs = labsData.labs || labsData;
 
-  // Load existing data to merge — never lose old reviews
   const dataPath = path.join(__dirname, '../docs/data.json');
   let existingBranches = {};
   try {
@@ -103,6 +117,9 @@ async function main() {
   const accessToken = await getAccessToken();
   console.log('Access token obtained.\n');
 
+  console.log('Fetching account ID...');
+  const accountId = await getAccountId(accessToken);
+
   const branches = [];
   const alerts = [];
 
@@ -110,9 +127,8 @@ async function main() {
     process.stdout.write(`Fetching ${lab.name}... `);
 
     try {
-      const newReviews = await fetchReviewsForLocation(accessToken, ACCOUNT_ID, lab.locationId);
+      const newReviews = await fetchReviewsForLocation(accessToken, accountId, lab.locationId);
 
-      // Merge: new overwrites old (rating/reply may change), sort newest first
       const oldReviews = existingBranches[lab.id] || [];
       const allById = {};
       for (const r of oldReviews) allById[r.reviewId] = r;
