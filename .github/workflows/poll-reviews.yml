@@ -1,9 +1,12 @@
 name: Fetch Reviews (Every 6 Hours)
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"  # every 6 hours — stays within $200 free credit
-  workflow_dispatch: {}   # manual run from Actions tab
+  # Scheduled runs DISABLED: direct Business Profile API has 0 quota and was
+  # overwriting good data with empty results. Re-enable only after Google
+  # quota approval (or a stable Zapier credential) is in place.
+  # schedule:
+  #   - cron: "0 */6 * * *"
+  workflow_dispatch: {}   # manual run only from Actions tab
 
 jobs:
   fetch:
